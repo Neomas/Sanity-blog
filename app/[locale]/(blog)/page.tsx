@@ -51,11 +51,12 @@ function HeroPost({
       </Link>
       <div className="mb-20 md:mb-28 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
         <div>
-          <h3 className="text-pretty mb-4 text-4xl leading-tight lg:text-6xl">
+          {/* <h3 className="text-pretty mb-4 text-4xl leading-tight lg:text-6xl">
             <Link href={`/posts/${slug}`} className="hover:underline">
               {title}
             </Link>
-          </h3>
+          </h3> */}
+
           <div className="mb-4 text-lg md:mb-0">
             <DateComponent dateString={date} />
           </div>
@@ -73,23 +74,29 @@ function HeroPost({
   );
 }
 
-export default async function Page() {
+const getLocalizedValue = (field: any, language = "en") => {
+  if (!field) return "";
+  return field[language] || field.en || ""; // Fallback to English if requested language is missing
+};
+
+export default async function Page({ params }) {
   const [settings, heroPost] = await Promise.all([
     sanityFetch({
       query: settingsQuery,
     }),
     sanityFetch({ query: heroQuery }),
   ]);
+  const { locale } = await params;
 
   return (
     <div className="container mx-auto px-5">
       <Intro title={settings?.title} description={settings?.description} />
       {heroPost ? (
         <HeroPost
-          title={heroPost.title}
+          title={getLocalizedValue(heroPost.title, locale)}
           slug={heroPost.slug}
           coverImage={heroPost.coverImage}
-          excerpt={heroPost.excerpt}
+          excerpt={getLocalizedValue(heroPost.excerpt, locale)}
           date={heroPost.date}
           author={heroPost.author}
         />

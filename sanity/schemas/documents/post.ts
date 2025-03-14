@@ -3,18 +3,55 @@ import { format, parseISO } from "date-fns";
 import { defineField, defineType } from "sanity";
 
 import authorType from "./author";
+import { Any } from "next-sanity";
 
 /**
- * This file is the schema definition for a post.
- *
- * Here you'll be able to edit the different fields that appear when you 
- * create or edit a post in the studio.
- * 
- * Here you can see the different schema types that are available:
-
-  https://www.sanity.io/docs/schema-types
-
+ * This file is the schema definition for a post with internationalization.
  */
+
+// Define the supported languages
+const supportedLanguages = [
+  { id: "en", title: "English" },
+  { id: "fr", title: "French" },
+  // Add more languages as needed
+];
+
+// Create a localized string field
+const localeString = defineField({
+  name: "localeString",
+  type: "object",
+  title: "Localized String",
+  fields: supportedLanguages.map((lang) => ({
+    name: lang.id,
+    title: lang.title,
+    type: "string",
+  })),
+});
+
+// Create a localized text field
+const localeText = defineField({
+  name: "localeText",
+  type: "object",
+  title: "Localized Text",
+  fields: supportedLanguages.map((lang) => ({
+    name: lang.id,
+    title: lang.title,
+    type: "text",
+  })),
+});
+
+// Create a localized block content field
+const localeBlockContent = defineField({
+  name: "localeBlockContent",
+  type: "object",
+  title: "Localized Block Content",
+  fields: supportedLanguages.map((lang) => ({
+    name: lang.id,
+    title: lang.title,
+    type: "array",
+    of: [{ type: "block" }],
+  })),
+});
 
 export default defineType({
   name: "post",
@@ -25,8 +62,13 @@ export default defineType({
     defineField({
       name: "title",
       title: "Title",
-      type: "string",
-      validation: (rule) => rule.required(),
+      type: "object",
+      fields: supportedLanguages.map((lang) => ({
+        name: lang.id,
+        title: lang.title,
+        type: "string",
+        validation: (rule: Any) => (lang.id === "en" ? rule.required() : rule),
+      })),
     }),
     defineField({
       name: "slug",
@@ -34,7 +76,7 @@ export default defineType({
       type: "slug",
       description: "A slug is required for the post to show up in the preview",
       options: {
-        source: "title",
+        source: (doc) => doc.title?.en || "",
         maxLength: 96,
         isUnique: (value, context) => context.defaultIsUnique(value, context),
       },
@@ -43,13 +85,23 @@ export default defineType({
     defineField({
       name: "content",
       title: "Content",
-      type: "array",
-      of: [{ type: "block" }],
+      type: "object",
+      fields: supportedLanguages.map((lang) => ({
+        name: lang.id,
+        title: lang.title,
+        type: "array",
+        of: [{ type: "block" }],
+      })),
     }),
     defineField({
       name: "excerpt",
       title: "Excerpt",
-      type: "text",
+      type: "object",
+      fields: supportedLanguages.map((lang) => ({
+        name: lang.id,
+        title: lang.title,
+        type: "text",
+      })),
     }),
     defineField({
       name: "coverImage",
@@ -58,19 +110,27 @@ export default defineType({
       options: {
         hotspot: true,
         aiAssist: {
-          imageDescriptionField: "alt",
+          imageDescriptionField: "alt.en",
         },
       },
       fields: [
         {
           name: "alt",
-          type: "string",
+          type: "object",
           title: "Alternative text",
           description: "Important for SEO and accessiblity.",
+          fields: supportedLanguages.map((lang) => ({
+            name: lang.id,
+            title: lang.title,
+            type: "string",
+          })),
           validation: (rule) => {
             return rule.custom((alt, context) => {
-              if ((context.document?.coverImage as any)?.asset?._ref && !alt) {
-                return "Required";
+              if (
+                (context.document?.coverImage as any)?.asset?._ref &&
+                !alt?.en
+              ) {
+                return "English alt text is required";
               }
               return true;
             });

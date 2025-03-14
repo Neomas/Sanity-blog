@@ -15,11 +15,12 @@ import { structureTool } from "sanity/structure";
 
 import { apiVersion, dataset, projectId, studioUrl } from "@/sanity/lib/api";
 import { pageStructure, singletonPlugin } from "@/sanity/plugins/settings";
-import { assistWithPresets } from "@/sanity/plugins/assist";
+// import { assistWithPresets } from "@/sanity/plugins/assist";
 import author from "@/sanity/schemas/documents/author";
 import post from "@/sanity/schemas/documents/post";
 import settings from "@/sanity/schemas/singletons/settings";
 import { resolveHref } from "@/sanity/lib/utils";
+import pages from "./sanity/schemas/documents/pages";
 
 const homeLocation = {
   title: "Home",
@@ -35,6 +36,7 @@ export default defineConfig({
       // Singletons
       settings,
       // Documents
+      pages,
       post,
       author,
     ],
@@ -56,7 +58,7 @@ export default defineConfig({
           }),
           post: defineLocations({
             select: {
-              title: "title",
+              title: "title?.en",
               slug: "slug.current",
             },
             resolve: (doc) => ({
@@ -80,7 +82,7 @@ export default defineConfig({
     unsplashImageAsset(),
     // Sets up AI Assist with preset prompts
     // https://www.sanity.io/docs/ai-assist
-    assistWithPresets(),
+    // assistWithPresets(),
     // Vision lets you query your content with GROQ in the studio
     // https://www.sanity.io/docs/the-vision-plugin
     process.env.NODE_ENV === "development" &&

@@ -25,7 +25,7 @@ export default async function MoreStories(params: {
               </Link>
               <h3 className="text-balance mb-3 text-3xl leading-snug">
                 <Link href={`/posts/${slug}`} className="hover:underline">
-                  {title}
+                  {/* {title} */}
                 </Link>
               </h3>
               <div className="mb-4 text-lg">
@@ -33,7 +33,7 @@ export default async function MoreStories(params: {
               </div>
               {excerpt && (
                 <p className="text-pretty mb-4 text-lg leading-relaxed">
-                  {excerpt}
+                  {/* {excerpt} */}
                 </p>
               )}
               {author && <Avatar name={author.name} picture={author.picture} />}

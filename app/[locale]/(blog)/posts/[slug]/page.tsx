@@ -15,13 +15,14 @@ import * as demo from "@/sanity/lib/demo";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { postQuery, settingsQuery } from "@/sanity/lib/queries";
 import { resolveOpenGraphImage } from "@/sanity/lib/utils";
+import { headers } from "next/headers";
 
 type Props = {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string; locale?: string }>;
 };
 
 const postSlugs = defineQuery(
-  `*[_type == "post" && defined(slug.current)]{"slug": slug.current}`,
+  `*[_type == "post" && defined(slug.current)]{"slug": slug.current}`
 );
 
 export async function generateStaticParams() {
@@ -34,7 +35,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(
   { params }: Props,
-  parent: ResolvingMetadata,
+  parent: ResolvingMetadata
 ): Promise<Metadata> {
   const post = await sanityFetch({
     query: postQuery,
@@ -46,19 +47,25 @@ export async function generateMetadata(
 
   return {
     authors: post?.author?.name ? [{ name: post?.author?.name }] : [],
-    title: post?.title,
-    description: post?.excerpt,
+    title: post?.title?.en,
+    description: post?.excerpt?.en,
     openGraph: {
       images: ogImage ? [ogImage, ...previousImages] : previousImages,
     },
   } satisfies Metadata;
 }
 
+const getLocalizedValue = (field: any, language = "en") => {
+  if (!field) return "";
+  return field[language] || field.en || ""; // Fallback to English if requested language is missing
+};
+
 export default async function PostPage({ params }: Props) {
   const [post, settings] = await Promise.all([
     sanityFetch({ query: postQuery, params }),
     sanityFetch({ query: settingsQuery }),
   ]);
+  const { locale } = await params;
 
   if (!post?._id) {
     return notFound();
@@ -73,7 +80,7 @@ export default async function PostPage({ params }: Props) {
       </h2>
       <article>
         <h1 className="text-balance mb-12 text-6xl font-bold leading-tight tracking-tighter md:text-7xl md:leading-none lg:text-8xl">
-          {post.title}
+          {getLocalizedValue(post.title, locale)}
         </h1>
         <div className="hidden md:mb-12 md:block">
           {post.author && (
@@ -95,7 +102,7 @@ export default async function PostPage({ params }: Props) {
             </div>
           </div>
         </div>
-        {post.content?.length && (
+        {post.content?.en?.length && (
           <PortableText
             className="mx-auto max-w-2xl"
             value={post.content as PortableTextBlock[]}

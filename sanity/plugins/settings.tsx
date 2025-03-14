@@ -14,7 +14,7 @@ export const singletonPlugin = definePlugin((types: string[]) => {
       newDocumentOptions: (prev, { creationContext, ...rest }) => {
         if (creationContext.type === "global") {
           return prev.filter(
-            (templateItem) => !types.includes(templateItem.templateId),
+            (templateItem) => !types.includes(templateItem.templateId)
           );
         }
 
@@ -35,7 +35,7 @@ export const singletonPlugin = definePlugin((types: string[]) => {
 // The StructureResolver is how we're changing the DeskTool structure to linking to document (named Singleton)
 // like how "Home" is handled.
 export const pageStructure = (
-  typeDefArray: DocumentDefinition[],
+  typeDefArray: DocumentDefinition[]
 ): StructureResolver => {
   return (S) => {
     // Goes through all of the singletons that were provided and translates them into something the
@@ -48,14 +48,14 @@ export const pageStructure = (
           S.editor()
             .id(typeDef.name)
             .schemaType(typeDef.name)
-            .documentId(typeDef.name),
+            .documentId(typeDef.name)
         );
     });
 
     // The default root list items (except custom ones)
     const defaultListItems = S.documentTypeListItems().filter(
       (listItem) =>
-        !typeDefArray.find((singleton) => singleton.name === listItem.getId()),
+        !typeDefArray.find((singleton) => singleton.name === listItem.getId())
     );
 
     return S.list()
