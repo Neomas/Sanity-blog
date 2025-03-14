@@ -14,7 +14,7 @@ const nextConfig: NextConfig = {
       // Handling locale prefixes
       afterFiles: [
         {
-          source: "/:path((?!nl|en|fr|api).*)*",
+          source: "/:path((?!nl|en|fr|api|studio).*)*",
           // missing: [
           //   { type: "header", key: "next-router-prefetch" },
           //   { type: "header", key: "purpose", value: "prefetch" },

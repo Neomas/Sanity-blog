@@ -36,7 +36,6 @@ export default defineConfig({
       // Singletons
       settings,
       // Documents
-      pages,
       post,
       author,
     ],
@@ -64,7 +63,7 @@ export default defineConfig({
             resolve: (doc) => ({
               locations: [
                 {
-                  title: doc?.title || "Untitled",
+                  title: doc?.title,
                   href: resolveHref("post", doc?.slug)!,
                 },
                 homeLocation,

@@ -79,7 +79,7 @@ const getLocalizedValue = (field: any, language = "en") => {
   return field[language] || field.en || ""; // Fallback to English if requested language is missing
 };
 
-export default async function Page({ params }) {
+export default async function Page({ params }: { params: any }) {
   const [settings, heroPost] = await Promise.all([
     sanityFetch({
       query: settingsQuery,

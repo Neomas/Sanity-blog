@@ -43,11 +43,12 @@ export async function generateMetadata(
     stega: false,
   });
   const previousImages = (await parent).openGraph?.images || [];
+  const { locale } = await params;
   const ogImage = resolveOpenGraphImage(post?.coverImage);
 
   return {
     authors: post?.author?.name ? [{ name: post?.author?.name }] : [],
-    title: post?.title?.en,
+    title: getLocalizedValue(post?.title, locale),
     description: post?.excerpt?.en,
     openGraph: {
       images: ogImage ? [ogImage, ...previousImages] : previousImages,

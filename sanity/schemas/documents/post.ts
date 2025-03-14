@@ -1,7 +1,7 @@
 import { DocumentTextIcon } from "@sanity/icons";
 import { format, parseISO } from "date-fns";
 import { defineField, defineType } from "sanity";
-
+import LocalizedFieldWithToggle from '@components/Atoms/LocalizedFieldWithToggle'
 import authorType from "./author";
 import { Any } from "next-sanity";
 
@@ -63,12 +63,9 @@ export default defineType({
       name: "title",
       title: "Title",
       type: "object",
-      fields: supportedLanguages.map((lang) => ({
-        name: lang.id,
-        title: lang.title,
-        type: "string",
-        validation: (rule: Any) => (lang.id === "en" ? rule.required() : rule),
-      })),
+     components: {
+      input: (props) => <LocalizedFieldWithToggle {...props} languageFields={[{ name: "title", en: "English" }, { name: "title", fr: "French" }]} />
+     }
     }),
     defineField({
       name: "slug",
@@ -76,7 +73,7 @@ export default defineType({
       type: "slug",
       description: "A slug is required for the post to show up in the preview",
       options: {
-        source: (doc) => doc.title?.en || "",
+        source: (doc) => (doc.title?.en as string) || "",
         maxLength: 96,
         isUnique: (value, context) => context.defaultIsUnique(value, context),
       },
@@ -88,7 +85,7 @@ export default defineType({
       type: "object",
       fields: supportedLanguages.map((lang) => ({
         name: lang.id,
-        title: lang.title,
+        title: lang.title?.en,
         type: "array",
         of: [{ type: "block" }],
       })),
@@ -121,7 +118,7 @@ export default defineType({
           description: "Important for SEO and accessiblity.",
           fields: supportedLanguages.map((lang) => ({
             name: lang.id,
-            title: lang.title,
+            title: lang.title?.en,
             type: "string",
           })),
           validation: (rule) => {
@@ -154,7 +151,7 @@ export default defineType({
   ],
   preview: {
     select: {
-      title: "title",
+      title: "title.en",
       author: "author.name",
       date: "date",
       media: "coverImage",
