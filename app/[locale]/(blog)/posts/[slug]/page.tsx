@@ -16,6 +16,7 @@ import { sanityFetch } from "@/sanity/lib/fetch";
 import { postQuery, settingsQuery } from "@/sanity/lib/queries";
 import { resolveOpenGraphImage } from "@/sanity/lib/utils";
 import { headers } from "next/headers";
+import { getLocalizedValue } from "@/sanity/lib/utils";
 
 type Props = {
   params: Promise<{ slug: string; locale?: string }>;
@@ -56,11 +57,6 @@ export async function generateMetadata(
   } satisfies Metadata;
 }
 
-const getLocalizedValue = (field: any, language = "en") => {
-  if (!field) return "";
-  return field[language] || field.en || ""; // Fallback to English if requested language is missing
-};
-
 export default async function PostPage({ params }: Props) {
   const [post, settings] = await Promise.all([
     sanityFetch({ query: postQuery, params }),
@@ -83,6 +79,12 @@ export default async function PostPage({ params }: Props) {
         <h1 className="text-balance mb-12 text-6xl font-bold leading-tight tracking-tighter md:text-7xl md:leading-none lg:text-8xl">
           {getLocalizedValue(post.title, locale)}
         </h1>
+
+        <div className="hidden md:mb-12 md:block">
+          {/* <pre>
+            {JSON.stringify(getLocalizedValue(post.content, locale), null, 2)}
+          </pre> */}
+        </div>
         <div className="hidden md:mb-12 md:block">
           {post.author && (
             <Avatar name={post.author.name} picture={post.author.picture} />
@@ -103,12 +105,11 @@ export default async function PostPage({ params }: Props) {
             </div>
           </div>
         </div>
-        {post.content?.en?.length && (
-          <PortableText
-            className="mx-auto max-w-2xl"
-            value={post.content as PortableTextBlock[]}
-          />
-        )}
+
+        <PortableText
+          className="mx-auto max-w-2xl"
+          value={getLocalizedValue(post.content, locale)}
+        />
       </article>
       <aside>
         <hr className="border-accent-2 mb-24 mt-28" />
@@ -116,7 +117,7 @@ export default async function PostPage({ params }: Props) {
           Recent Stories
         </h2>
         <Suspense>
-          <MoreStories skip={post._id} limit={2} />
+          <MoreStories skip={post._id} limit={2} locale={locale} />
         </Suspense>
       </aside>
     </div>

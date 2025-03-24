@@ -13,6 +13,8 @@
     "typegen": "sanity schema extract && sanity typegen generate"
   },
   "dependencies": {
+    "@portabletext/editor": "^1.41.4",
+    "@portabletext/react": "^3.2.1",
     "@sanity/assist": "^3.0.8",
     "@sanity/icons": "^3.4.0",
     "@sanity/image-url": "^1.0.2",
@@ -32,6 +34,7 @@
     "react-dom": "^18.3.1",
     "sanity": "^3.62.0",
     "sanity-plugin-asset-source-unsplash": "^3.0.1",
+    "sass": "^1.86.0",
     "server-only": "^0.0.1",
     "styled-components": "^6.1.13",
     "tailwindcss": "^3.4.14",

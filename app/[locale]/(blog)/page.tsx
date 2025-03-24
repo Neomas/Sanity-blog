@@ -12,6 +12,7 @@ import type { HeroQueryResult } from "@/sanity.types";
 import * as demo from "@/sanity/lib/demo";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { heroQuery, settingsQuery } from "@/sanity/lib/queries";
+import { getLocalizedValue } from "@/sanity/lib/utils";
 
 function Intro(props: { title: string | null | undefined; description: any }) {
   const title = props.title || demo.title;
@@ -39,11 +40,12 @@ function HeroPost({
   excerpt,
   coverImage,
   date,
+  locale,
   author,
 }: Pick<
   Exclude<HeroQueryResult, null>,
   "title" | "coverImage" | "date" | "excerpt" | "author" | "slug"
->) {
+> & { locale: string }) {
   return (
     <article>
       <Link className="group mb-8 block md:mb-16" href={`/posts/${slug}`}>
@@ -51,11 +53,11 @@ function HeroPost({
       </Link>
       <div className="mb-20 md:mb-28 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
         <div>
-          {/* <h3 className="text-pretty mb-4 text-4xl leading-tight lg:text-6xl">
+          <h3 className="text-pretty mb-4 text-4xl leading-tight lg:text-6xl">
             <Link href={`/posts/${slug}`} className="hover:underline">
-              {title}
+              {getLocalizedValue(title, locale)}
             </Link>
-          </h3> */}
+          </h3>
 
           <div className="mb-4 text-lg md:mb-0">
             <DateComponent dateString={date} />
@@ -64,7 +66,7 @@ function HeroPost({
         <div>
           {excerpt && (
             <p className="text-pretty mb-4 text-lg leading-relaxed">
-              {excerpt}
+              {getLocalizedValue(excerpt, locale)}
             </p>
           )}
           {author && <Avatar name={author.name} picture={author.picture} />}
@@ -73,11 +75,6 @@ function HeroPost({
     </article>
   );
 }
-
-const getLocalizedValue = (field: any, language = "en") => {
-  if (!field) return "";
-  return field[language] || field.en || ""; // Fallback to English if requested language is missing
-};
 
 export default async function Page({ params }: { params: any }) {
   const [settings, heroPost] = await Promise.all([
@@ -93,10 +90,11 @@ export default async function Page({ params }: { params: any }) {
       <Intro title={settings?.title} description={settings?.description} />
       {heroPost ? (
         <HeroPost
-          title={getLocalizedValue(heroPost.title, locale)}
+          locale={locale}
+          title={heroPost.title}
           slug={heroPost.slug}
           coverImage={heroPost.coverImage}
-          excerpt={getLocalizedValue(heroPost.excerpt, locale)}
+          excerpt={heroPost.excerpt}
           date={heroPost.date}
           author={heroPost.author}
         />
@@ -109,7 +107,7 @@ export default async function Page({ params }: { params: any }) {
             More Stories
           </h2>
           <Suspense>
-            <MoreStories skip={heroPost._id} limit={100} />
+            <MoreStories skip={heroPost._id} locale={locale} limit={100} />
           </Suspense>
         </aside>
       )}

@@ -6,12 +6,15 @@ import DateComponent from "./date";
 
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { moreStoriesQuery } from "@/sanity/lib/queries";
+import { getLocalizedValue } from "@/sanity/lib/utils";
 
 export default async function MoreStories(params: {
+  locale?: string;
   skip: string;
   limit: number;
 }) {
   const data = await sanityFetch({ query: moreStoriesQuery, params });
+  const { locale } = await params;
 
   return (
     <>
@@ -25,7 +28,7 @@ export default async function MoreStories(params: {
               </Link>
               <h3 className="text-balance mb-3 text-3xl leading-snug">
                 <Link href={`/posts/${slug}`} className="hover:underline">
-                  {/* {title} */}
+                  {getLocalizedValue(title, locale)}
                 </Link>
               </h3>
               <div className="mb-4 text-lg">
@@ -33,7 +36,7 @@ export default async function MoreStories(params: {
               </div>
               {excerpt && (
                 <p className="text-pretty mb-4 text-lg leading-relaxed">
-                  {/* {excerpt} */}
+                  {getLocalizedValue(excerpt, locale)}
                 </p>
               )}
               {author && <Avatar name={author.name} picture={author.picture} />}

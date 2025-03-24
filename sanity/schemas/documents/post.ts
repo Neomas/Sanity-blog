@@ -1,9 +1,13 @@
 import { DocumentTextIcon } from "@sanity/icons";
 import { format, parseISO } from "date-fns";
 import { defineField, defineType } from "sanity";
-import LocalizedFieldWithToggle from '@components/Atoms/LocalizedFieldWithToggle'
+// Fix import statement to avoid type errors
+import LocalizedFieldWithToggle, {
+  LocalizedFieldWithToggleTextArea,
+  LocalizedFieldWithToggleWysiwyg,
+} from "@components/Atoms/LocalizedFieldWithToggle";
 import authorType from "./author";
-import { Any } from "next-sanity";
+import { set, setIfMissing } from "sanity";
 
 /**
  * This file is the schema definition for a post with internationalization.
@@ -13,45 +17,9 @@ import { Any } from "next-sanity";
 const supportedLanguages = [
   { id: "en", title: "English" },
   { id: "fr", title: "French" },
+  { id: "nl", title: "Nederlands" },
   // Add more languages as needed
 ];
-
-// Create a localized string field
-const localeString = defineField({
-  name: "localeString",
-  type: "object",
-  title: "Localized String",
-  fields: supportedLanguages.map((lang) => ({
-    name: lang.id,
-    title: lang.title,
-    type: "string",
-  })),
-});
-
-// Create a localized text field
-const localeText = defineField({
-  name: "localeText",
-  type: "object",
-  title: "Localized Text",
-  fields: supportedLanguages.map((lang) => ({
-    name: lang.id,
-    title: lang.title,
-    type: "text",
-  })),
-});
-
-// Create a localized block content field
-const localeBlockContent = defineField({
-  name: "localeBlockContent",
-  type: "object",
-  title: "Localized Block Content",
-  fields: supportedLanguages.map((lang) => ({
-    name: lang.id,
-    title: lang.title,
-    type: "array",
-    of: [{ type: "block" }],
-  })),
-});
 
 export default defineType({
   name: "post",
@@ -63,9 +31,29 @@ export default defineType({
       name: "title",
       title: "Title",
       type: "object",
-     components: {
-      input: (props) => <LocalizedFieldWithToggle {...props} languageFields={[{ name: "title", en: "English" }, { name: "title", fr: "French" }]} />
-     }
+      fields: supportedLanguages.map((lang) => ({
+        name: lang.id,
+        title: lang.title,
+        type: "string",
+      })),
+      components: {
+        // Use a simpler approach to define the component
+        input: function CustomTitleInput(props) {
+          const languageFields = supportedLanguages.map((lang) => ({
+            name: lang.id,
+            title: lang.title,
+          }));
+          return LocalizedFieldWithToggle({
+            languageFields,
+            value: props.value,
+            onChange: (newValue: Record<string, any>) => {
+              props.onChange(
+                [setIfMissing({}), set(newValue)] // Apply both patches
+              );
+            },
+          });
+        },
+      },
     }),
     defineField({
       name: "slug",
@@ -73,7 +61,8 @@ export default defineType({
       type: "slug",
       description: "A slug is required for the post to show up in the preview",
       options: {
-        source: (doc) => (doc.title?.en as string) || "",
+        //@ts-ignore
+        source: (document) => (document?.title?.en as string) || "",
         maxLength: 96,
         isUnique: (value, context) => context.defaultIsUnique(value, context),
       },
@@ -85,10 +74,29 @@ export default defineType({
       type: "object",
       fields: supportedLanguages.map((lang) => ({
         name: lang.id,
-        title: lang.title?.en,
+        title: lang.title,
         type: "array",
         of: [{ type: "block" }],
       })),
+
+      components: {
+        // Use a simpler approach to define the component
+        input: function CustomTitleInput(props) {
+          const languageFields = supportedLanguages.map((lang) => ({
+            name: lang.id,
+            title: lang.title,
+          }));
+          return LocalizedFieldWithToggleWysiwyg({
+            ...props,
+            languageFields,
+            onChange: (newValue: Record<string, any>) => {
+              props.onChange(
+                [setIfMissing({}), set(newValue)] // Apply both patches
+              );
+            },
+          });
+        },
+      },
     }),
     defineField({
       name: "excerpt",
@@ -99,6 +107,24 @@ export default defineType({
         title: lang.title,
         type: "text",
       })),
+      components: {
+        // Use a simpler approach to define the component
+        input: function CustomTitleInput(props) {
+          const languageFields = supportedLanguages.map((lang) => ({
+            name: lang.id,
+            title: lang.title,
+          }));
+          return LocalizedFieldWithToggleTextArea({
+            ...props,
+            languageFields,
+            onChange: (newValue: Record<string, any>) => {
+              props.onChange(
+                [setIfMissing({}), set(newValue)] // Apply both patches
+              );
+            },
+          });
+        },
+      },
     }),
     defineField({
       name: "coverImage",
@@ -118,11 +144,29 @@ export default defineType({
           description: "Important for SEO and accessiblity.",
           fields: supportedLanguages.map((lang) => ({
             name: lang.id,
-            title: lang.title?.en,
+            title: lang.title,
             type: "string",
           })),
+          components: {
+            // Use a simpler approach to define the component
+            input: function CustomTitleInput(props: any) {
+              const languageFields = supportedLanguages.map((lang) => ({
+                name: lang.id,
+                title: lang.title,
+              }));
+              return LocalizedFieldWithToggle({
+                ...props,
+                languageFields,
+                onChange: (newValue: Record<string, any>) => {
+                  props.onChange(
+                    [setIfMissing({}), set(newValue)] // Apply both patches
+                  );
+                },
+              });
+            },
+          },
           validation: (rule) => {
-            return rule.custom((alt, context) => {
+            return rule.custom((alt: Record<string, string>, context) => {
               if (
                 (context.document?.coverImage as any)?.asset?._ref &&
                 !alt?.en

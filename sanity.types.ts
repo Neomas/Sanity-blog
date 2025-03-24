@@ -77,6 +77,7 @@ export type Post = {
   title?: {
     en?: string;
     fr?: string;
+    nl?: string;
   };
   slug?: Slug;
   content?: {
@@ -116,10 +117,29 @@ export type Post = {
       _type: "block";
       _key: string;
     }>;
+    nl?: Array<{
+      children?: Array<{
+        marks?: Array<string>;
+        text?: string;
+        _type: "span";
+        _key: string;
+      }>;
+      style?: "normal" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "blockquote";
+      listItem?: "bullet" | "number";
+      markDefs?: Array<{
+        href?: string;
+        _type: "link";
+        _key: string;
+      }>;
+      level?: number;
+      _type: "block";
+      _key: string;
+    }>;
   };
   excerpt?: {
     en?: string;
     fr?: string;
+    nl?: string;
   };
   coverImage?: {
     asset?: {
@@ -133,55 +153,8 @@ export type Post = {
     alt?: {
       en?: string;
       fr?: string;
+      nl?: string;
     };
-    _type: "image";
-  };
-  date?: string;
-  author?: {
-    _ref: string;
-    _type: "reference";
-    _weak?: boolean;
-    [internalGroqTypeReferenceTo]?: "author";
-  };
-};
-
-export type Pages = {
-  _id: string;
-  _type: "pages";
-  _createdAt: string;
-  _updatedAt: string;
-  _rev: string;
-  title?: string;
-  slug?: Slug;
-  content?: Array<{
-    children?: Array<{
-      marks?: Array<string>;
-      text?: string;
-      _type: "span";
-      _key: string;
-    }>;
-    style?: "normal" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "blockquote";
-    listItem?: "bullet" | "number";
-    markDefs?: Array<{
-      href?: string;
-      _type: "link";
-      _key: string;
-    }>;
-    level?: number;
-    _type: "block";
-    _key: string;
-  }>;
-  excerpt?: string;
-  coverImage?: {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt?: string;
     _type: "image";
   };
   date?: string;
@@ -335,7 +308,7 @@ export type SanityImageMetadata = {
   isOpaque?: boolean;
 };
 
-export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityFileAsset | Geopoint | Post | Pages | Author | Slug | Settings | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata;
+export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityFileAsset | Geopoint | Post | Author | Slug | Settings | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata;
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./app/[locale]/(blog)/posts/[slug]/page.tsx
 // Variable: postSlugs
@@ -444,17 +417,37 @@ export type HeroQueryResult = {
       _type: "block";
       _key: string;
     }>;
+    nl?: Array<{
+      children?: Array<{
+        marks?: Array<string>;
+        text?: string;
+        _type: "span";
+        _key: string;
+      }>;
+      style?: "blockquote" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "normal";
+      listItem?: "bullet" | "number";
+      markDefs?: Array<{
+        href?: string;
+        _type: "link";
+        _key: string;
+      }>;
+      level?: number;
+      _type: "block";
+      _key: string;
+    }>;
   } | null;
   _id: string;
   status: "draft" | "published";
   title: {
     en?: string;
     fr?: string;
+    nl?: string;
   } | "Untitled";
   slug: string | null;
   excerpt: {
     en?: string;
     fr?: string;
+    nl?: string;
   } | null;
   coverImage: {
     asset?: {
@@ -468,6 +461,7 @@ export type HeroQueryResult = {
     alt?: {
       en?: string;
       fr?: string;
+      nl?: string;
     };
     _type: "image";
   } | null;
@@ -496,11 +490,13 @@ export type MoreStoriesQueryResult = Array<{
   title: {
     en?: string;
     fr?: string;
+    nl?: string;
   } | "Untitled";
   slug: string | null;
   excerpt: {
     en?: string;
     fr?: string;
+    nl?: string;
   } | null;
   coverImage: {
     asset?: {
@@ -514,6 +510,7 @@ export type MoreStoriesQueryResult = Array<{
     alt?: {
       en?: string;
       fr?: string;
+      nl?: string;
     };
     _type: "image";
   } | null;
@@ -574,17 +571,37 @@ export type PostQueryResult = {
       _type: "block";
       _key: string;
     }>;
+    nl?: Array<{
+      children?: Array<{
+        marks?: Array<string>;
+        text?: string;
+        _type: "span";
+        _key: string;
+      }>;
+      style?: "blockquote" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "normal";
+      listItem?: "bullet" | "number";
+      markDefs?: Array<{
+        href?: string;
+        _type: "link";
+        _key: string;
+      }>;
+      level?: number;
+      _type: "block";
+      _key: string;
+    }>;
   } | null;
   _id: string;
   status: "draft" | "published";
   title: {
     en?: string;
     fr?: string;
+    nl?: string;
   } | "Untitled";
   slug: string | null;
   excerpt: {
     en?: string;
     fr?: string;
+    nl?: string;
   } | null;
   coverImage: {
     asset?: {
@@ -598,6 +615,7 @@ export type PostQueryResult = {
     alt?: {
       en?: string;
       fr?: string;
+      nl?: string;
     };
     _type: "image";
   } | null;
