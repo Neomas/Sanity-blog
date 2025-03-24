@@ -305,44 +305,30 @@ export const LocalizedFieldWithToggleWysiwyg: React.FC<
     ));
     return (
       <div className={styles.toolbar}>
-        <button
-          onClick={() => {
-            editor.send({
-              type: "custom.insertBlock",
-              block: {
-                _type: "customComponent",
-                _key: Math.random().toString(36).substr(2, 9),
-              },
-            });
-            editor.send({ type: "focus" });
-          }}
-        >
-          Add Custom Component
-        </button>
         {styleButtons}
         {decoratorButtons}
       </div>
     );
   }
 
-  const renderBlock: RenderStyleFunction = (props) => {
-    if (props.schemaType.value === "customComponent") {
-      return (
-        <div
-          style={{
-            padding: "10px",
-            backgroundColor: "#f0f0f0",
-            border: "1px solid #ccc",
-          }}
-        >
-          <h4>Custom Component</h4>
-          <button onClick={() => alert("Clicked!")}>Click Me</button>
-        </div>
-      );
-    }
+  // const renderBlock: RenderStyleFunction = (props) => {
+  //   if (props.schemaType.name === "customComponent") {
+  //     return (
+  //       <div
+  //         style={{
+  //           padding: "10px",
+  //           backgroundColor: "#f0f0f0",
+  //           border: "1px solid #ccc",
+  //         }}
+  //       >
+  //         <h4>Custom Component</h4>
+  //         <button onClick={() => alert("Clicked!")}>Click Me</button>
+  //       </div>
+  //     );
+  //   }
 
-    return <div>{props.children ?? null}</div>;
-  };
+  //   return <div>{props.children ?? null}</div>;
+  // };
 
   return (
     <div>
@@ -375,8 +361,8 @@ export const LocalizedFieldWithToggleWysiwyg: React.FC<
             value={value?.[defaultLanguage.name] || []}
             renderStyle={renderStyle}
             renderDecorator={renderDecorator}
-            renderBlock={renderBlock} // Custom block rendering
-            renderListItem={(props) => <>{props.children ?? null}</>}
+            renderBlock={(props) => <>{props.children}</>}
+            renderListItem={(props) => <>{props.children}</>}
           />
         </div>
 
