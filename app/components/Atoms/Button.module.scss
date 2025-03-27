@@ -1,0 +1,178 @@
+// import css lib
+@import "styles/lib";
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(16px);
+  position: relative;
+  font: $font-button;
+  white-space: nowrap;
+  cursor: pointer;
+
+  transition: 0.3s;
+  color: currentColor;
+
+  &:active {
+    bottom: rem(0px);
+    right: rem(0px);
+
+    &::after {
+      bottom: rem(0px);
+      right: rem(0px);
+      z-index: -1;
+    }
+  }
+
+  &:hover {
+    .icon {
+      background: $color-primary-nero-80;
+      color: $color-primary-eggshell-100;
+    }
+
+    .arrowwrapper {
+      width: 30px;
+    }
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 rem(16px);
+  height: 40px;
+  overflow: hidden;
+
+  background: $color-primary-eggshell-120;
+  color: $color-primary-nero-100;
+  border-radius: rem(20px);
+
+  transition: width 0.6s $ease-out-cubic, background-color 0.3s $ease-out-quad, color 0.3s $ease-out-quad;
+}
+
+.arrowwrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20px;
+  height: 12px;
+  overflow: hidden;
+  transition: width 0.6s $ease-out-cubic;
+}
+.arrow {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 12px;
+}
+
+.darkmode:hover {
+  .icon {
+    background: $color-primary-eggshell-100;
+    color: $color-primary-nero-100;
+  }
+
+  .arrowwrapper {
+    width: 30px;
+  }
+}
+
+.button__primary {
+  background-color: $color-primary-nero-80;
+  color: $color-primary-eggshell-100 !important;
+  padding: rem(8px) rem(16px) !important;
+  border-radius: rem(24px);
+  height: rem(40px);
+  width: fit-content;
+  text-decoration: none !important;
+  > :global(.icon) {
+    background: transparent !important;
+    padding: 0 !important;
+    display: none;
+  }
+
+  &:hover {
+    color: $color-primary-eggshell-100 !important;
+    background-color: $color-primary-nero-60;
+  }
+
+  &:active {
+    color: $color-primary-eggshell-100 !important;
+    background-color: $color-primary-nero-100;
+  }
+
+  &.darkmode {
+    background-color: $color-primary-eggshell-120;
+    color: $color-primary-nero-100 !important;
+
+    &:hover {
+      background-color: $color-primary-eggshell-140;
+    }
+
+    &:active {
+      background-color: $color-primary-nero-20;
+    }
+  }
+}
+
+.button__secondary {
+  color: $color-primary-nero-100;
+  padding: rem(8px) rem(16px);
+  height: rem(40px);
+  border-radius: rem(20px);
+
+  &.purple {
+    background: $color-secondary-periwinkle-100;
+
+    &:hover {
+      background: $color-secondary-periwinkle-80;
+    }
+  }
+  &.yellow {
+    background: $color-secondary-flax-100;
+
+    &:hover {
+      background: $color-secondary-flax-80;
+    }
+  }
+  &.pink {
+    background: $color-secondary-melon-100;
+
+    &:hover {
+      background: $color-secondary-melon-80;
+    }
+  }
+  .icon {
+    padding: 0;
+    background-color: transparent;
+    color: currentColor;
+  }
+
+  &:hover {
+    .icon {
+      color: currentColor;
+      background-color: transparent;
+    }
+  }
+}
+
+.button__fullcolor {
+  background-color: $color-secondary-melon-100;
+  color: $color-primary-nero-100 !important;
+  padding: rem(8px) rem(16px) !important;
+  border-radius: rem(24px);
+  height: rem(40px);
+  margin-top: rem(32px);
+  width: fit-content;
+  text-decoration: none !important;
+  > :global(.icon) {
+    background: transparent !important;
+    padding: 0 !important;
+  }
+
+  &:hover {
+    color: $color-primary-eggshell-100 !important;
+  }
+}

@@ -54,11 +54,6 @@ const LocalizedFieldWithToggle: React.FC<LocalizedFieldWithToggleProps> = ({
           value={value?.[defaultLanguage.name] || ""}
           onChange={(e) => {
             if (onChange) {
-              // console.log("Old Value:", value);
-              // console.log("Event:", e.target.value);
-              // console.log("languageFields", languageFields);
-              // console.log("defaultLanguage", defaultLanguage.name);
-
               onChange({
                 ...value,
                 [defaultLanguage.name]: e.target.value, // Ensure defaultLanguage is defined
@@ -79,8 +74,6 @@ const LocalizedFieldWithToggle: React.FC<LocalizedFieldWithToggleProps> = ({
                 className={styles.input}
                 value={value?.[lang.name] || ""}
                 onChange={(e) => {
-                  console.log({ value });
-                  console.log({ e });
                   onChange &&
                     onChange({
                       ...value,
@@ -93,7 +86,11 @@ const LocalizedFieldWithToggle: React.FC<LocalizedFieldWithToggleProps> = ({
         </>
       )}
 
-      <button type="button" onClick={toggleLanguages}>
+      <button
+        className={styles.languageToggle}
+        type="button"
+        onClick={toggleLanguages}
+      >
         {showAdditionalLanguages
           ? "Hide Other Languages"
           : "Show Other Languages"}
@@ -101,6 +98,7 @@ const LocalizedFieldWithToggle: React.FC<LocalizedFieldWithToggleProps> = ({
     </div>
   );
 };
+
 export const LocalizedFieldWithToggleTextArea: React.FC<
   LocalizedFieldWithToggleProps
 > = ({ value, onChange, languageFields }) => {
@@ -128,8 +126,6 @@ export const LocalizedFieldWithToggleTextArea: React.FC<
           className={styles.input}
           value={value?.[defaultLanguage.name] || ""}
           onChange={(e) => {
-            console.log({ value });
-            console.log({ e });
             onChange &&
               onChange({
                 ...value,
@@ -149,8 +145,8 @@ export const LocalizedFieldWithToggleTextArea: React.FC<
                 className={styles.input}
                 value={value?.[lang.name] || ""}
                 onChange={(e) => {
-                  console.log({ value });
-                  console.log({ e });
+                  // console.log({ value });
+                  // console.log({ e });
                   onChange &&
                     onChange({
                       ...value,
@@ -163,7 +159,11 @@ export const LocalizedFieldWithToggleTextArea: React.FC<
         </>
       )}
 
-      <button type="button" onClick={toggleLanguages}>
+      <button
+        className={styles.languageToggle}
+        type="button"
+        onClick={toggleLanguages}
+      >
         {showAdditionalLanguages
           ? "Hide Other Languages"
           : "Show Other Languages"}
@@ -262,7 +262,7 @@ export const LocalizedFieldWithToggleWysiwyg: React.FC<
           margin: "0 4px 0 0",
         }}
         onClick={() => {
-          console.log("style", style);
+          // console.log("style", style);
           // Send style toggle event
           editor.send({
             type: "style.toggle",
@@ -289,7 +289,7 @@ export const LocalizedFieldWithToggleWysiwyg: React.FC<
           margin: "0 4px 0 0",
         }}
         onClick={() => {
-          console.log("decorator", decorator);
+          // console.log("decorator", decorator);
           // Send decorator toggle event
           editor.send({
             type: "decorator.toggle",
@@ -312,7 +312,7 @@ export const LocalizedFieldWithToggleWysiwyg: React.FC<
   }
 
   // const renderBlock: RenderStyleFunction = (props) => {
-  //   if (props.schemaType.name === "customComponent") {
+  //   if (props?.schemaType?.name === "customComponent") {
   //     return (
   //       <div
   //         style={{
@@ -339,9 +339,6 @@ export const LocalizedFieldWithToggleWysiwyg: React.FC<
           initialValue: value?.[defaultLanguage.name] || [],
         }}
       >
-        {/* <pre style={{ border: "1px dashed black", padding: "0.5em" }}>
-          {JSON.stringify(value, null, 2)}
-        </pre> */}
         <div className={styles.formWrapper}>
           <label>{defaultLanguage.title}</label>
           <EventListenerPlugin
@@ -393,13 +390,13 @@ export const LocalizedFieldWithToggleWysiwyg: React.FC<
                 <PortableTextEditable
                   className={`${styles.input} ${styles.editable}`}
                   value={value?.[lang.name] || []}
-                  // onChange={(newValue) => {
-                  //   onChange &&
-                  //     onChange({
-                  //       ...value,
-                  //       [lang.name]: newValue,
-                  //     });
-                  // }}
+                  onChange={(newValue) => {
+                    onChange &&
+                      onChange({
+                        ...value,
+                        [lang.name]: newValue,
+                      });
+                  }}
                   renderStyle={renderStyle}
                   renderDecorator={renderDecorator}
                   renderBlock={(props) => <div>{props.children}</div>}
@@ -410,7 +407,11 @@ export const LocalizedFieldWithToggleWysiwyg: React.FC<
           ))}
       </EditorProvider>
 
-      <button type="button" onClick={toggleLanguages}>
+      <button
+        className={styles.languageToggle}
+        type="button"
+        onClick={toggleLanguages}
+      >
         {showAdditionalLanguages
           ? "Hide Other Languages"
           : "Show Other Languages"}

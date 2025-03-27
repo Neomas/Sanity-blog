@@ -1,3 +1,6 @@
+// import css lib
+@import "styles/lib";
+
 .formWrapper {
   display: flex;
   flex-direction: column;
@@ -45,4 +48,15 @@
   gap: 4px;
   align-items: center;
   padding: 4px 0px;
+}
+
+.languageToggle {
+  color: $color-primary-nero-80;
+  font-size: 12px;
+
+  cursor: pointer;
+
+  &:hover {
+    color: $color-primary-nero-40;
+  }
 }

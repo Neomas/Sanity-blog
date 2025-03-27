@@ -1,0 +1,1584 @@
+{
+  "components": [
+    {
+      "name": "Brandblock",
+      "display_name": "Brand lijst",
+      "created_at": "2021-12-21T13:57:09.184Z",
+      "updated_at": "2022-07-01T09:01:57.534Z",
+      "id": 2055285,
+      "schema": {
+        "title": {
+          "type": "text",
+          "translatable": true
+        },
+        "brands": {
+          "type": "bloks",
+          "restrict_components": true,
+          "component_whitelist": [
+            "Brandcomponent"
+          ]
+        },
+        "buttontext": {
+          "type": "text",
+          "translatable": true
+        },
+        "buttonlink": {
+          "type": "multilink",
+          "translatable": true
+        }
+      },
+      "image": "//a.storyblok.com/f/137616/x/c5cff05132/brandslist.jpg",
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Brand lijst",
+      "component_group_uuid": "c2ca4a6c-3ebd-4671-b35a-29959c3c4f4a",
+      "color": null,
+      "icon": null,
+      "component_group_name": "body"
+    },
+    {
+      "name": "Brandcomponent",
+      "display_name": null,
+      "created_at": "2021-12-21T15:00:43.585Z",
+      "updated_at": "2022-01-20T08:16:29.721Z",
+      "id": 2055784,
+      "schema": {
+        "image": {
+          "type": "asset",
+          "filetypes": [
+            "images"
+          ],
+          "description": "Ideale ratio:200x88"
+        },
+        "link": {
+          "type": "multilink",
+          "translatable": true
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Brandcomponent",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "CategoryHeader",
+      "display_name": null,
+      "created_at": "2021-12-13T15:39:57.065Z",
+      "updated_at": "2021-12-23T16:23:50.266Z",
+      "id": 2035913,
+      "schema": {
+        "title": {
+          "type": "text",
+          "translatable": true
+        },
+        "icon": {
+          "type": "option",
+          "use_uuid": true,
+          "options": [
+            {
+              "value": "baby",
+              "name": "Baby"
+            },
+            {
+              "value": "fashion",
+              "name": "Fashion"
+            },
+            {
+              "value": "home",
+              "name": "Home"
+            },
+            {
+              "value": "retail",
+              "name": "Retail"
+            },
+            {
+              "value": "sports",
+              "name": "Sports"
+            }
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": "",
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "CategoryHeader",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "CategoryLabels",
+      "display_name": null,
+      "created_at": "2021-12-17T15:04:12.565Z",
+      "updated_at": "2021-12-23T16:24:00.073Z",
+      "id": 2047722,
+      "schema": {
+        "title": {
+          "type": "text",
+          "pos": 0,
+          "translatable": true
+        },
+        "category": {
+          "type": "options",
+          "restrict_components": true,
+          "component_whitelist": [
+            "Label"
+          ],
+          "source": "internal_stories",
+          "folder_slug": "",
+          "filter_content_type": "CategoryPage",
+          "translatable": false
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "CategoryLabels",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "CategoryLink",
+      "display_name": null,
+      "created_at": "2021-12-14T15:17:27.494Z",
+      "updated_at": "2021-12-17T11:39:41.701Z",
+      "id": 2038975,
+      "schema": {
+        "Icon": {
+          "type": "bloks",
+          "maximum": "1",
+          "restrict_components": true,
+          "component_whitelist": [
+            "Icon"
+          ],
+          "restrict_type": "",
+          "required": true
+        },
+        "Theme": {
+          "type": "text",
+          "restrict_components": true,
+          "required": true,
+          "translatable": true
+        },
+        "link": {
+          "type": "multilink",
+          "link_scope": "",
+          "required": true
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "CategoryLink",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "CategoryPage",
+      "display_name": "Category",
+      "created_at": "2021-12-13T15:31:05.525Z",
+      "updated_at": "2022-07-01T13:14:54.861Z",
+      "id": 2035907,
+      "schema": {
+        "metadata": {
+          "type": "custom",
+          "field_type": "seo-metatags",
+          "options": [],
+          "pos": 0,
+          "translatable": true
+        },
+        "title": {
+          "type": "text",
+          "pos": 1,
+          "translatable": true
+        },
+        "icon": {
+          "type": "option",
+          "use_uuid": true,
+          "options": [
+            {
+              "value": "baby",
+              "name": "Baby"
+            },
+            {
+              "value": "fashion",
+              "name": "Fashion"
+            },
+            {
+              "value": "home",
+              "name": "Home"
+            },
+            {
+              "value": "retail",
+              "name": "Retail"
+            },
+            {
+              "value": "sports",
+              "name": "Sports"
+            }
+          ],
+          "pos": 2
+        },
+        "body": {
+          "type": "bloks",
+          "pos": 3,
+          "display_name": "Inhoud"
+        },
+        "tab-b28a78b7-c1f6-4fb4-a61b-02fbeb931b64": {
+          "type": "tab",
+          "display_name": "SEO",
+          "keys": [
+            "metadata"
+          ],
+          "pos": 4
+        },
+        "link": {
+          "type": "multilink",
+          "restrict_content_types": true,
+          "restrict_components": false,
+          "show_anchor": false,
+          "required": false,
+          "link_scope": "categories/",
+          "component_whitelist": [
+            "CategoryPage"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Category",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "detailheader",
+      "display_name": null,
+      "created_at": "2021-12-16T15:29:15.992Z",
+      "updated_at": "2021-12-23T16:24:27.870Z",
+      "id": 2045343,
+      "schema": {
+        "title": {
+          "type": "text",
+          "pos": 0,
+          "translatable": true
+        },
+        "image": {
+          "type": "asset",
+          "filetypes": [],
+          "pos": 1
+        },
+        "label": {
+          "type": "bloks",
+          "pos": 2,
+          "maximum": "1",
+          "restrict_components": true,
+          "component_whitelist": [
+            "Label"
+          ]
+        },
+        "date": {
+          "type": "datetime",
+          "pos": 3
+        },
+        "author": {
+          "type": "text",
+          "pos": 4
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "detailheader",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "DetailPage",
+      "display_name": null,
+      "created_at": "2021-12-16T15:18:48.152Z",
+      "updated_at": "2021-12-23T16:24:48.129Z",
+      "id": 2045317,
+      "schema": {
+        "title": {
+          "type": "text",
+          "pos": 0,
+          "translatable": true
+        },
+        "category": {
+          "type": "bloks",
+          "pos": 1,
+          "maximum": "1",
+          "restrict_components": true,
+          "component_whitelist": [
+            "Label"
+          ]
+        },
+        "image": {
+          "type": "asset",
+          "pos": 2,
+          "filetypes": [
+            "images"
+          ]
+        },
+        "date": {
+          "type": "datetime",
+          "pos": 3
+        },
+        "author": {
+          "type": "text",
+          "pos": 4
+        },
+        "body": {
+          "type": "bloks",
+          "pos": 5
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "DetailPage",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "feature",
+      "display_name": null,
+      "created_at": "2021-12-02T09:42:00.460Z",
+      "updated_at": "2021-12-23T16:25:03.377Z",
+      "id": 2005562,
+      "schema": {
+        "link": {
+          "type": "multilink",
+          "pos": 0
+        },
+        "image": {
+          "type": "asset",
+          "filetypes": [
+            "images"
+          ],
+          "pos": 1,
+          "asset_folder_id": 109555,
+          "required": true
+        },
+        "label": {
+          "type": "option",
+          "use_uuid": true,
+          "options": [
+            {
+              "value": "fashion",
+              "name": "Fashion"
+            },
+            {
+              "value": "baby",
+              "name": "Baby"
+            },
+            {
+              "value": "retail",
+              "name": "Retail"
+            },
+            {
+              "value": "sports",
+              "name": "Sports"
+            },
+            {
+              "value": "home",
+              "name": "Home"
+            }
+          ],
+          "pos": 2
+        },
+        "title": {
+          "type": "text",
+          "pos": 3,
+          "required": true,
+          "translatable": true
+        },
+        "date": {
+          "type": "datetime",
+          "translatable": true,
+          "display_name": "",
+          "disable_time": true,
+          "pos": 4
+        },
+        "author": {
+          "type": "text",
+          "pos": 5
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "feature",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "Global",
+      "display_name": "Globale elementen",
+      "created_at": "2021-12-17T16:34:53.411Z",
+      "updated_at": "2021-12-21T17:56:44.687Z",
+      "id": 2047917,
+      "schema": {
+        "Global": {
+          "type": "option",
+          "source": "internal_stories",
+          "folder_slug": "global/",
+          "use_uuid": true
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Globale elementen",
+      "component_group_uuid": "c2ca4a6c-3ebd-4671-b35a-29959c3c4f4a",
+      "color": null,
+      "icon": null,
+      "component_group_name": "body"
+    },
+    {
+      "name": "Highlight",
+      "display_name": "Uitgelichte post",
+      "created_at": "2021-12-21T14:30:03.303Z",
+      "updated_at": "2021-12-21T17:39:53.864Z",
+      "id": 2055691,
+      "schema": {
+        "postReference": {
+          "type": "option",
+          "use_uuid": false,
+          "source": "internal_stories",
+          "filter_content_type": "Post",
+          "required": true,
+          "display_name": "Blog post"
+        }
+      },
+      "image": "//a.storyblok.com/f/137616/x/5a1d1a31c6/highlight.jpg",
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Uitgelichte post",
+      "component_group_uuid": "c2ca4a6c-3ebd-4671-b35a-29959c3c4f4a",
+      "color": null,
+      "icon": null,
+      "component_group_name": "body"
+    },
+    {
+      "name": "Icon",
+      "display_name": null,
+      "created_at": "2021-12-14T15:18:37.465Z",
+      "updated_at": "2021-12-14T16:19:17.164Z",
+      "id": 2038976,
+      "schema": {
+        "icon": {
+          "type": "option",
+          "use_uuid": true,
+          "options": [
+            {
+              "value": "baby",
+              "name": "Baby"
+            },
+            {
+              "value": "retail",
+              "name": "Retail"
+            },
+            {
+              "value": "home",
+              "name": "Home"
+            },
+            {
+              "value": "sports",
+              "name": "Sports"
+            },
+            {
+              "value": "fashion",
+              "name": "Fashion"
+            }
+          ],
+          "default_value": "baby",
+          "exclude_empty_option": false,
+          "required": true
+        },
+        "size": {
+          "type": "option",
+          "use_uuid": true,
+          "options": [
+            {
+              "value": "sm",
+              "name": "Small"
+            },
+            {
+              "value": "med",
+              "name": "Medium"
+            },
+            {
+              "value": "lg",
+              "name": "Large"
+            },
+            {
+              "value": "xl",
+              "name": "Extra Large"
+            }
+          ],
+          "default_value": "sm",
+          "display_name": "",
+          "exclude_empty_option": true
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Icon",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "Label",
+      "display_name": null,
+      "created_at": "2021-12-16T15:23:56.332Z",
+      "updated_at": "2021-12-23T16:25:28.216Z",
+      "id": 2045340,
+      "schema": {
+        "icon": {
+          "type": "bloks",
+          "pos": 0,
+          "maximum": "1",
+          "restrict_components": true,
+          "component_whitelist": [
+            "Icon"
+          ],
+          "default_value": "{\nicon:\"baby\", \nsize: \"sm\"\n}",
+          "required": true
+        },
+        "labeltext": {
+          "type": "text",
+          "required": true,
+          "translatable": true
+        },
+        "link": {
+          "type": "multilink"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Label",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "Landing",
+      "display_name": null,
+      "created_at": "2023-01-13T13:58:32.544Z",
+      "updated_at": "2023-01-13T13:58:32.544Z",
+      "id": 3307464,
+      "schema": {
+        "title": {
+          "type": "text",
+          "pos": 0
+        },
+        "body": {
+          "type": "bloks",
+          "default_value": "[{\n\"component\": \"teaser\"\n},\n{\n\"component\": \"call_to_action\"\n}]",
+          "pos": 1
+        },
+        "tab-8e92f69a-4d90-46ed-bba8-27a0ac5fcf45": {
+          "type": "tab",
+          "display_name": "SEO",
+          "keys": [
+            "meta_description",
+            "meta_keywords",
+            "og_image"
+          ],
+          "pos": 0
+        },
+        "meta_description": {
+          "type": "text",
+          "max_length": "200",
+          "pos": 0
+        },
+        "meta_keywords": {
+          "type": "text",
+          "pos": 1
+        },
+        "og_image": {
+          "type": "image",
+          "image_crop": false,
+          "image_width": "",
+          "pos": 2
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Landing",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "List",
+      "display_name": "Lijst (carousel/grid)",
+      "created_at": "2021-12-17T11:25:11.038Z",
+      "updated_at": "2022-05-30T08:16:59.570Z",
+      "id": 2047137,
+      "schema": {
+        "titlecenter": {
+          "type": "boolean",
+          "pos": 0,
+          "display_name": "Title centered?"
+        },
+        "itemFormat": {
+          "type": "option",
+          "use_uuid": true,
+          "options": [
+            {
+              "value": "teaser",
+              "name": "Afbeelding, titel, samenvatting"
+            },
+            {
+              "value": "overlay",
+              "name": "Titel over afbeelding"
+            },
+            {
+              "value": "textual",
+              "name": "Tekstueel"
+            }
+          ],
+          "pos": 1,
+          "display_name": "Formaat (Blog post)"
+        },
+        "itemFormatProduct": {
+          "type": "option",
+          "pos": 2,
+          "options": [
+            {
+              "value": "centered",
+              "name": "Boven elkaar (gecentreerde tekst)"
+            },
+            {
+              "value": "teaser",
+              "name": "Boven elkaar (met knop)"
+            },
+            {
+              "value": "overlay",
+              "name": "Tekst over afbeelding"
+            }
+          ],
+          "use_uuid": true,
+          "display_name": "Formaat (Product)"
+        },
+        "itemFormatItem": {
+          "type": "option",
+          "pos": 3,
+          "use_uuid": true,
+          "options": [
+            {
+              "value": "overlay",
+              "name": "Tekst over afbeelding"
+            },
+            {
+              "value": "stacked",
+              "name": "Velden boven elkaar"
+            },
+            {
+              "value": "teaser",
+              "name": "Velden naast elkaar"
+            }
+          ],
+          "display_name": "Formaat (Los item)"
+        },
+        "format": {
+          "type": "option",
+          "use_uuid": true,
+          "options": [
+            {
+              "value": "grid",
+              "name": "Grid"
+            },
+            {
+              "value": "carousel",
+              "name": "Carousel"
+            }
+          ],
+          "pos": 4
+        },
+        "formatColumns": {
+          "type": "number",
+          "display_name": "Aantal kolommen",
+          "pos": 5,
+          "default_value": "4"
+        },
+        "title": {
+          "type": "text",
+          "display_name": "Titel",
+          "translatable": true,
+          "pos": 6
+        },
+        "readMore": {
+          "type": "multilink",
+          "translatable": true,
+          "display_name": "Lees meer link",
+          "description": "",
+          "pos": 7
+        },
+        "linkText": {
+          "type": "text",
+          "pos": 8,
+          "display_name": "Link Tekst",
+          "translatable": true
+        },
+        "list": {
+          "type": "options",
+          "source": "internal_stories",
+          "filter_content_type": "Post",
+          "pos": 9
+        },
+        "listInternal": {
+          "type": "bloks",
+          "restrict_components": true,
+          "component_whitelist": [
+            "Product",
+            "ListItem"
+          ],
+          "pos": 10,
+          "maximum": "",
+          "display_name": "Eenmalige list items",
+          "restrict_type": "groups",
+          "component_group_whitelist": [
+            "0019ba32-842f-4757-91ad-9bec8b3b2e56"
+          ]
+        },
+        "prefillEnabled": {
+          "type": "boolean",
+          "pos": 11,
+          "display_name": "Automatisch aanvullen"
+        },
+        "prefillCategory": {
+          "type": "options",
+          "source": "internal_stories",
+          "filter_content_type": "CategoryPage",
+          "pos": 12
+        },
+        "prefillTheme": {
+          "type": "options",
+          "source": "internal_stories",
+          "pos": 13,
+          "filter_content_type": "Theme"
+        },
+        "totalItems": {
+          "type": "number",
+          "display_name": "",
+          "description": "Totaal aantal items in lijst",
+          "pos": 14
+        },
+        "tab-5cf98ec7-f0af-494b-a1a7-17706560b066": {
+          "type": "tab",
+          "display_name": "Layout",
+          "keys": [
+            "itemFormat",
+            "format",
+            "formatColumns",
+            "itemFormatProduct",
+            "itemFormatItem",
+            "titlecenter"
+          ],
+          "pos": 15
+        },
+        "tab-1f2ec876-f445-4360-b16f-d1124ceb02d6": {
+          "type": "tab",
+          "display_name": "Prefill",
+          "keys": [
+            "prefillCategory",
+            "prefillTheme",
+            "totalItems",
+            "prefillEnabled"
+          ],
+          "pos": 16
+        }
+      },
+      "image": "//a.storyblok.com/f/137616/x/fba3d60e57/frame-105.jpg",
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Lijst (carousel/grid)",
+      "component_group_uuid": "c2ca4a6c-3ebd-4671-b35a-29959c3c4f4a",
+      "color": null,
+      "icon": null,
+      "component_group_name": "body"
+    },
+    {
+      "name": "ListItem",
+      "display_name": "List item",
+      "created_at": "2021-12-20T14:24:21.153Z",
+      "updated_at": "2022-01-20T08:36:10.820Z",
+      "id": 2052439,
+      "schema": {
+        "title": {
+          "type": "text",
+          "translatable": true,
+          "required": true,
+          "display_name": "Titel",
+          "pos": 0
+        },
+        "tag": {
+          "type": "text",
+          "display_name": "Tag",
+          "translatable": true,
+          "pos": 1
+        },
+        "image": {
+          "type": "asset",
+          "filetypes": [
+            "images"
+          ],
+          "description": "gebruikt in overzichten en in header van detail pagina\nIdeale afmeting: 412x295",
+          "pos": 2
+        },
+        "summary": {
+          "type": "textarea",
+          "pos": 3,
+          "translatable": true
+        },
+        "link": {
+          "type": "multilink",
+          "translatable": true,
+          "pos": 4
+        },
+        "linkText": {
+          "type": "text",
+          "pos": 5,
+          "translatable": true,
+          "display_name": "Link tekst",
+          "description": "Optioneel, om standaard te overschrijven"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "List item",
+      "component_group_uuid": "0019ba32-842f-4757-91ad-9bec8b3b2e56",
+      "color": null,
+      "icon": null,
+      "component_group_name": "list"
+    },
+    {
+      "name": "Newsletter",
+      "display_name": null,
+      "created_at": "2021-12-22T10:58:54.651Z",
+      "updated_at": "2022-01-24T17:31:33.311Z",
+      "id": 2057197,
+      "schema": {
+        "title": {
+          "type": "text",
+          "translatable": true
+        },
+        "buttontext": {
+          "type": "text",
+          "translatable": true
+        },
+        "buttonlink": {
+          "type": "multilink"
+        },
+        "clickdimensionsId": {
+          "type": "text",
+          "translatable": true,
+          "description": "Voeg hier het ID van het clickdimensions formulier toe.\n"
+        }
+      },
+      "image": null,
+      "preview_field": "",
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Newsletter",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "Page",
+      "display_name": null,
+      "created_at": "2021-12-02T09:42:00.420Z",
+      "updated_at": "2021-12-21T18:03:32.973Z",
+      "id": 2005559,
+      "schema": {
+        "metadata": {
+          "type": "custom",
+          "field_type": "seo-metatags",
+          "options": [],
+          "pos": 0,
+          "translatable": true
+        },
+        "body": {
+          "type": "bloks",
+          "pos": 1,
+          "display_name": "Inhoud",
+          "restrict_components": true,
+          "component_whitelist": [],
+          "restrict_type": "groups",
+          "component_group_whitelist": [
+            "c2ca4a6c-3ebd-4671-b35a-29959c3c4f4a"
+          ]
+        },
+        "tab-fe48ba76-a32e-4670-85df-c4d71f5ac503": {
+          "type": "tab",
+          "display_name": "SEO",
+          "keys": [
+            "metadata"
+          ],
+          "pos": 2
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [
+        {
+          "id": 1312523,
+          "name": "preset test",
+          "component_id": 2005559,
+          "image": "",
+          "icon": null,
+          "color": null,
+          "description": null
+        }
+      ],
+      "preset_id": null,
+      "real_name": "Page",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "PopularCategories",
+      "display_name": null,
+      "created_at": "2021-12-14T15:07:23.802Z",
+      "updated_at": "2022-01-20T08:08:41.864Z",
+      "id": 2038956,
+      "schema": {
+        "title": {
+          "type": "text",
+          "pos": 0,
+          "translatable": true
+        },
+        "category": {
+          "type": "options",
+          "maximum": "5",
+          "restrict_components": true,
+          "component_whitelist": [
+            "CategoryLink"
+          ],
+          "pos": 1,
+          "source": "internal_stories",
+          "folder_slug": "",
+          "translatable": true,
+          "filter_content_type": "CategoryPage"
+        }
+      },
+      "image": "//a.storyblok.com/f/137616/x/45892c389f/popularcategories.png",
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "PopularCategories",
+      "component_group_uuid": "c2ca4a6c-3ebd-4671-b35a-29959c3c4f4a",
+      "color": null,
+      "icon": null,
+      "component_group_name": "body"
+    },
+    {
+      "name": "Post",
+      "display_name": "Post",
+      "created_at": "2021-12-15T21:28:06.280Z",
+      "updated_at": "2022-01-20T08:38:39.203Z",
+      "id": 2043202,
+      "schema": {
+        "title": {
+          "type": "text",
+          "translatable": true,
+          "required": true,
+          "display_name": "Titel",
+          "pos": 0
+        },
+        "author": {
+          "type": "text",
+          "pos": 1
+        },
+        "date": {
+          "type": "datetime",
+          "disable_time": true,
+          "default_value": "",
+          "display_name": "Datum",
+          "pos": 2
+        },
+        "category": {
+          "type": "options",
+          "source": "internal_stories",
+          "folder_slug": "",
+          "filter_content_type": "CategoryPage",
+          "display_name": "Categorie",
+          "pos": 3
+        },
+        "theme": {
+          "type": "options",
+          "pos": 4,
+          "source": "internal_stories",
+          "filter_content_type": "Theme",
+          "display_name": "Thema"
+        },
+        "image": {
+          "type": "asset",
+          "filetypes": [
+            "images"
+          ],
+          "description": "gebruikt in overzichten en in header van detail pagina\nIdeale afmeting: 1720x552",
+          "pos": 5
+        },
+        "summary": {
+          "type": "textarea",
+          "display_name": "Samenvatting",
+          "description": "Gebruikt in overzichten",
+          "translatable": true,
+          "pos": 6
+        },
+        "body": {
+          "type": "bloks",
+          "display_name": "Inhoud",
+          "restrict_components": true,
+          "restrict_type": "groups",
+          "pos": 7,
+          "component_group_whitelist": [
+            "c2ca4a6c-3ebd-4671-b35a-29959c3c4f4a"
+          ]
+        },
+        "tab-98e857b8-ec7b-446e-99d8-d9bb2afd411b": {
+          "type": "tab",
+          "display_name": "SEO",
+          "keys": [
+            "metadata"
+          ],
+          "pos": 8
+        },
+        "metadata": {
+          "type": "custom",
+          "translatable": true,
+          "field_type": "seo-metatags",
+          "options": [],
+          "pos": 9
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Post",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "PostHeader",
+      "display_name": null,
+      "created_at": "2021-12-22T09:40:14.263Z",
+      "updated_at": "2022-01-20T08:00:06.879Z",
+      "id": 2056973,
+      "schema": {
+        "mainPost": {
+          "type": "option",
+          "use_uuid": true,
+          "options": [],
+          "required": true,
+          "source": "internal_stories",
+          "folder_slug": "blog/"
+        },
+        "postList": {
+          "type": "options",
+          "required": true,
+          "source": "internal_stories",
+          "folder_slug": "blog/"
+        }
+      },
+      "image": "//a.storyblok.com/f/137616/x/48f503ea9d/postheader.png",
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "PostHeader",
+      "component_group_uuid": "c2ca4a6c-3ebd-4671-b35a-29959c3c4f4a",
+      "color": null,
+      "icon": null,
+      "component_group_name": "body"
+    },
+    {
+      "name": "PostHeader_copy",
+      "display_name": null,
+      "created_at": "2021-12-22T09:46:47.709Z",
+      "updated_at": "2021-12-22T09:46:47.709Z",
+      "id": 2057009,
+      "schema": {
+        "mainPost": {
+          "type": "option",
+          "use_uuid": true,
+          "options": [],
+          "required": true
+        },
+        "postList": {
+          "type": "options",
+          "required": true
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "PostHeader_copy",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "Product",
+      "display_name": "Product",
+      "created_at": "2021-12-19T10:54:50.277Z",
+      "updated_at": "2022-01-20T08:32:43.103Z",
+      "id": 2049681,
+      "schema": {
+        "title": {
+          "type": "text",
+          "translatable": true,
+          "required": true,
+          "display_name": "Titel",
+          "pos": 0
+        },
+        "category": {
+          "type": "options",
+          "source": "internal_stories",
+          "folder_slug": "",
+          "filter_content_type": "CategoryPage",
+          "display_name": "Categorie",
+          "pos": 1
+        },
+        "image": {
+          "type": "asset",
+          "filetypes": [
+            "images"
+          ],
+          "description": "gebruikt in overzichten en in header van detail pagina\nIdeale ratio: 362x260",
+          "pos": 2
+        },
+        "link": {
+          "type": "multilink",
+          "translatable": true,
+          "pos": 3
+        },
+        "linkText": {
+          "type": "text",
+          "pos": 4,
+          "translatable": true,
+          "display_name": "Link tekst",
+          "description": "Optioneel, om standaard te overschrijven"
+        },
+        "minimumAmount": {
+          "type": "text",
+          "display_name": "Minimum aantal",
+          "pos": 5,
+          "translatable": true
+        },
+        "msrp": {
+          "type": "text",
+          "display_name": "MSRP",
+          "pos": 6,
+          "translatable": true
+        },
+        "price": {
+          "type": "text",
+          "display_name": "Prijs",
+          "pos": 7,
+          "translatable": true
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Product",
+      "component_group_uuid": "0019ba32-842f-4757-91ad-9bec8b3b2e56",
+      "color": null,
+      "icon": null,
+      "component_group_name": "list"
+    },
+    {
+      "name": "Quoteblock",
+      "display_name": "Quote",
+      "created_at": "2021-12-16T13:07:27.486Z",
+      "updated_at": "2022-01-12T14:22:32.176Z",
+      "id": 2044783,
+      "schema": {
+        "quote": {
+          "type": "text",
+          "translatable": true
+        },
+        "author": {
+          "type": "text",
+          "translatable": true
+        },
+        "light": {
+          "type": "boolean"
+        }
+      },
+      "image": "//a.storyblok.com/f/137616/x/dd2255610f/quote.jpg",
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Quote",
+      "component_group_uuid": "c2ca4a6c-3ebd-4671-b35a-29959c3c4f4a",
+      "color": null,
+      "icon": null,
+      "component_group_name": "body"
+    },
+    {
+      "name": "Shareblock",
+      "display_name": "Share on social media",
+      "created_at": "2021-12-16T10:18:54.314Z",
+      "updated_at": "2022-01-20T07:52:54.020Z",
+      "id": 2044346,
+      "schema": {
+        "title": {
+          "type": "text",
+          "default_value": "Share this page",
+          "translatable": true
+        }
+      },
+      "image": "//a.storyblok.com/f/137616/x/87345318a6/share.jpg",
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Share on social media",
+      "component_group_uuid": "c2ca4a6c-3ebd-4671-b35a-29959c3c4f4a",
+      "color": null,
+      "icon": null,
+      "component_group_name": "body"
+    },
+    {
+      "name": "teaser",
+      "display_name": null,
+      "created_at": "2021-12-02T09:42:00.433Z",
+      "updated_at": "2021-12-09T14:15:42.656Z",
+      "id": 2005560,
+      "schema": {
+        "headline": {
+          "type": "text",
+          "translatable": true
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "teaser",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "TextContent",
+      "display_name": null,
+      "created_at": "2021-12-16T13:38:42.207Z",
+      "updated_at": "2021-12-16T13:38:53.675Z",
+      "id": 2044945,
+      "schema": {
+        "content": {
+          "type": "bloks"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "TextContent",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "TextMediaBlock",
+      "display_name": "Media/Content",
+      "created_at": "2021-12-15T14:45:42.660Z",
+      "updated_at": "2022-07-11T07:59:25.489Z",
+      "id": 2042005,
+      "schema": {
+        "title": {
+          "type": "text",
+          "pos": 0,
+          "default_value": "New Media Block",
+          "translatable": true
+        },
+        "paragraph": {
+          "type": "richtext",
+          "pos": 1,
+          "display_name": "Rich Text",
+          "customize_toolbar": true,
+          "toolbar": [
+            "h5",
+            "h6",
+            "list",
+            "olist",
+            "bold",
+            "italic",
+            "strike",
+            "underline",
+            "paragraph",
+            "link",
+            "inlinecode",
+            "code"
+          ],
+          "translatable": true,
+          "restrict_components": false,
+          "component_whitelist": [
+            "Quoteblock"
+          ],
+          "style_options": []
+        },
+        "image": {
+          "type": "asset",
+          "pos": 2,
+          "filetypes": [
+            "images"
+          ],
+          "required": false,
+          "description": "Ideale ratio met text: 424x328.\nIdeale ratio volledige breedte: 872x328."
+        },
+        "image_position": {
+          "type": "option",
+          "pos": 3,
+          "use_uuid": true,
+          "options": [
+            {
+              "value": "left",
+              "name": "Left"
+            },
+            {
+              "value": "right",
+              "name": "Right"
+            }
+          ],
+          "display_name": "",
+          "default_value": "left",
+          "exclude_empty_option": true
+        },
+        "url": {
+          "type": "text",
+          "pos": 4,
+          "display_name": "Video",
+          "description": "youtube url"
+        },
+        "extra": {
+          "type": "bloks",
+          "display_name": "Quote",
+          "maximum": "1",
+          "restrict_components": true,
+          "component_whitelist": [
+            "Quoteblock"
+          ]
+        },
+        "design": {
+          "type": "option",
+          "options": [
+            {
+              "value": "info",
+              "name": "Info Box"
+            }
+          ],
+          "display_name": "Style",
+          "max_options": "1",
+          "use_uuid": true
+        }
+      },
+      "image": "//a.storyblok.com/f/137616/x/e152c609a9/frame-107.jpg",
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Media/Content",
+      "component_group_uuid": "c2ca4a6c-3ebd-4671-b35a-29959c3c4f4a",
+      "color": null,
+      "icon": null,
+      "component_group_name": "body"
+    },
+    {
+      "name": "Theme",
+      "display_name": "Thema",
+      "created_at": "2021-12-19T09:54:42.689Z",
+      "updated_at": "2021-12-23T16:27:25.596Z",
+      "id": 2049637,
+      "schema": {
+        "metadata": {
+          "type": "custom",
+          "field_type": "seo-metatags",
+          "options": [],
+          "pos": 0
+        },
+        "title": {
+          "type": "text",
+          "pos": 1,
+          "translatable": true
+        },
+        "icon": {
+          "type": "option",
+          "use_uuid": true,
+          "options": [
+            {
+              "value": "baby",
+              "name": "Baby"
+            },
+            {
+              "value": "fashion",
+              "name": "Fashion"
+            },
+            {
+              "value": "home",
+              "name": "Home"
+            },
+            {
+              "value": "retail",
+              "name": "Retail"
+            },
+            {
+              "value": "sports",
+              "name": "Sports"
+            }
+          ],
+          "pos": 2
+        },
+        "body": {
+          "type": "bloks",
+          "pos": 3,
+          "display_name": "Inhoud"
+        },
+        "tab-b28a78b7-c1f6-4fb4-a61b-02fbeb931b64": {
+          "type": "tab",
+          "display_name": "SEO",
+          "keys": [
+            "metadata"
+          ],
+          "pos": 4
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Thema",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    }
+  ]
+}

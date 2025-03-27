@@ -1,0 +1,60 @@
+{
+  "presets": [
+    {
+      "id": 1312523,
+      "name": "preset test",
+      "preset": {
+        "_uid": "eb7cc275-149a-46b4-870e-39a95beddc1d",
+        "body": [
+          {
+            "_uid": "f358cd2a-b8d6-4290-82d6-5295c45db9fe",
+            "date": "",
+            "link": {
+              "id": "994f2f09-8d00-46e1-86c6-449213bc912d",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "home"
+            },
+            "image": {
+              "id": 3514611,
+              "alt": "",
+              "name": "",
+              "focus": null,
+              "title": "",
+              "filename": "https://a.storyblok.com/f/137616/1968x1104/041a3806af/featureimg.png",
+              "copyright": "",
+              "fieldtype": "asset"
+            },
+            "label": "baby",
+            "title": "This is a preset",
+            "author": "",
+            "component": "feature"
+          }
+        ],
+        "category": [],
+        "metadata": {
+          "_uid": "effd308b-a129-4fe6-85eb-8489b4290fa1",
+          "title": "",
+          "plugin": "seo_metatags",
+          "og_image": "",
+          "og_title": "",
+          "description": "",
+          "twitter_image": "",
+          "twitter_title": "",
+          "og_description": "",
+          "twitter_description": ""
+        },
+        "component": "Page"
+      },
+      "component_id": 2005559,
+      "space_id": 137616,
+      "created_at": "2021-12-15T14:36:30.248Z",
+      "updated_at": "2021-12-15T14:36:30.248Z",
+      "image": "",
+      "color": null,
+      "icon": null,
+      "description": null
+    }
+  ]
+}

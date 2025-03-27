@@ -14,7 +14,7 @@ export const urlForImage = (source: any, width?: number, height?: number) => {
   }
   width = width || 120;
   height = height || 1000;
-  console.log({ source });
+  // console.log({ source });
 
   const url = !source.hotpots
     ? imageBuilder?.image(source).auto("format").fit("max")
@@ -44,6 +44,8 @@ export function resolveHref(
   switch (documentType) {
     case "post":
       return slug ? `/posts/${slug}` : undefined;
+    case "pages":
+      return slug ? `/pages/${slug}` : undefined;
     default:
       console.warn("Invalid document type:", documentType);
       return undefined;
@@ -53,3 +55,17 @@ export const getLocalizedValue = (field: any, language = "en") => {
   if (!field) return "";
   return field[language] || field.en || ""; // Fallback to English if requested language is missing
 };
+
+// Define the supported languages
+export const supportedLanguages = [
+  { id: "en", title: "English" },
+  { id: "fr", title: "French" },
+  { id: "nl", title: "Nederlands" },
+  // Add more languages as needed
+];
+
+export const bodyComponent = [
+  { type: "heroComponent" },
+  { type: "uspComponent" },
+  // Add more component types here as you create them
+];

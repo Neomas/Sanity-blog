@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   env: {
-    // Matches the behavior of `sanity dev` which sets styled-components to use the fastest way of inserting CSS rules in both dev and production. It's default behavior is to disable it in dev mode.
     SC_DISABLE_SPEEDY: "false",
   },
 
@@ -11,18 +10,24 @@ const nextConfig: NextConfig = {
 
     return {
       beforeFiles: [],
-      // Handling locale prefixes
       afterFiles: [
         {
           source: "/:path((?!nl|en|fr|api|studio).*)*",
-          // missing: [
-          //   { type: "header", key: "next-router-prefetch" },
-          //   { type: "header", key: "purpose", value: "prefetch" },
-          // ],
           destination: `/${defaultLocale}/:path*`,
         },
       ],
     };
+  },
+
+  experimental: {
+    turbo: {
+      rules: {
+        "*.glsl": {
+          loaders: ["glsl-shader-loader"],
+          as: "*.js",
+        },
+      },
+    },
   },
 };
 

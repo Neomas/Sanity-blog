@@ -20,3 +20,11 @@ export const client = createClient({
     },
   },
 });
+
+export const rawClient = createClient({
+  projectId,
+  dataset,
+  apiVersion,
+  useCdn: false,
+  perspective: "raw",
+});

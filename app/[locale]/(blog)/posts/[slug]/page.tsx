@@ -9,7 +9,7 @@ import Avatar from "../../avatar";
 import CoverImage from "../../cover-image";
 import DateComponent from "../../date";
 import MoreStories from "../../more-stories";
-import PortableText from "../../portable-text";
+import PortableText from "@/app/components/atoms/portable-text";
 
 import * as demo from "@/sanity/lib/demo";
 import { sanityFetch } from "@/sanity/lib/fetch";
@@ -81,11 +81,6 @@ export default async function PostPage({ params }: Props) {
         </h1>
 
         <div className="hidden md:mb-12 md:block">
-          {/* <pre>
-            {JSON.stringify(getLocalizedValue(post.content, locale), null, 2)}
-          </pre> */}
-        </div>
-        <div className="hidden md:mb-12 md:block">
           {post.author && (
             <Avatar name={post.author.name} picture={post.author.picture} />
           )}
@@ -106,10 +101,11 @@ export default async function PostPage({ params }: Props) {
           </div>
         </div>
 
-        <PortableText
+        {/* <PortableText
+          locale={locale}
           className="mx-auto max-w-2xl"
           value={getLocalizedValue(post.content, locale)}
-        />
+        /> */}
       </article>
       <aside>
         <hr className="border-accent-2 mb-24 mt-28" />

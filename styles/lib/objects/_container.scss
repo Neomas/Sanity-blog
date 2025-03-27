@@ -1,0 +1,38 @@
+@mixin o-site-container() {
+  width: 100%;
+  max-width: rem(1910px);
+  margin: 0 auto;
+  padding-left: rem(24);
+  padding-right: rem(24);
+
+  @include mq(sm) {
+    padding-left: space(10);
+    padding-right: space(10);
+  }
+
+  @include mq(lg) {
+    padding-left: space(22);
+    padding-right: space(22);
+  }
+}
+
+@mixin o-site-container-edge() {
+  @include o-site-container();
+
+  margin-left: -space(4);
+  margin-right: -space(4);
+
+  @include mq(sm) {
+    margin-left: -space(10);
+    margin-right: -space(10);
+  }
+
+  @include mq(lg) {
+    margin-left: -space(22);
+    margin-right: -space(22);
+  }
+}
+
+.o-site-container {
+  @include o-site-container();
+}

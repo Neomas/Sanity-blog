@@ -1,0 +1,22 @@
+.row {
+  @include row(4);
+
+  @include mq(sm) {
+    @include row(12);
+  }
+}
+
+// loop the breakpoints to set class for each col
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    @include span($i);
+  }
+  @each $breakpoint, $size in $mq-breakpoints {
+    @include mq($breakpoint) {
+      .col-#{$breakpoint}-#{$i} {
+        @include span($i);
+      }
+    }
+  }
+}

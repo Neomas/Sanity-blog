@@ -1,4 +1,5 @@
-import "../../globals.css";
+// import "../../globals.css";
+import "../../../styles/global.scss";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
@@ -11,12 +12,13 @@ import { Inter } from "next/font/google";
 import { draftMode } from "next/headers";
 
 import AlertBanner from "./alert-banner";
-import PortableText from "./portable-text";
+import PortableText from "@/app/components/atoms/portable-text";
 
 import * as demo from "@/sanity/lib/demo";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { settingsQuery } from "@/sanity/lib/queries";
 import { resolveOpenGraphImage } from "@/sanity/lib/utils";
+import localFont from "next/font/local";
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await sanityFetch({
@@ -48,7 +50,10 @@ export async function generateMetadata(): Promise<Metadata> {
     },
   };
 }
-
+const biotif = localFont({
+  src: "../../../public/fonts/Biotif-Variable/font.woff2",
+  variable: "--biotif",
+});
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -57,15 +62,19 @@ const inter = Inter({
 
 export default async function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params?: any;
 }) {
   const data = await sanityFetch({ query: settingsQuery });
   const footer = data?.footer || [];
   const { isEnabled: isDraftMode } = await draftMode();
+  // const { isEnabled: isDraftMode, previewModeId } = isDraft;
+  const { locale } = await params;
 
   return (
-    <html lang="en" className={`${inter.variable} bg-white text-black`}>
+    <html lang={locale} className={`${biotif.variable} bg-white text-black`}>
       <body>
         <section className="min-h-screen">
           {isDraftMode && <AlertBanner />}

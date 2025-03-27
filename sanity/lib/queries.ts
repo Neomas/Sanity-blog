@@ -32,3 +32,7 @@ export const postQuery = defineQuery(`
     ${postFields}
   }
 `);
+
+export const pageQuery = defineQuery(`
+  *[_type == "pages" && slug.current == $slug]
+`);

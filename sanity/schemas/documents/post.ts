@@ -5,21 +5,21 @@ import { defineField, defineType } from "sanity";
 import LocalizedFieldWithToggle, {
   LocalizedFieldWithToggleTextArea,
   LocalizedFieldWithToggleWysiwyg,
-} from "@components/Atoms/LocalizedFieldWithToggle";
+} from "@/app/components/atoms/LocalizedFieldWithToggle";
 import authorType from "./author";
 import { set, setIfMissing } from "sanity";
-
+import { supportedLanguages } from "@/sanity/lib/utils";
 /**
  * This file is the schema definition for a post with internationalization.
  */
 
 // Define the supported languages
-const supportedLanguages = [
-  { id: "en", title: "English" },
-  { id: "fr", title: "French" },
-  { id: "nl", title: "Nederlands" },
-  // Add more languages as needed
-];
+// const supportedLanguages = [
+//   { id: "en", title: "English" },
+//   { id: "fr", title: "French" },
+//   { id: "nl", title: "Nederlands" },
+//   // Add more languages as needed
+// ];
 
 export default defineType({
   name: "post",
@@ -76,27 +76,64 @@ export default defineType({
         name: lang.id,
         title: lang.title,
         type: "array",
-        of: [{ type: "block" }],
+        of: [
+          {
+            type: "block",
+            options: {
+              spellCheck: true,
+            },
+          },
+          {
+            type: "object",
+            name: "card",
+            title: "Card",
+            fields: [
+              { name: "title", type: "string", title: "Title" },
+              { name: "info", type: "text", title: "info" },
+              {
+                name: "image",
+                type: "image",
+                options: {
+                  hotspot: true,
+                  aiAssist: {
+                    imageDescriptionField: "alt.en",
+                  },
+                },
+              },
+            ],
+            // components: {
+            //   input: function CardInput(props: any) {
+            //     return (
+            //       <Card
+            //             title={props.value?.title }
+            //             info={props.value?.content }
+            //             image={props.value?.image}
+            //             />
+            //           )
+            //   }
+            // },
+          },
+        ],
       })),
 
-      components: {
-        // Use a simpler approach to define the component
-        input: function CustomTitleInput(props) {
-          const languageFields = supportedLanguages.map((lang) => ({
-            name: lang.id,
-            title: lang.title,
-          }));
-          return LocalizedFieldWithToggleWysiwyg({
-            ...props,
-            languageFields,
-            onChange: (newValue: Record<string, any>) => {
-              props.onChange(
-                [setIfMissing({}), set(newValue)] // Apply both patches
-              );
-            },
-          });
-        },
-      },
+      // components: {
+      //   // Use a simpler approach to define the component
+      //   input: function CustomTitleInput(props) {
+      //     const languageFields = supportedLanguages.map((lang) => ({
+      //       name: lang.id,
+      //       title: lang.title,
+      //     }));
+      //     return LocalizedFieldWithToggleWysiwyg({
+      //       ...props,
+      //       languageFields,
+      //       onChange: (newValue: Record<string, any>) => {
+      //         props.onChange(
+      //           [setIfMissing({}), set(newValue)] // Apply both patches
+      //         );
+      //       },
+      //     });
+      //   },
+      // },
     }),
     defineField({
       name: "excerpt",

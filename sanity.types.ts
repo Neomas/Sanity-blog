@@ -68,6 +68,64 @@ export type Geopoint = {
   alt?: number;
 };
 
+export type TextImageComponent = {
+  _type: "textImageComponent";
+  title?: string;
+  content?: string;
+  image?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
+  imagePosition?: "left" | "right";
+};
+
+export type UspComponent = {
+  _type: "uspComponent";
+  title?: string;
+  uspItems?: Array<{
+    icon?: string;
+    title?: string;
+    description?: string;
+    _key: string;
+  }>;
+};
+
+export type HeroComponent = {
+  _type: "heroComponent";
+  title?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  subtitle?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
+  primaryCta?: {
+    text?: string;
+    link?: string;
+  };
+};
+
 export type Post = {
   _id: string;
   _type: "post";
@@ -98,6 +156,22 @@ export type Post = {
       level?: number;
       _type: "block";
       _key: string;
+    } | {
+      title?: string;
+      info?: string;
+      image?: {
+        asset?: {
+          _ref: string;
+          _type: "reference";
+          _weak?: boolean;
+          [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+        };
+        hotspot?: SanityImageHotspot;
+        crop?: SanityImageCrop;
+        _type: "image";
+      };
+      _type: "card";
+      _key: string;
     }>;
     fr?: Array<{
       children?: Array<{
@@ -116,6 +190,22 @@ export type Post = {
       level?: number;
       _type: "block";
       _key: string;
+    } | {
+      title?: string;
+      info?: string;
+      image?: {
+        asset?: {
+          _ref: string;
+          _type: "reference";
+          _weak?: boolean;
+          [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+        };
+        hotspot?: SanityImageHotspot;
+        crop?: SanityImageCrop;
+        _type: "image";
+      };
+      _type: "card";
+      _key: string;
     }>;
     nl?: Array<{
       children?: Array<{
@@ -133,6 +223,22 @@ export type Post = {
       }>;
       level?: number;
       _type: "block";
+      _key: string;
+    } | {
+      title?: string;
+      info?: string;
+      image?: {
+        asset?: {
+          _ref: string;
+          _type: "reference";
+          _weak?: boolean;
+          [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+        };
+        hotspot?: SanityImageHotspot;
+        crop?: SanityImageCrop;
+        _type: "image";
+      };
+      _type: "card";
       _key: string;
     }>;
   };
@@ -184,6 +290,25 @@ export type Author = {
     crop?: SanityImageCrop;
     alt?: string;
     _type: "image";
+  };
+};
+
+export type Pages = {
+  _id: string;
+  _type: "pages";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  title?: string;
+  slug?: Slug;
+  contentBlocks?: Array<{
+    _key: string;
+  } & HeroComponent | {
+    _key: string;
+  } & UspComponent>;
+  seo?: {
+    metaDescription?: string;
+    keywords?: Array<string>;
   };
 };
 
@@ -308,8 +433,15 @@ export type SanityImageMetadata = {
   isOpaque?: boolean;
 };
 
-export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityFileAsset | Geopoint | Post | Author | Slug | Settings | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata;
+export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityFileAsset | Geopoint | TextImageComponent | UspComponent | HeroComponent | Post | Author | Pages | Slug | Settings | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata;
 export declare const internalGroqTypeReferenceTo: unique symbol;
+// Source: ./app/[locale]/(blog)/pages/[slug]/page.tsx
+// Variable: pageSlugs
+// Query: *[_type == "pages" && defined(slug.current)]{"slug": slug.current}
+export type PageSlugsResult = Array<{
+  slug: string | null;
+}>;
+
 // Source: ./app/[locale]/(blog)/posts/[slug]/page.tsx
 // Variable: postSlugs
 // Query: *[_type == "post" && defined(slug.current)]{"slug": slug.current}
@@ -398,6 +530,22 @@ export type HeroQueryResult = {
       level?: number;
       _type: "block";
       _key: string;
+    } | {
+      title?: string;
+      info?: string;
+      image?: {
+        asset?: {
+          _ref: string;
+          _type: "reference";
+          _weak?: boolean;
+          [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+        };
+        hotspot?: SanityImageHotspot;
+        crop?: SanityImageCrop;
+        _type: "image";
+      };
+      _type: "card";
+      _key: string;
     }>;
     fr?: Array<{
       children?: Array<{
@@ -416,6 +564,22 @@ export type HeroQueryResult = {
       level?: number;
       _type: "block";
       _key: string;
+    } | {
+      title?: string;
+      info?: string;
+      image?: {
+        asset?: {
+          _ref: string;
+          _type: "reference";
+          _weak?: boolean;
+          [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+        };
+        hotspot?: SanityImageHotspot;
+        crop?: SanityImageCrop;
+        _type: "image";
+      };
+      _type: "card";
+      _key: string;
     }>;
     nl?: Array<{
       children?: Array<{
@@ -433,6 +597,22 @@ export type HeroQueryResult = {
       }>;
       level?: number;
       _type: "block";
+      _key: string;
+    } | {
+      title?: string;
+      info?: string;
+      image?: {
+        asset?: {
+          _ref: string;
+          _type: "reference";
+          _weak?: boolean;
+          [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+        };
+        hotspot?: SanityImageHotspot;
+        crop?: SanityImageCrop;
+        _type: "image";
+      };
+      _type: "card";
       _key: string;
     }>;
   } | null;
@@ -552,6 +732,22 @@ export type PostQueryResult = {
       level?: number;
       _type: "block";
       _key: string;
+    } | {
+      title?: string;
+      info?: string;
+      image?: {
+        asset?: {
+          _ref: string;
+          _type: "reference";
+          _weak?: boolean;
+          [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+        };
+        hotspot?: SanityImageHotspot;
+        crop?: SanityImageCrop;
+        _type: "image";
+      };
+      _type: "card";
+      _key: string;
     }>;
     fr?: Array<{
       children?: Array<{
@@ -570,6 +766,22 @@ export type PostQueryResult = {
       level?: number;
       _type: "block";
       _key: string;
+    } | {
+      title?: string;
+      info?: string;
+      image?: {
+        asset?: {
+          _ref: string;
+          _type: "reference";
+          _weak?: boolean;
+          [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+        };
+        hotspot?: SanityImageHotspot;
+        crop?: SanityImageCrop;
+        _type: "image";
+      };
+      _type: "card";
+      _key: string;
     }>;
     nl?: Array<{
       children?: Array<{
@@ -587,6 +799,22 @@ export type PostQueryResult = {
       }>;
       level?: number;
       _type: "block";
+      _key: string;
+    } | {
+      title?: string;
+      info?: string;
+      image?: {
+        asset?: {
+          _ref: string;
+          _type: "reference";
+          _weak?: boolean;
+          [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+        };
+        hotspot?: SanityImageHotspot;
+        crop?: SanityImageCrop;
+        _type: "image";
+      };
+      _type: "card";
       _key: string;
     }>;
   } | null;
@@ -636,15 +864,37 @@ export type PostQueryResult = {
     } | null;
   } | null;
 } | null;
+// Variable: pageQuery
+// Query: *[_type == "pages" && slug.current == $slug]
+export type PageQueryResult = Array<{
+  _id: string;
+  _type: "pages";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  title?: string;
+  slug?: Slug;
+  contentBlocks?: Array<{
+    _key: string;
+  } & HeroComponent | {
+    _key: string;
+  } & UspComponent>;
+  seo?: {
+    metaDescription?: string;
+    keywords?: Array<string>;
+  };
+}>;
 
 // Query TypeMap
 import "@sanity/client";
 declare module "@sanity/client" {
   interface SanityQueries {
+    "*[_type == \"pages\" && defined(slug.current)]{\"slug\": slug.current}": PageSlugsResult;
     "*[_type == \"post\" && defined(slug.current)]{\"slug\": slug.current}": PostSlugsResult;
     "*[_type == \"settings\"][0]": SettingsQueryResult;
     "\n  *[_type == \"post\" && defined(slug.current)] | order(date desc, _updatedAt desc) [0] {\n    content,\n    \n  _id,\n  \"status\": select(_originalId in path(\"drafts.**\") => \"draft\", \"published\"),\n  \"title\": coalesce(title, \"Untitled\"),\n  \"slug\": slug.current,\n  excerpt,\n  coverImage,\n  \"date\": coalesce(date, _updatedAt),\n  \"author\": author->{\"name\": coalesce(name, \"Anonymous\"), picture},\n\n  }\n": HeroQueryResult;
     "\n  *[_type == \"post\" && _id != $skip && defined(slug.current)] | order(date desc, _updatedAt desc) [0...$limit] {\n    \n  _id,\n  \"status\": select(_originalId in path(\"drafts.**\") => \"draft\", \"published\"),\n  \"title\": coalesce(title, \"Untitled\"),\n  \"slug\": slug.current,\n  excerpt,\n  coverImage,\n  \"date\": coalesce(date, _updatedAt),\n  \"author\": author->{\"name\": coalesce(name, \"Anonymous\"), picture},\n\n  }\n": MoreStoriesQueryResult;
     "\n  *[_type == \"post\" && slug.current == $slug] [0] {\n    content,\n    \n  _id,\n  \"status\": select(_originalId in path(\"drafts.**\") => \"draft\", \"published\"),\n  \"title\": coalesce(title, \"Untitled\"),\n  \"slug\": slug.current,\n  excerpt,\n  coverImage,\n  \"date\": coalesce(date, _updatedAt),\n  \"author\": author->{\"name\": coalesce(name, \"Anonymous\"), picture},\n\n  }\n": PostQueryResult;
+    "\n  *[_type == \"pages\" && slug.current == $slug]\n": PageQueryResult;
   }
 }

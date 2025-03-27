@@ -1,0 +1,108 @@
+@import "styles/lib";
+
+.switch:hover {
+  cursor: pointer;
+}
+
+.switch {
+  @include mq(md) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-size: 1rem;
+    line-height: 20.78px;
+    width: fit-content;
+    margin-left: 10px;
+    margin-top: 13px;
+    padding: 5px 0;
+    gap: 10px;
+  }
+
+  &.desktop {
+    display: none;
+    @include mq(md) {
+      display: flex;
+    }
+  }
+}
+
+.switch {
+  @include mq(md) {
+    :global .pi {
+      color: #848484;
+      transition: all 0.25s ease;
+      height: 19px;
+    }
+    :global .pi-chevron-down {
+      display: none;
+    }
+  }
+}
+
+.active {
+  :global .pi {
+    transform: rotate(-180deg);
+
+    @include mq(md) {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: 21px;
+  padding: 0;
+  overflow: hidden;
+  background: #fff;
+  color: #333333;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+  left: 39px;
+  transform: translateX(-50%);
+  border-radius: 3px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  // gap: 1px
+}
+
+.menuItem {
+  display: flex;
+  justify-content: flex-start;
+  transition: background 0.2s box-shadow 0.2s;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  cursor: pointer;
+  box-sizing: border-box;
+  white-space: unset;
+  background-color: transparent;
+  padding: 4px 14px;
+
+  &.active {
+    background: #007ad9;
+    color: #fff;
+  }
+  @include mq(md) {
+    padding: 3px 14px;
+  }
+}
+
+.menuItem:hover {
+  color: #333333;
+  background: #eaeaea;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+									supported by Chrome, Edge, Opera and Firefox */
+}

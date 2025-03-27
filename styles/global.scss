@@ -1,0 +1,117 @@
+@use "sass:math";
+@use "sass:list";
+
+@import "lib";
+@import "tokens/cssvars";
+
+// Utilities
+// // -----------------------------------------------------------------------------
+// @import "utils/variables";
+// @import "utils/mixins";
+// @import "utils/functions";
+// @import "utils/animations";
+
+// Utilities
+// -----------------------------------------------------------------------------
+@import "utils/utilities";
+@import "utils/grid";
+
+// Base
+// -----------------------------------------------------------------------------
+@import "base/reset";
+@import "base/base";
+@import "base/typography";
+@import "base/transitions";
+
+// set space var, used in space function
+:root {
+  --space: 4px;
+  @include mq(md) {
+    --space: 4px;
+  }
+}
+
+// prevent clicking on links inside an sbEditable
+[data-blok-uid] * {
+  // pointer-events: none;
+}
+
+body {
+  //word-wrap: break-word;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
+
+  min-height: 100%;
+
+  height: initial; //for lenis
+  scroll-behavior: initial;
+}
+
+html {
+  min-height: 100%;
+  height: initial; //for lenis
+  scroll-behavior: initial;
+}
+
+// .overflowHidden {
+//   overflow: hidden !important;
+// }
+
+body:has(.requires-no-scroll) {
+  //overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Lenis styling
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+.ppms_cm_footer,
+#ppms_cm_footer {
+  display: none !important;
+}
+
+#ppms_cm_agree-to-all,
+#ppms_cm_reject-all {
+  border-radius: rem(28px) !important;
+}
+
+#ppms_consent_form_success_note_button {
+  border-radius: rem(28px) !important;
+}
+#ppms_cm_open-popup {
+  border-radius: rem(16px) !important;
+}
+
+#ppas_site_inspector {
+  pointer-events: all;
+}

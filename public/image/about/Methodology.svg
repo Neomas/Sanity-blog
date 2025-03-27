@@ -1,0 +1,16 @@
+<svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:difference">
+<g style="mix-blend-mode:difference">
+<path d="M137 120L45 184L45 56L137 120Z" fill="#FCFAF8"/>
+</g>
+<g style="mix-blend-mode:difference">
+<path d="M92 120L1.52638e-06 184L0 56L92 120Z" fill="#FCFAF8"/>
+</g>
+<g style="mix-blend-mode:difference">
+<circle cx="137" cy="120" r="64" fill="#FCFAF8"/>
+</g>
+<g style="mix-blend-mode:difference">
+<circle cx="137" cy="120" r="20" fill="#FCFAF8"/>
+</g>
+</g>
+</svg>

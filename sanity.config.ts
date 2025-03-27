@@ -20,7 +20,12 @@ import author from "@/sanity/schemas/documents/author";
 import post from "@/sanity/schemas/documents/post";
 import settings from "@/sanity/schemas/singletons/settings";
 import { resolveHref } from "@/sanity/lib/utils";
-import pages from "./sanity/schemas/documents/pages";
+import page from "./sanity/schemas/documents/page";
+import {
+  heroComponent,
+  uspComponent,
+  textImageComponent,
+} from "./sanity/schemas/contentblocks"; // Adjust the path as needed
 
 const homeLocation = {
   title: "Home",
@@ -36,8 +41,12 @@ export default defineConfig({
       // Singletons
       settings,
       // Documents
+      page,
       post,
       author,
+      heroComponent,
+      uspComponent,
+      textImageComponent,
     ],
   },
   plugins: [
@@ -47,6 +56,10 @@ export default defineConfig({
           {
             route: "/posts/:slug",
             filter: `_type == "post" && slug.current == $slug`,
+          },
+          {
+            route: "/pages/:slug",
+            filter: `_type == "pages" && slug.current == $slug`,
           },
         ]),
         locations: {
