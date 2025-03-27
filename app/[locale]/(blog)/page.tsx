@@ -16,21 +16,29 @@ import { getLocalizedValue } from "@/sanity/lib/utils";
 import ContentBlockMapper from "@/app/components/Molecules/ContentBlockMapper";
 
 export default async function Page({ params }: { params: any }) {
-  const slugParams = { ...params, slug: "home" };
+  const slugParams = {
+    ...params,
+    slug: "home",
+    useCdn: false,
+  };
 
   const [settings, page] = await Promise.all([
     sanityFetch({
       query: settingsQuery,
     }),
-    sanityFetch({ query: pageQuery, params: slugParams }),
+    sanityFetch({
+      query: pageQuery,
+      perspective: ["r2cmhXobH", "drafts"],
+      params: slugParams,
+    }),
   ]);
-  // const releases = await fetchActiveReleaseDocuments();
+  const releases = await fetchActiveReleaseDocuments();
 
   const { locale } = await params;
 
   return (
     <div className="container mx-auto px-5">
-      <pre>{JSON.stringify(slugParams, null, 2)}</pre>
+      <pre>{JSON.stringify(releases, null, 2)}</pre>
       <ContentBlockMapper blocks={page?.[0]?.contentBlocks} locale={locale} />
     </div>
   );

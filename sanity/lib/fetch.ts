@@ -26,14 +26,17 @@ export async function sanityFetch<const QueryString extends string>({
   perspective?: Omit<ClientPerspective, "raw">;
   stega?: boolean;
 }) {
-  const perspective =
-    _perspective || (await draftMode()).isEnabled ? "drafts" : "published";
+  const perspective = (await draftMode()).isEnabled
+    ? _perspective
+      ? _perspective
+      : "drafts"
+    : "published";
   const stega =
     _stega || perspective === "drafts" || process.env.VERCEL_ENV === "preview";
-  if (perspective === "drafts") {
+  if (perspective !== "published") {
     return client.fetch(query, await params, {
       stega,
-      perspective: "drafts",
+      perspective: perspective as ClientPerspective,
       // The token is required to fetch draft content
       token,
       // The `drafts` perspective isn't available on the API CDN
@@ -42,6 +45,7 @@ export async function sanityFetch<const QueryString extends string>({
       next: { revalidate: 0 },
     });
   }
+
   return client.fetch(query, await params, {
     stega,
     perspective: "published",

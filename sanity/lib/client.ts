@@ -6,8 +6,8 @@ export const client = createClient({
   projectId,
   dataset,
   apiVersion,
-  useCdn: true,
-  perspective: "published",
+  useCdn: false,
+  perspective: "raw",
   stega: {
     studioUrl,
     logger: console,
