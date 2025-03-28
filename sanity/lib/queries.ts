@@ -34,5 +34,5 @@ export const postQuery = defineQuery(`
 `);
 
 export const pageQuery = defineQuery(`
-  *[_type == "pages" && slug.current == $slug]
+  *[_type == "page" && slug.current == $slug]
 `);

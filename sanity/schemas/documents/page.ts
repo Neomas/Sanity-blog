@@ -4,7 +4,7 @@ import { defineField, defineType } from "sanity";
 import { bodyComponent } from "@/sanity/lib/utils";
 
 export default defineType({
-  name: "pages",
+  name: "page",
   title: "Pages",
   icon: DocumentTextIcon,
   type: "document",

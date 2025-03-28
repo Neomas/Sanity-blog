@@ -450,7 +450,30 @@
         "title": {
           "type": "objectAttribute",
           "value": {
-            "type": "string"
+            "type": "object",
+            "attributes": {
+              "en": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "string"
+                },
+                "optional": true
+              },
+              "fr": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "string"
+                },
+                "optional": true
+              },
+              "nl": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "string"
+                },
+                "optional": true
+              }
+            }
           },
           "optional": true
         },
@@ -464,21 +487,90 @@
                 "icon": {
                   "type": "objectAttribute",
                   "value": {
-                    "type": "string"
+                    "type": "object",
+                    "attributes": {
+                      "en": {
+                        "type": "objectAttribute",
+                        "value": {
+                          "type": "string"
+                        },
+                        "optional": true
+                      },
+                      "fr": {
+                        "type": "objectAttribute",
+                        "value": {
+                          "type": "string"
+                        },
+                        "optional": true
+                      },
+                      "nl": {
+                        "type": "objectAttribute",
+                        "value": {
+                          "type": "string"
+                        },
+                        "optional": true
+                      }
+                    }
                   },
                   "optional": true
                 },
                 "title": {
                   "type": "objectAttribute",
                   "value": {
-                    "type": "string"
+                    "type": "object",
+                    "attributes": {
+                      "en": {
+                        "type": "objectAttribute",
+                        "value": {
+                          "type": "string"
+                        },
+                        "optional": true
+                      },
+                      "fr": {
+                        "type": "objectAttribute",
+                        "value": {
+                          "type": "string"
+                        },
+                        "optional": true
+                      },
+                      "nl": {
+                        "type": "objectAttribute",
+                        "value": {
+                          "type": "string"
+                        },
+                        "optional": true
+                      }
+                    }
                   },
                   "optional": true
                 },
                 "description": {
                   "type": "objectAttribute",
                   "value": {
-                    "type": "string"
+                    "type": "object",
+                    "attributes": {
+                      "en": {
+                        "type": "objectAttribute",
+                        "value": {
+                          "type": "string"
+                        },
+                        "optional": true
+                      },
+                      "fr": {
+                        "type": "objectAttribute",
+                        "value": {
+                          "type": "string"
+                        },
+                        "optional": true
+                      },
+                      "nl": {
+                        "type": "objectAttribute",
+                        "value": {
+                          "type": "string"
+                        },
+                        "optional": true
+                      }
+                    }
                   },
                   "optional": true
                 }
@@ -1868,7 +1960,7 @@
     }
   },
   {
-    "name": "pages",
+    "name": "page",
     "type": "document",
     "attributes": {
       "_id": {
@@ -1881,7 +1973,7 @@
         "type": "objectAttribute",
         "value": {
           "type": "string",
-          "value": "pages"
+          "value": "page"
         }
       },
       "_createdAt": {

@@ -88,11 +88,27 @@ export type TextImageComponent = {
 
 export type UspComponent = {
   _type: "uspComponent";
-  title?: string;
+  title?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
   uspItems?: Array<{
-    icon?: string;
-    title?: string;
-    description?: string;
+    icon?: {
+      en?: string;
+      fr?: string;
+      nl?: string;
+    };
+    title?: {
+      en?: string;
+      fr?: string;
+      nl?: string;
+    };
+    description?: {
+      en?: string;
+      fr?: string;
+      nl?: string;
+    };
     _key: string;
   }>;
 };
@@ -293,9 +309,9 @@ export type Author = {
   };
 };
 
-export type Pages = {
+export type Page = {
   _id: string;
-  _type: "pages";
+  _type: "page";
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
@@ -433,7 +449,7 @@ export type SanityImageMetadata = {
   isOpaque?: boolean;
 };
 
-export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityFileAsset | Geopoint | TextImageComponent | UspComponent | HeroComponent | Post | Author | Pages | Slug | Settings | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata;
+export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityFileAsset | Geopoint | TextImageComponent | UspComponent | HeroComponent | Post | Author | Page | Slug | Settings | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata;
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./app/[locale]/(blog)/posts/[slug]/page.tsx
 // Variable: postSlugs
@@ -858,10 +874,10 @@ export type PostQueryResult = {
   } | null;
 } | null;
 // Variable: pageQuery
-// Query: *[_type == "pages" && slug.current == $slug]
+// Query: *[_type == "page" && slug.current == $slug]
 export type PageQueryResult = Array<{
   _id: string;
-  _type: "pages";
+  _type: "page";
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
@@ -887,6 +903,6 @@ declare module "@sanity/client" {
     "\n  *[_type == \"post\" && defined(slug.current)] | order(date desc, _updatedAt desc) [0] {\n    content,\n    \n  _id,\n  \"status\": select(_originalId in path(\"drafts.**\") => \"draft\", \"published\"),\n  \"title\": coalesce(title, \"Untitled\"),\n  \"slug\": slug.current,\n  excerpt,\n  coverImage,\n  \"date\": coalesce(date, _updatedAt),\n  \"author\": author->{\"name\": coalesce(name, \"Anonymous\"), picture},\n\n  }\n": HeroQueryResult;
     "\n  *[_type == \"post\" && _id != $skip && defined(slug.current)] | order(date desc, _updatedAt desc) [0...$limit] {\n    \n  _id,\n  \"status\": select(_originalId in path(\"drafts.**\") => \"draft\", \"published\"),\n  \"title\": coalesce(title, \"Untitled\"),\n  \"slug\": slug.current,\n  excerpt,\n  coverImage,\n  \"date\": coalesce(date, _updatedAt),\n  \"author\": author->{\"name\": coalesce(name, \"Anonymous\"), picture},\n\n  }\n": MoreStoriesQueryResult;
     "\n  *[_type == \"post\" && slug.current == $slug] [0] {\n    content,\n    \n  _id,\n  \"status\": select(_originalId in path(\"drafts.**\") => \"draft\", \"published\"),\n  \"title\": coalesce(title, \"Untitled\"),\n  \"slug\": slug.current,\n  excerpt,\n  coverImage,\n  \"date\": coalesce(date, _updatedAt),\n  \"author\": author->{\"name\": coalesce(name, \"Anonymous\"), picture},\n\n  }\n": PostQueryResult;
-    "\n  *[_type == \"pages\" && slug.current == $slug]\n": PageQueryResult;
+    "\n  *[_type == \"page\" && slug.current == $slug]\n": PageQueryResult;
   }
 }

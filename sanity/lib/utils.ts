@@ -44,8 +44,6 @@ export function resolveHref(
   switch (documentType) {
     case "post":
       return slug ? `/posts/${slug}` : undefined;
-    case "pages":
-      return slug ? `/pages/${slug}` : undefined;
     default:
       console.warn("Invalid document type:", documentType);
       return undefined;

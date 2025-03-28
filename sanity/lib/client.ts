@@ -7,6 +7,8 @@ export const client = createClient({
   dataset,
   apiVersion,
   useCdn: false,
+  // token: process.env.SANITY_WRITE_TOKEN, // Use a write token with full permissions used to fix content in sanity
+
   perspective: "raw",
   stega: {
     studioUrl,

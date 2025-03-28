@@ -63,6 +63,7 @@ const inter = Inter({
 export default async function RootLayout({
   children,
   params,
+  ...props
 }: {
   children: React.ReactNode;
   params?: any;
@@ -71,13 +72,14 @@ export default async function RootLayout({
   const footer = data?.footer || [];
   const { isEnabled: isDraftMode } = await draftMode();
   // const { isEnabled: isDraftMode, previewModeId } = isDraft;
-  const { locale } = await params;
+  const { locale, ...all } = await params;
 
   return (
     <html lang={locale} className={`${biotif.variable} bg-white text-black`}>
       <body>
         <section className="min-h-screen">
           {isDraftMode && <AlertBanner />}
+
           <main>{children}</main>
           <footer className="bg-accent-1 border-accent-2 border-t">
             <div className="container mx-auto px-5">

@@ -49,6 +49,15 @@ export default defineConfig({
       textImageComponent,
     ],
   },
+  webhooks: [
+    {
+      name: "nextjs-revalidate",
+      url: "http://localhost:3000/api/revalidate", // Your actual endpoint
+      triggers: ["after.create", "after.update", "after.delete"],
+      // You might want to filter specific document types if needed
+    },
+  ],
+
   plugins: [
     presentationTool({
       resolve: {
@@ -58,17 +67,48 @@ export default defineConfig({
             filter: `_type == "post" && slug.current == $slug`,
           },
           {
-            route: "/pages/:slug",
-            filter: `_type == "pages" && slug.current == $slug`,
+            route: "/", // Root route
+            filter: `_type == "page" && slug.current == "home"`, // Specifically select the home page
+          },
+          {
+            route: "/:slug",
+            filter: `_type == "page" && slug.current != "home"`, // Exclude home page from general routing
           },
         ]),
         locations: {
+          // Global settings for all locations
           settings: defineLocations({
             locations: [homeLocation],
-            message: "This document is used on all pages",
+            message: "Global settings applied across all pages",
             tone: "caution",
           }),
+
           post: defineLocations({
+            select: {
+              title: "title?.en",
+              slug: "slug.current",
+            },
+            resolve: (doc) => {
+              console.group("Post Location Resolution");
+              console.log("Document:", doc);
+
+              const href = resolveHref("post", doc?.slug);
+
+              console.log("Resolved Href:", href);
+              console.groupEnd();
+
+              return {
+                locations: [
+                  {
+                    title: doc?.title || "Untitled Post",
+                    href: href || "/", // Fallback to home
+                  },
+                  homeLocation,
+                ],
+              };
+            },
+          }),
+          home: defineLocations({
             select: {
               title: "title?.en",
               slug: "slug.current",
@@ -76,16 +116,34 @@ export default defineConfig({
             resolve: (doc) => ({
               locations: [
                 {
-                  title: doc?.title,
-                  href: resolveHref("post", doc?.slug)!,
+                  title: "Home Page",
+                  href: "/", // Direct link to home
                 },
+                // Global settings link
+                {
+                  title: "Global Settings",
+                  href: "/desk/settings", // Corrected settings path
+                },
+
                 homeLocation,
               ],
+
+              context: {
+                // You can add global settings information here
+                globalSettings: {
+                  siteTitle: "Your Site Title",
+                  description: "Global context for pages",
+                },
+              },
             }),
           }),
         },
       },
-      previewUrl: { previewMode: { enable: "/api/draft-mode/enable" } },
+      previewUrl: {
+        previewMode: {
+          enable: "/api/draft-mode/enable",
+        },
+      },
     }),
     structureTool({ structure: pageStructure([settings]) }),
     // Configures the global "new document" button, and document actions, to suit the Settings document singleton

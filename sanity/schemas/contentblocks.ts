@@ -121,11 +121,8 @@ export const uspComponent = defineType({
   title: "USP Component",
   type: "object",
   fields: [
-    defineField({
-      name: "title",
-      title: "Section Title",
-      type: "string",
-    }),
+    TextString({ name: "title", title: "Title" }),
+
     defineField({
       name: "uspItems",
       title: "USP Items",
@@ -134,26 +131,14 @@ export const uspComponent = defineType({
         {
           type: "object",
           fields: [
-            defineField({
-              name: "icon",
-              title: "Icon",
-              type: "string",
-            }),
-            defineField({
-              name: "title",
-              title: "USP Title",
-              type: "string",
-            }),
-            defineField({
-              name: "description",
-              title: "Description",
-              type: "text",
-            }),
+            TextString({ name: "icon", title: "Icon" }),
+            TextString({ name: "title", title: "USP Title" }),
+            TextBlock({ name: "description", title: "Description" }),
           ],
           preview: {
             select: {
-              title: "title",
-              icon: "icon",
+              title: "title.en",
+              icon: "icon.en",
             },
             prepare({ title, icon }) {
               return {
@@ -168,7 +153,7 @@ export const uspComponent = defineType({
   ],
   preview: {
     select: {
-      title: "title",
+      title: "title.en",
       itemCount: "uspItems",
     },
     prepare({ title, itemCount }) {

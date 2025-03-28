@@ -59,10 +59,11 @@ export async function sanityFetch<const QueryString extends string>({
 
 export async function fetchActiveReleaseDocuments() {
   // Fetch active releases
-  const activeReleasesQuery = `releases::all()`;
+  const activeReleasesQuery = `[releases::all()[state == 'active']]
+`;
   const activeReleases = await rawClient.fetch(activeReleasesQuery);
 
-  console.log("FETCHING ACTIVE RELEASES", activeReleases);
+  // console.log("FETCHING ACTIVE RELEASES", activeReleases);
   if (activeReleases.length === 0) {
     console.log("No active releases found.");
     return [];
