@@ -55,15 +55,7 @@ export default defineConfig({
       blogGridComponent,
     ],
   },
-  webhooks: [
-    {
-      name: "nextjs-revalidate",
-      url: "http://localhost:3000/api/revalidate", // Your actual endpoint
-      triggers: ["after.create", "after.update", "after.delete"],
-      // You might want to filter specific document types if needed
-    },
-  ],
-
+ 
   plugins: [
     presentationTool({
       resolve: {
@@ -107,13 +99,7 @@ export default defineConfig({
               slug: "slug.current",
             },
             resolve: (doc) => {
-              console.group("Post Location Resolution");
-              console.log("Document:", doc);
-
               const href = resolveHref("post", doc?.slug);
-
-              console.log("Resolved Href:", href);
-              console.groupEnd();
 
               return {
                 locations: [
@@ -149,7 +135,6 @@ export default defineConfig({
                     href: "/desk/settings", // Corrected settings path
                   },
                   ...localeLocations,
-
                   homeLocation,
                 ],
 
