@@ -3,7 +3,7 @@ import { supportedLanguages } from "@/sanity/lib/utils";
 import LocalizedFieldWithToggle, {
   LocalizedFieldWithToggleTextArea,
   LocalizedFieldWithToggleWysiwyg,
-} from "@/app/components/atoms/LocalizedFieldWithToggle";
+} from "@components/atoms/LocalizedFieldWithToggle";
 import { set, setIfMissing } from "sanity";
 
 export const bodyComponent = [

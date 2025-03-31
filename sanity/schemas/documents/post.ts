@@ -4,7 +4,7 @@ import { defineField, defineType } from "sanity";
 import LocalizedFieldWithToggle, {
   LocalizedFieldWithToggleTextArea,
   // LocalizedFieldWithToggleWysiwyg,
-} from "@/app/components/atoms/LocalizedFieldWithToggle";
+} from "@components/atoms/LocalizedFieldWithToggle";
 import authorType from "./author";
 import { set, setIfMissing } from "sanity";
 import { supportedLanguages } from "@/sanity/lib/utils";
