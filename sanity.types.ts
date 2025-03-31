@@ -60,24 +60,6 @@ export type BlogGridComponent = {
   };
 };
 
-export type TextImageComponent = {
-  _type: "textImageComponent";
-  title?: string;
-  content?: string;
-  image?: {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    _type: "image";
-  };
-  imagePosition?: "left" | "right";
-};
-
 export type UspComponent = {
   _type: "uspComponent";
   title?: {
@@ -526,7 +508,7 @@ export type SanityImageMetadata = {
   isOpaque?: boolean;
 };
 
-export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | Geopoint | BlogGridComponent | TextImageComponent | UspComponent | HeroComponent | Documents | SanityFileAsset | Post | Author | Page | Slug | Settings | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata;
+export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | Geopoint | BlogGridComponent | UspComponent | HeroComponent | Documents | SanityFileAsset | Post | Author | Page | Slug | Settings | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata;
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./app/[locale]/(blog)/posts/[slug]/page.tsx
 // Variable: postSlugs

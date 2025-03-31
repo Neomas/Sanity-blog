@@ -23,11 +23,9 @@ export interface LocalizedFieldWithToggleProps {
   languageFields: LanguageField[];
 }
 
-const LocalizedFieldWithToggle: React.FC<LocalizedFieldWithToggleProps> = ({
-  value,
-  onChange,
-  languageFields,
-}) => {
+export const LocalizedFieldWithToggle: React.FC<
+  LocalizedFieldWithToggleProps
+> = ({ value, onChange, languageFields }) => {
   const [showAdditionalLanguages, setShowAdditionalLanguages] =
     useState<boolean>(false);
 

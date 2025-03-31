@@ -26,7 +26,6 @@ import page from "./sanity/schemas/documents/page";
 import {
   heroComponent,
   uspComponent,
-  textImageComponent,
   blogGridComponent,
 } from "./sanity/schemas/contentblocks"; // Adjust the path as needed
 
@@ -50,7 +49,6 @@ export default defineConfig({
       documents,
       heroComponent,
       uspComponent,
-      textImageComponent,
       blogGridComponent,
     ],
   },

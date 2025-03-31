@@ -193,54 +193,54 @@ export const blogGridComponent = defineType({
   },
 });
 
-// Text Image Component Schema
-export const textImageComponent = defineType({
-  name: "textImageComponent",
-  title: "Text & Image Component",
-  type: "object",
-  fields: [
-    defineField({
-      name: "title",
-      title: "Title",
-      type: "string",
-    }),
-    defineField({
-      name: "content",
-      title: "Content",
-      type: "text",
-    }),
-    defineField({
-      name: "image",
-      title: "Image",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
-    }),
-    defineField({
-      name: "imagePosition",
-      title: "Image Position",
-      type: "string",
-      options: {
-        list: [
-          { title: "Left", value: "left" },
-          { title: "Right", value: "right" },
-        ],
-      },
-      initialValue: "left",
-    }),
-  ],
-  preview: {
-    select: {
-      title: "title",
-      media: "image",
-    },
-    prepare({ title, media }) {
-      return {
-        title: "Text & Image Component",
-        subtitle: title,
-        media,
-      };
-    },
-  },
-});
+// // Text Image Component Schema
+// export const textImageComponent = defineType({
+//   name: "textImageComponent",
+//   title: "Text & Image Component",
+//   type: "object",
+//   fields: [
+//     defineField({
+//       name: "title",
+//       title: "Title",
+//       type: "string",
+//     }),
+//     defineField({
+//       name: "content",
+//       title: "Content",
+//       type: "text",
+//     }),
+//     defineField({
+//       name: "image",
+//       title: "Image",
+//       type: "image",
+//       options: {
+//         hotspot: true,
+//       },
+//     }),
+//     defineField({
+//       name: "imagePosition",
+//       title: "Image Position",
+//       type: "string",
+//       options: {
+//         list: [
+//           { title: "Left", value: "left" },
+//           { title: "Right", value: "right" },
+//         ],
+//       },
+//       initialValue: "left",
+//     }),
+//   ],
+//   preview: {
+//     select: {
+//       title: "title",
+//       media: "image",
+//     },
+//     prepare({ title, media }) {
+//       return {
+//         title: "Text & Image Component",
+//         subtitle: title,
+//         media,
+//       };
+//     },
+//   },
+// });
