@@ -9774,7 +9774,7 @@ sanity-plugin-asset-source-unsplash@^3.0.1:
     react-photo-album "2.4.1"
     rxjs "^7.8.1"
 
-sanity@^3.62.0:
+sanity@^3.81.0:
   version "3.81.0"
   resolved "https://registry.yarnpkg.com/sanity/-/sanity-3.81.0.tgz#87e1295e5df07e79cc93c21d4f15282e5f10b59b"
   integrity sha512-6DxuUrOXdfeO0qtDj3GgR+3UTVJHF7EwvMqfanARmYz0GjelorQq3bz6yjA1Guf5ib3ijEvcT4u2wAnVSZt5/w==
