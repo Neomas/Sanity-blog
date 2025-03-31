@@ -1,12 +1,13 @@
 import { DocumentTextIcon } from "@sanity/icons";
 import { format, parseISO } from "date-fns";
 import { defineField, defineType } from "sanity";
-import LocalizedFieldWithToggle, {
-  LocalizedFieldWithToggleTextArea,
-  // LocalizedFieldWithToggleWysiwyg,
-} from "@components/atoms/LocalizedFieldWithToggle";
+// import {
+//   LocalizedFieldWithToggle,
+//   LocalizedFieldWithToggleTextArea,
+//   // LocalizedFieldWithToggleWysiwyg,
+// } from "@components/atoms/LocalizedFieldWithToggle";
+
 import authorType from "./author";
-import { set, setIfMissing } from "sanity";
 import { supportedLanguages } from "@/sanity/lib/utils";
 import { TextString, TextBlock } from "../contentblocks";
 
