@@ -15,21 +15,20 @@ import { structureTool } from "sanity/structure";
 
 import { apiVersion, dataset, projectId, studioUrl } from "@/sanity/lib/api";
 import { pageStructure, singletonPlugin } from "@/sanity/plugins/settings";
-// import { assistWithPresets } from "@/sanity/plugins/assist";
+import { supportedLanguages, resolveHref } from "@lib/utils";
+
 import author from "@/sanity/schemas/documents/author";
 import post from "@/sanity/schemas/documents/post";
 import settings from "@/sanity/schemas/singletons/settings";
 import documents from "@/sanity/schemas/documents/documents";
-import { resolveHref } from "@/sanity/lib/utils";
 import page from "./sanity/schemas/documents/page";
+
 import {
   heroComponent,
   uspComponent,
   textImageComponent,
   blogGridComponent,
 } from "./sanity/schemas/contentblocks"; // Adjust the path as needed
-
-import { supportedLanguages } from "@lib/utils";
 
 const homeLocation = {
   title: "Home",
@@ -55,7 +54,7 @@ export default defineConfig({
       blogGridComponent,
     ],
   },
- 
+
   plugins: [
     presentationTool({
       resolve: {

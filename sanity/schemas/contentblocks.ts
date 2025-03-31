@@ -1,8 +1,7 @@
 import { defineType, defineField } from "sanity";
-import { supportedLanguages } from "@/sanity/lib/utils";
+import { supportedLanguages } from "@lib/utils";
 import LocalizedFieldWithToggle, {
   LocalizedFieldWithToggleTextArea,
-  LocalizedFieldWithToggleWysiwyg,
 } from "@components/atoms/LocalizedFieldWithToggle";
 import { set, setIfMissing } from "sanity";
 
@@ -27,8 +26,8 @@ export const TextString = ({ name, title }: { name: string; title: string }) =>
       // Use a simpler approach to define the component
       input: function CustomTitleInput(props) {
         const languageFields = supportedLanguages.map((lang) => ({
-          name: lang.id,
-          title: lang.title,
+          name: lang?.id,
+          title: lang?.title,
         }));
         return LocalizedFieldWithToggle({
           languageFields,
