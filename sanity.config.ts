@@ -17,17 +17,17 @@ import { apiVersion, dataset, projectId, studioUrl } from "@/sanity/lib/api";
 import { pageStructure, singletonPlugin } from "@/sanity/plugins/settings";
 import { supportedLanguages, resolveHref } from "@lib/utils";
 
-import author from "@/sanity/schemas/documents/author";
-import post from "@/sanity/schemas/documents/post";
-import settings from "@/sanity/schemas/singletons/settings";
-import documents from "@/sanity/schemas/documents/documents";
-import page from "./sanity/schemas/documents/page";
+import author from "@schemas/documents/author";
+import post from "@schemas/documents/post";
+import settings from "@schemas/singletons/settings";
+import documents from "@schemas/documents/documents";
+import page from "@schemas/documents/page";
 
 import {
   heroComponent,
   uspComponent,
   blogGridComponent,
-} from "./sanity/schemas/contentblocks"; // Adjust the path as needed
+} from "@schemas/contentblocks"; // Adjust the path as needed
 
 const homeLocation = {
   title: "Home",

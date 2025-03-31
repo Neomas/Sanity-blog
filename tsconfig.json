@@ -22,6 +22,7 @@
     "paths": {
       "@components/*": ["./app/components/*"], // Added link to @components folder
       "@lib/*": ["./sanity/lib/*"],
+      "@schemas/*": ["./sanity/schemas/*"],
       "@styles/*": ["./styles/*"],
       "styles/*": ["./styles/*"],
       "@context/*": ["./app/context/*"],
