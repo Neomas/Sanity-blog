@@ -92,7 +92,7 @@ h1,
 h2,
 .h2,
 .beta {
-  font: $font-h2-regular;
+  font: $font-h2;
 }
 
 // Heading level 3.
@@ -113,7 +113,7 @@ h4,
 h5,
 .h5,
 .epsilon {
-  font: $font-h5-regular;
+  font: $font-h5;
   font-variation-settings:
     "wdth" 100,
     "wght" 400 !important;
@@ -123,7 +123,7 @@ h5,
 h6,
 .h6,
 .zeta {
-  font: $font-h6-light;
+  font: $font-h6;
 }
 
 small {

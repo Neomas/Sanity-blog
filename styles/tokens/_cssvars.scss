@@ -1,10 +1,11 @@
 main {
-  --font-hero-small: #{$font-xxs-hero-small};
   --font-bg: #{$font-xxs-bg};
   --font-h1: #{$font-xxs-h1};
   --font-h2: #{$font-xxs-h2};
-  --font-h2-regular: #{$font-xxs-h2-regular};
   --font-h3: #{$font-xxs-h3};
+  --font-h4: #{$font-xxs-h4};
+  --font-h4: #{$font-xxs-h4};
+  --font-h6: #{$font-xxs-h4};
   --font-tag: #{$font-xxs-tag};
   --font-tag-large: #{$font-xxs-tag-large};
   --font-nav: #{$font-xxs-nav};
@@ -13,27 +14,25 @@ main {
   --font-body-large: #{$font-xxs-body-large};
   --font-h4: #{$font-xxs-h4};
   --font-label: #{$font-xxs-label};
-  --font-button: #{$font-xxs-button};
   --font-label-small: #{$font-xxs-label-small};
+  --font-button: #{$font-md-button};
   --font-hero-large: #{$font-xxs-hero-large};
   @media only screen and (min-width: $breakpoints-md) {
-    --font-hero-large: #{$font-md-hero-large};
-    --font-hero-small: #{$font-md-hero-small};
     --font-bg: #{$font-md-bg};
     --font-h1: #{$font-md-h1};
     --font-h2: #{$font-md-h2};
-    --font-h2-regular: #{$font-md-h2-regular};
     --font-h3: #{$font-md-h3};
+    --font-h4: #{$font-md-h4};
+    --font-h5: #{$font-md-h4};
+    --font-h6: #{$font-md-h4};
     --font-tag: #{$font-md-tag};
     --font-tag-large: #{$font-md-tag-large};
     --font-nav: #{$font-md-nav};
     --font-body: #{$font-md-body};
     --font-body-regular: #{$font-md-body};
     --font-body-large: #{$font-md-body-large};
-    --font-h4: #{$font-md-h4};
     --font-label: #{$font-md-label};
-    --font-button: #{$font-md-button};
     --font-label-small: #{$font-md-label-small};
-    --font-h4-bold: #{$font-md-h4-bold};
+    --font-button: #{$font-md-button};
   }
 }

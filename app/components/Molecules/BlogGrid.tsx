@@ -5,9 +5,9 @@ import PortableText from "@components/atoms/portable-text";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { moreStoriesQuery } from "@/sanity/lib/queries";
 
-import Avatar from "@components/atoms/avatar";
+import Avatar from "@components/atoms/CardAvatar";
 import CoverImage from "@components/atoms/cover-image";
-import DateComponent from "@components/atoms/date";
+import DateComponent from "@components/atoms/CardDate";
 import BlogCard from "@components/atoms/BlogCard";
 
 export interface BlogGridProps {
