@@ -1,25 +1,14 @@
 import { DocumentTextIcon } from "@sanity/icons";
 import { format, parseISO } from "date-fns";
 import { defineField, defineType } from "sanity";
-// Fix import statement to avoid type errors
 import LocalizedFieldWithToggle, {
   LocalizedFieldWithToggleTextArea,
-  LocalizedFieldWithToggleWysiwyg,
+  // LocalizedFieldWithToggleWysiwyg,
 } from "@/app/components/atoms/LocalizedFieldWithToggle";
 import authorType from "./author";
 import { set, setIfMissing } from "sanity";
 import { supportedLanguages } from "@/sanity/lib/utils";
-/**
- * This file is the schema definition for a post with internationalization.
- */
-
-// Define the supported languages
-// const supportedLanguages = [
-//   { id: "en", title: "English" },
-//   { id: "fr", title: "French" },
-//   { id: "nl", title: "Nederlands" },
-//   // Add more languages as needed
-// ];
+import { TextString, TextBlock } from "../contentblocks";
 
 export default defineType({
   name: "post",
@@ -31,29 +20,26 @@ export default defineType({
       name: "title",
       title: "Title",
       type: "object",
-      fields: supportedLanguages.map((lang) => ({
-        name: lang.id,
-        title: lang.title,
-        type: "string",
-      })),
-      components: {
-        // Use a simpler approach to define the component
-        input: function CustomTitleInput(props) {
-          const languageFields = supportedLanguages.map((lang) => ({
-            name: lang.id,
-            title: lang.title,
-          }));
-          return LocalizedFieldWithToggle({
-            languageFields,
-            value: props.value,
-            onChange: (newValue: Record<string, any>) => {
-              props.onChange(
-                [setIfMissing({}), set(newValue)] // Apply both patches
-              );
-            },
-          });
-        },
-      },
+      fields: [TextString({ name: "title", title: "Title" })],
+      // components: {
+      // Use a simpler approach to define the component
+
+      //   input: function CustomTitleInput(props) {
+      //     const languageFields = supportedLanguages.map((lang) => ({
+      //       name: lang.id,
+      //       title: lang.title,
+      //     }));
+      //     return LocalizedFieldWithToggle({
+      //       languageFields,
+      //       value: props.value,
+      //       onChange: (newValue: Record<string, any>) => {
+      //         props.onChange(
+      //           [setIfMissing({}), set(newValue)] // Apply both patches
+      //         );
+      //       },
+      //     });
+      //   },
+      // },
     }),
     defineField({
       name: "slug",
@@ -88,8 +74,8 @@ export default defineType({
             name: "card",
             title: "Card",
             fields: [
-              { name: "title", type: "string", title: "Title" },
-              { name: "info", type: "text", title: "info" },
+              TextString({ name: "title", title: "Title" }),
+              TextString({ name: "info", title: "Info" }),
               {
                 name: "image",
                 type: "image",
@@ -101,21 +87,15 @@ export default defineType({
                 },
               },
             ],
-            // components: {
-            //   input: function CardInput(props: any) {
-            //     return (
-            //       <Card
-            //             title={props.value?.title }
-            //             info={props.value?.content }
-            //             image={props.value?.image}
-            //             />
-            //           )
-            //   }
-            // },
           },
         ],
       })),
-
+    }),
+    defineField({
+      name: "excerpt",
+      title: "Excerpt",
+      type: "object",
+      fields: [TextBlock({ name: "title", title: "Title" })],
       // components: {
       //   // Use a simpler approach to define the component
       //   input: function CustomTitleInput(props) {
@@ -123,7 +103,7 @@ export default defineType({
       //       name: lang.id,
       //       title: lang.title,
       //     }));
-      //     return LocalizedFieldWithToggleWysiwyg({
+      //     return LocalizedFieldWithToggleTextArea({
       //       ...props,
       //       languageFields,
       //       onChange: (newValue: Record<string, any>) => {
@@ -134,34 +114,6 @@ export default defineType({
       //     });
       //   },
       // },
-    }),
-    defineField({
-      name: "excerpt",
-      title: "Excerpt",
-      type: "object",
-      fields: supportedLanguages.map((lang) => ({
-        name: lang.id,
-        title: lang.title,
-        type: "text",
-      })),
-      components: {
-        // Use a simpler approach to define the component
-        input: function CustomTitleInput(props) {
-          const languageFields = supportedLanguages.map((lang) => ({
-            name: lang.id,
-            title: lang.title,
-          }));
-          return LocalizedFieldWithToggleTextArea({
-            ...props,
-            languageFields,
-            onChange: (newValue: Record<string, any>) => {
-              props.onChange(
-                [setIfMissing({}), set(newValue)] // Apply both patches
-              );
-            },
-          });
-        },
-      },
     }),
     defineField({
       name: "coverImage",
@@ -179,29 +131,8 @@ export default defineType({
           type: "object",
           title: "Alternative text",
           description: "Important for SEO and accessiblity.",
-          fields: supportedLanguages.map((lang) => ({
-            name: lang.id,
-            title: lang.title,
-            type: "string",
-          })),
-          components: {
-            // Use a simpler approach to define the component
-            input: function CustomTitleInput(props: any) {
-              const languageFields = supportedLanguages.map((lang) => ({
-                name: lang.id,
-                title: lang.title,
-              }));
-              return LocalizedFieldWithToggle({
-                ...props,
-                languageFields,
-                onChange: (newValue: Record<string, any>) => {
-                  props.onChange(
-                    [setIfMissing({}), set(newValue)] // Apply both patches
-                  );
-                },
-              });
-            },
-          },
+          fields: [TextBlock({ name: "title", title: "Title" })],
+
           validation: (rule) => {
             return rule.custom((alt: Record<string, string>, context) => {
               if (

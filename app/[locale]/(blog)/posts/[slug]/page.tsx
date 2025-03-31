@@ -51,7 +51,7 @@ export async function generateMetadata(
   return {
     authors: post?.author?.name ? [{ name: post?.author?.name }] : [],
     title: getLocalizedValue(post?.title, locale),
-    description: post?.excerpt?.en,
+    description: getLocalizedValue(post?.excerpt, locale),
     openGraph: {
       images: ogImage ? [ogImage, ...previousImages] : previousImages,
     },

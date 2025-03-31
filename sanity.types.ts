@@ -194,9 +194,11 @@ export type Post = {
   _updatedAt: string;
   _rev: string;
   title?: {
-    en?: string;
-    fr?: string;
-    nl?: string;
+    title?: {
+      en?: string;
+      fr?: string;
+      nl?: string;
+    };
   };
   slug?: Slug;
   content?: {
@@ -218,8 +220,16 @@ export type Post = {
       _type: "block";
       _key: string;
     } | {
-      title?: string;
-      info?: string;
+      title?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
+      info?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
       image?: {
         asset?: {
           _ref: string;
@@ -252,8 +262,16 @@ export type Post = {
       _type: "block";
       _key: string;
     } | {
-      title?: string;
-      info?: string;
+      title?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
+      info?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
       image?: {
         asset?: {
           _ref: string;
@@ -286,8 +304,16 @@ export type Post = {
       _type: "block";
       _key: string;
     } | {
-      title?: string;
-      info?: string;
+      title?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
+      info?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
       image?: {
         asset?: {
           _ref: string;
@@ -304,9 +330,11 @@ export type Post = {
     }>;
   };
   excerpt?: {
-    en?: string;
-    fr?: string;
-    nl?: string;
+    title?: {
+      en?: string;
+      fr?: string;
+      nl?: string;
+    };
   };
   coverImage?: {
     asset?: {
@@ -318,9 +346,11 @@ export type Post = {
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     alt?: {
-      en?: string;
-      fr?: string;
-      nl?: string;
+      title?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
     };
     _type: "image";
   };
@@ -587,8 +617,16 @@ export type HeroQueryResult = {
       _type: "block";
       _key: string;
     } | {
-      title?: string;
-      info?: string;
+      title?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
+      info?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
       image?: {
         asset?: {
           _ref: string;
@@ -621,8 +659,16 @@ export type HeroQueryResult = {
       _type: "block";
       _key: string;
     } | {
-      title?: string;
-      info?: string;
+      title?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
+      info?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
       image?: {
         asset?: {
           _ref: string;
@@ -655,8 +701,16 @@ export type HeroQueryResult = {
       _type: "block";
       _key: string;
     } | {
-      title?: string;
-      info?: string;
+      title?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
+      info?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
       image?: {
         asset?: {
           _ref: string;
@@ -675,15 +729,19 @@ export type HeroQueryResult = {
   _id: string;
   status: "draft" | "published";
   title: {
-    en?: string;
-    fr?: string;
-    nl?: string;
+    title?: {
+      en?: string;
+      fr?: string;
+      nl?: string;
+    };
   } | "Untitled";
   slug: string | null;
   excerpt: {
-    en?: string;
-    fr?: string;
-    nl?: string;
+    title?: {
+      en?: string;
+      fr?: string;
+      nl?: string;
+    };
   } | null;
   coverImage: {
     asset?: {
@@ -695,9 +753,11 @@ export type HeroQueryResult = {
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     alt?: {
-      en?: string;
-      fr?: string;
-      nl?: string;
+      title?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
     };
     _type: "image";
   } | null;
@@ -724,15 +784,19 @@ export type MoreStoriesQueryResult = Array<{
   _id: string;
   status: "draft" | "published";
   title: {
-    en?: string;
-    fr?: string;
-    nl?: string;
+    title?: {
+      en?: string;
+      fr?: string;
+      nl?: string;
+    };
   } | "Untitled";
   slug: string | null;
   excerpt: {
-    en?: string;
-    fr?: string;
-    nl?: string;
+    title?: {
+      en?: string;
+      fr?: string;
+      nl?: string;
+    };
   } | null;
   coverImage: {
     asset?: {
@@ -744,9 +808,11 @@ export type MoreStoriesQueryResult = Array<{
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     alt?: {
-      en?: string;
-      fr?: string;
-      nl?: string;
+      title?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
     };
     _type: "image";
   } | null;
@@ -789,8 +855,16 @@ export type PostQueryResult = {
       _type: "block";
       _key: string;
     } | {
-      title?: string;
-      info?: string;
+      title?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
+      info?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
       image?: {
         asset?: {
           _ref: string;
@@ -823,8 +897,16 @@ export type PostQueryResult = {
       _type: "block";
       _key: string;
     } | {
-      title?: string;
-      info?: string;
+      title?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
+      info?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
       image?: {
         asset?: {
           _ref: string;
@@ -857,8 +939,16 @@ export type PostQueryResult = {
       _type: "block";
       _key: string;
     } | {
-      title?: string;
-      info?: string;
+      title?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
+      info?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
       image?: {
         asset?: {
           _ref: string;
@@ -877,15 +967,19 @@ export type PostQueryResult = {
   _id: string;
   status: "draft" | "published";
   title: {
-    en?: string;
-    fr?: string;
-    nl?: string;
+    title?: {
+      en?: string;
+      fr?: string;
+      nl?: string;
+    };
   } | "Untitled";
   slug: string | null;
   excerpt: {
-    en?: string;
-    fr?: string;
-    nl?: string;
+    title?: {
+      en?: string;
+      fr?: string;
+      nl?: string;
+    };
   } | null;
   coverImage: {
     asset?: {
@@ -897,9 +991,11 @@ export type PostQueryResult = {
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     alt?: {
-      en?: string;
-      fr?: string;
-      nl?: string;
+      title?: {
+        en?: string;
+        fr?: string;
+        nl?: string;
+      };
     };
     _type: "image";
   } | null;

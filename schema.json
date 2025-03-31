@@ -1036,24 +1036,33 @@
         "value": {
           "type": "object",
           "attributes": {
-            "en": {
+            "title": {
               "type": "objectAttribute",
               "value": {
-                "type": "string"
-              },
-              "optional": true
-            },
-            "fr": {
-              "type": "objectAttribute",
-              "value": {
-                "type": "string"
-              },
-              "optional": true
-            },
-            "nl": {
-              "type": "objectAttribute",
-              "value": {
-                "type": "string"
+                "type": "object",
+                "attributes": {
+                  "en": {
+                    "type": "objectAttribute",
+                    "value": {
+                      "type": "string"
+                    },
+                    "optional": true
+                  },
+                  "fr": {
+                    "type": "objectAttribute",
+                    "value": {
+                      "type": "string"
+                    },
+                    "optional": true
+                  },
+                  "nl": {
+                    "type": "objectAttribute",
+                    "value": {
+                      "type": "string"
+                    },
+                    "optional": true
+                  }
+                }
               },
               "optional": true
             }
@@ -1259,14 +1268,60 @@
                         "title": {
                           "type": "objectAttribute",
                           "value": {
-                            "type": "string"
+                            "type": "object",
+                            "attributes": {
+                              "en": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              },
+                              "fr": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              },
+                              "nl": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              }
+                            }
                           },
                           "optional": true
                         },
                         "info": {
                           "type": "objectAttribute",
                           "value": {
-                            "type": "string"
+                            "type": "object",
+                            "attributes": {
+                              "en": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              },
+                              "fr": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              },
+                              "nl": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              }
+                            }
                           },
                           "optional": true
                         },
@@ -1542,14 +1597,60 @@
                         "title": {
                           "type": "objectAttribute",
                           "value": {
-                            "type": "string"
+                            "type": "object",
+                            "attributes": {
+                              "en": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              },
+                              "fr": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              },
+                              "nl": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              }
+                            }
                           },
                           "optional": true
                         },
                         "info": {
                           "type": "objectAttribute",
                           "value": {
-                            "type": "string"
+                            "type": "object",
+                            "attributes": {
+                              "en": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              },
+                              "fr": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              },
+                              "nl": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              }
+                            }
                           },
                           "optional": true
                         },
@@ -1825,14 +1926,60 @@
                         "title": {
                           "type": "objectAttribute",
                           "value": {
-                            "type": "string"
+                            "type": "object",
+                            "attributes": {
+                              "en": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              },
+                              "fr": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              },
+                              "nl": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              }
+                            }
                           },
                           "optional": true
                         },
                         "info": {
                           "type": "objectAttribute",
                           "value": {
-                            "type": "string"
+                            "type": "object",
+                            "attributes": {
+                              "en": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              },
+                              "fr": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              },
+                              "nl": {
+                                "type": "objectAttribute",
+                                "value": {
+                                  "type": "string"
+                                },
+                                "optional": true
+                              }
+                            }
                           },
                           "optional": true
                         },
@@ -1932,24 +2079,33 @@
         "value": {
           "type": "object",
           "attributes": {
-            "en": {
+            "title": {
               "type": "objectAttribute",
               "value": {
-                "type": "string"
-              },
-              "optional": true
-            },
-            "fr": {
-              "type": "objectAttribute",
-              "value": {
-                "type": "string"
-              },
-              "optional": true
-            },
-            "nl": {
-              "type": "objectAttribute",
-              "value": {
-                "type": "string"
+                "type": "object",
+                "attributes": {
+                  "en": {
+                    "type": "objectAttribute",
+                    "value": {
+                      "type": "string"
+                    },
+                    "optional": true
+                  },
+                  "fr": {
+                    "type": "objectAttribute",
+                    "value": {
+                      "type": "string"
+                    },
+                    "optional": true
+                  },
+                  "nl": {
+                    "type": "objectAttribute",
+                    "value": {
+                      "type": "string"
+                    },
+                    "optional": true
+                  }
+                }
               },
               "optional": true
             }
@@ -2013,24 +2169,33 @@
               "value": {
                 "type": "object",
                 "attributes": {
-                  "en": {
+                  "title": {
                     "type": "objectAttribute",
                     "value": {
-                      "type": "string"
-                    },
-                    "optional": true
-                  },
-                  "fr": {
-                    "type": "objectAttribute",
-                    "value": {
-                      "type": "string"
-                    },
-                    "optional": true
-                  },
-                  "nl": {
-                    "type": "objectAttribute",
-                    "value": {
-                      "type": "string"
+                      "type": "object",
+                      "attributes": {
+                        "en": {
+                          "type": "objectAttribute",
+                          "value": {
+                            "type": "string"
+                          },
+                          "optional": true
+                        },
+                        "fr": {
+                          "type": "objectAttribute",
+                          "value": {
+                            "type": "string"
+                          },
+                          "optional": true
+                        },
+                        "nl": {
+                          "type": "objectAttribute",
+                          "value": {
+                            "type": "string"
+                          },
+                          "optional": true
+                        }
+                      }
                     },
                     "optional": true
                   }

@@ -13,7 +13,7 @@ export const bodyComponent = [
   // Add more component types here as you create them
 ];
 
-const TextString = ({ name, title }: { name: string; title: string }) =>
+export const TextString = ({ name, title }: { name: string; title: string }) =>
   defineField({
     name: name,
     title: title,
@@ -42,7 +42,7 @@ const TextString = ({ name, title }: { name: string; title: string }) =>
       },
     },
   });
-const TextBlock = ({ name, title }: { name: string; title: string }) =>
+export const TextBlock = ({ name, title }: { name: string; title: string }) =>
   defineField({
     name: name,
     title: title,
