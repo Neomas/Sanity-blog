@@ -32,9 +32,9 @@ const USPComponent: React.FC<USPComponentProps> = ({
           <div key={index} className={styles.uspItem}>
             {item.icon && (
               <div className={styles.iconWrapper}>
-                <i
-                  className={`${styles.icon} ${getLocalizedValue(item.icon, locale)}`}
-                ></i>
+                <p className={`${styles.icon}`}>
+                  {getLocalizedValue(item.icon, locale)}
+                </p>
               </div>
             )}
             {item.title && (

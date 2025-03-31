@@ -17,6 +17,7 @@ import { postQuery, settingsQuery } from "@/sanity/lib/queries";
 import { resolveOpenGraphImage } from "@/sanity/lib/utils";
 import { headers } from "next/headers";
 import { getLocalizedValue } from "@/sanity/lib/utils";
+import { cookies, draftMode } from "next/headers";
 
 type Props = {
   params: Promise<{ slug: string; locale?: string }>;
@@ -58,8 +59,17 @@ export async function generateMetadata(
 }
 
 export default async function PostPage({ params }: Props) {
+  const cookiesData = await cookies();
+  const { isEnabled: isDraftMode } = await draftMode();
+
+  const perspective =
+    cookiesData.get("sanity-preview-perspective")?.value?.split(",") ||
+    isDraftMode
+      ? "draft"
+      : "published";
+
   const [post, settings] = await Promise.all([
-    sanityFetch({ query: postQuery, params }),
+    sanityFetch({ query: postQuery, params, perspective: perspective }),
     sanityFetch({ query: settingsQuery }),
   ]);
   const { locale } = await params;

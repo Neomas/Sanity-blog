@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
     "moduleResolution": "Bundler",
     "isolatedModules": true,
@@ -24,46 +20,19 @@
       }
     ],
     "paths": {
-      "@components/*": [
-        "./app/components/*"
-      ], // Added link to @components folder
-      "@lib/*": [
-        "./app/lib/*"
-      ],
-      "@styles/*": [
-        "./app/styles/*"
-      ],
-      "styles/*": [
-        "./app/styles/*"
-      ],
-      "@context/*": [
-        "./app/context/*"
-      ],
-      "@services/*": [
-        "./app/services/*"
-      ],
-      "@public/*": [
-        "./public/*"
-      ],
-      "@config/*": [
-        "./config/*"
-      ],
-      "@types/*": [
-        "./app/types/*"
-      ],
-      "@/*": [
-        "./*"
-      ]
+      "@components/*": ["./app/components/*"], // Added link to @components folder
+      "@lib/*": ["./sanity/lib/*"],
+      "@styles/*": ["./styles/*"],
+      "styles/*": ["./styles/*"],
+      "@context/*": ["./app/context/*"],
+      "@services/*": ["./app/services/*"],
+      "@public/*": ["./public/*"],
+      "@config/*": ["./config/*"],
+      "@types/*": ["./app/types/*"],
+      "@/*": ["./*"]
     },
     "resolveJsonModule": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }

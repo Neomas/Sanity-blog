@@ -6,6 +6,13 @@ import LocalizedFieldWithToggle, {
 } from "@/app/components/atoms/LocalizedFieldWithToggle";
 import { set, setIfMissing } from "sanity";
 
+export const bodyComponent = [
+  { type: "heroComponent" },
+  { type: "uspComponent" },
+  { type: "blogGridComponent" },
+  // Add more component types here as you create them
+];
+
 const TextString = ({ name, title }: { name: string; title: string }) =>
   defineField({
     name: name,
@@ -161,6 +168,27 @@ export const uspComponent = defineType({
       return {
         title: "USP Component",
         subtitle: `${title} (${itemsLength} items)`,
+      };
+    },
+  },
+});
+// Blog grid Schema
+export const blogGridComponent = defineType({
+  name: "blogGridComponent",
+  title: "Blog Grid",
+  type: "object",
+  fields: [
+    TextString({ name: "title", title: "Title" }),
+    TextBlock({ name: "info", title: "Info" }),
+  ],
+  preview: {
+    select: {
+      title: "title.en",
+    },
+    prepare({ title }) {
+      return {
+        title: "Blog Grid",
+        subtitle: `${title}`,
       };
     },
   },

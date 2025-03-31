@@ -61,9 +61,3 @@ export const supportedLanguages = [
   { id: "nl", title: "Nederlands" },
   // Add more languages as needed
 ];
-
-export const bodyComponent = [
-  { type: "heroComponent" },
-  { type: "uspComponent" },
-  // Add more component types here as you create them
-];

@@ -33,6 +33,7 @@ const HeroComponent: React.FC<HeroComponentProps> = ({
       }}
     >
       <div className={styles.heroContent}>
+        
         {getLocalizedValue(title) && (
           <h1 className={styles.title}>{getLocalizedValue(title, locale)}</h1>
         )}

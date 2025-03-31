@@ -68,6 +68,20 @@ export type Geopoint = {
   alt?: number;
 };
 
+export type BlogGridComponent = {
+  _type: "blogGridComponent";
+  title?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  info?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+};
+
 export type TextImageComponent = {
   _type: "textImageComponent";
   title?: string;
@@ -321,7 +335,9 @@ export type Page = {
     _key: string;
   } & HeroComponent | {
     _key: string;
-  } & UspComponent>;
+  } & UspComponent | {
+    _key: string;
+  } & BlogGridComponent>;
   seo?: {
     metaDescription?: string;
     keywords?: Array<string>;
@@ -449,7 +465,7 @@ export type SanityImageMetadata = {
   isOpaque?: boolean;
 };
 
-export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityFileAsset | Geopoint | TextImageComponent | UspComponent | HeroComponent | Post | Author | Page | Slug | Settings | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata;
+export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityFileAsset | Geopoint | BlogGridComponent | TextImageComponent | UspComponent | HeroComponent | Post | Author | Page | Slug | Settings | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata;
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./app/[locale]/(blog)/posts/[slug]/page.tsx
 // Variable: postSlugs
@@ -884,6 +900,8 @@ export type PageQueryResult = Array<{
   title?: string;
   slug?: Slug;
   contentBlocks?: Array<{
+    _key: string;
+  } & BlogGridComponent | {
     _key: string;
   } & HeroComponent | {
     _key: string;

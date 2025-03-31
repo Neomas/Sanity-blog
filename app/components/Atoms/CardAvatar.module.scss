@@ -1,0 +1,31 @@
+// import css lib
+@import "styles/lib";
+
+.avatarWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font: $font-label;
+
+  border-top-left-radius: 32px;
+  padding: 12px 4px 4px 16px;
+  background-color: white;
+}
+
+.imageWrapper {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font: $font-label;
+}

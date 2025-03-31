@@ -1,0 +1,24 @@
+// import css lib
+@import "styles/lib";
+
+.section {
+  @include o-site-container();
+  @include row(4);
+  margin-block: 80px;
+
+  @include mq(sm) {
+    @include row(12);
+    margin-block: 120px;
+  }
+}
+.blogGrid,
+.textWrapper {
+  @include span(4);
+
+  @include mq(sm) {
+    @include span(12);
+  }
+}
+.blogGrid {
+  @include row(3);
+}

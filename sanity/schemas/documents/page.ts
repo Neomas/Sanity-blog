@@ -1,7 +1,7 @@
 import { DocumentTextIcon } from "@sanity/icons";
-import { format, parseISO } from "date-fns";
+// import { format, parseISO } from "date-fns";
 import { defineField, defineType } from "sanity";
-import { bodyComponent } from "@/sanity/lib/utils";
+import { bodyComponent } from "../contentblocks";
 
 export default defineType({
   name: "page",

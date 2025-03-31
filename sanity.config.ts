@@ -19,13 +19,17 @@ import { pageStructure, singletonPlugin } from "@/sanity/plugins/settings";
 import author from "@/sanity/schemas/documents/author";
 import post from "@/sanity/schemas/documents/post";
 import settings from "@/sanity/schemas/singletons/settings";
+import documents from "@/sanity/schemas/documents/documents";
 import { resolveHref } from "@/sanity/lib/utils";
 import page from "./sanity/schemas/documents/page";
 import {
   heroComponent,
   uspComponent,
   textImageComponent,
+  blogGridComponent,
 } from "./sanity/schemas/contentblocks"; // Adjust the path as needed
+
+import { supportedLanguages } from "@lib/utils";
 
 const homeLocation = {
   title: "Home",
@@ -44,9 +48,11 @@ export default defineConfig({
       page,
       post,
       author,
+      documents,
       heroComponent,
       uspComponent,
       textImageComponent,
+      blogGridComponent,
     ],
   },
   webhooks: [
@@ -67,12 +73,24 @@ export default defineConfig({
             filter: `_type == "post" && slug.current == $slug`,
           },
           {
+            route: "/fr", // French homepage
+            filter: `_type == "page" && slug.current == "home"`,
+          },
+          {
+            route: "/nl", // Dutch homepage
+            filter: `_type == "page" && slug.current == "home"`,
+          },
+          {
             route: "/", // Root route
             filter: `_type == "page" && slug.current == "home"`, // Specifically select the home page
           },
           {
             route: "/:slug",
             filter: `_type == "page" && slug.current != "home"`, // Exclude home page from general routing
+          },
+          {
+            route: "/:lang/:slug",
+            filter: `_type == "page" && slug.current != "home" && (language == $lang)`,
           },
         ]),
         locations: {
@@ -113,29 +131,37 @@ export default defineConfig({
               title: "title?.en",
               slug: "slug.current",
             },
-            resolve: (doc) => ({
-              locations: [
-                {
-                  title: "Home Page",
-                  href: "/", // Direct link to home
-                },
-                // Global settings link
-                {
-                  title: "Global Settings",
-                  href: "/desk/settings", // Corrected settings path
-                },
+            resolve: (doc) => {
+              const localeLocations = supportedLanguages.map((lang) => ({
+                title: `Home (${lang.title})`,
+                href: lang.id === "en" ? "/" : `/${lang.id}`, // Root for English, /{lang} for others
+              }));
 
-                homeLocation,
-              ],
+              return {
+                locations: [
+                  {
+                    title: "Home Page",
+                    href: "/", // Direct link to home
+                  },
+                  // Global settings link
+                  {
+                    title: "Global Settings",
+                    href: "/desk/settings", // Corrected settings path
+                  },
+                  ...localeLocations,
 
-              context: {
-                // You can add global settings information here
-                globalSettings: {
-                  siteTitle: "Your Site Title",
-                  description: "Global context for pages",
+                  homeLocation,
+                ],
+
+                context: {
+                  // You can add global settings information here
+                  globalSettings: {
+                    siteTitle: "Your Site Title",
+                    description: "Global context for pages",
+                  },
                 },
-              },
-            }),
+              };
+            },
           }),
         },
       },
