@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
@@ -14,10 +15,12 @@
     "incremental": true,
     "esModuleInterop": true,
     "allowUnreachableCode": true,
+    "strictNullChecks": true,
     "plugins": [
       {
         "name": "next"
       }
+      
     ],
     "paths": {
       "@components/*": ["./app/components/*"], // Added link to @components folder
