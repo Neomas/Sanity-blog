@@ -27,11 +27,8 @@
       "@schemas/*": ["sanity/schemas/*"],
       "@styles/*": ["styles/*"],
       "styles/*": ["styles/*"],
-      "@context/*": ["app/context/*"],
-      "@services/*": ["app/services/*"],
       "@public/*": ["public/*"],
       "@config/*": ["config/*"],
-      "@types/*": ["app/types/*"],
       "@/*": ["*"]
     },
     "resolveJsonModule": true
