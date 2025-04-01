@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./BlogGrid.module.scss";
 import { getLocalizedValue } from "@/sanity/lib/utils";
-import PortableText from "@components/atoms/portable-text";
+import PortableText from "@components/Atoms/PortableText";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { moreStoriesQuery } from "@/sanity/lib/queries";
 
 // import Avatar from "@components/atoms/CardAvatar";
 // import CoverImage from "@components/atoms/cover-image";
 // import DateComponent from "@components/atoms/CardDate";
-import BlogCard from "@components/atoms/BlogCard";
+import BlogCard from "@components/Atoms/BlogCard";
 
 export interface BlogGridProps {
   title?: string;

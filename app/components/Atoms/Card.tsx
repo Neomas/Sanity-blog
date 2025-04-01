@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import styles from "./Card.module.scss";
 import { urlForImage } from "@/sanity/lib/utils";
-import PortableText from "@components/atoms/portable-text";
+import PortableText from "@components/Atoms/PortableText";
 
-import { getLocalizedValue } from "@/sanity/lib/utils";
+// import { getLocalizedValue } from "@/sanity/lib/utils";
 
 const Card = ({ item, locale }: { item?: any; locale?: string }) => {
   const { title, image, info } = item;

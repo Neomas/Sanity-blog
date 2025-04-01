@@ -8,7 +8,7 @@
  *
  */
 
-import Card from "@/app/components/atoms/Card";
+import Card from "@components/Atoms/Card";
 import {
   PortableText,
   type PortableTextComponents,
