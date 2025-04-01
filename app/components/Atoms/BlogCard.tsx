@@ -23,6 +23,7 @@ const BlogCard = ({ item, locale }) => {
               urlForImage(item?.coverImage)
                 ?.height(200)
                 .width(200)
+                
                 .url() as string
             }
             sizes="100vw"

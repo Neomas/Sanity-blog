@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "./Card.module.scss";
 import { urlForImage } from "@/sanity/lib/utils";
-import PortableText from "@/app/components/atoms/portable-text";
+import PortableText from "@components/atoms/portable-text";
 
 import { getLocalizedValue } from "@/sanity/lib/utils";
 

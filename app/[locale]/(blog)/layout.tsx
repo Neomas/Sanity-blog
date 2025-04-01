@@ -12,7 +12,7 @@ import { Inter } from "next/font/google";
 import { draftMode } from "next/headers";
 
 import AlertBanner from "./alert-banner";
-import PortableText from "@/app/components/atoms/portable-text";
+import PortableText from "@components/atoms/portable-text";
 
 import * as demo from "@/sanity/lib/demo";
 import { sanityFetch } from "@/sanity/lib/fetch";
