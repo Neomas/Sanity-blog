@@ -23,17 +23,17 @@
       
     ],
     "paths": {
-      "@components/*": ["./app/components/*"], // Added link to @components folder
-      "@lib/*": ["./sanity/lib/*"],
-      "@schemas/*": ["./sanity/schemas/*"],
-      "@styles/*": ["./styles/*"],
-      "styles/*": ["./styles/*"],
-      "@context/*": ["./app/context/*"],
-      "@services/*": ["./app/services/*"],
-      "@public/*": ["./public/*"],
-      "@config/*": ["./config/*"],
-      "@types/*": ["./app/types/*"],
-      "@/*": ["./*"]
+      "@components/*": ["app/components/*"], // Added link to @components folder
+      "@lib/*": ["sanity/lib/*"],
+      "@schemas/*": ["sanity/schemas/*"],
+      "@styles/*": ["styles/*"],
+      "styles/*": ["styles/*"],
+      "@context/*": ["app/context/*"],
+      "@services/*": ["app/services/*"],
+      "@public/*": ["public/*"],
+      "@config/*": ["config/*"],
+      "@types/*": ["app/types/*"],
+      "@/*": ["*"]
     },
     "resolveJsonModule": true
   },
