@@ -1,0 +1,46 @@
+// import css lib
+@import "styles/lib";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  background-color: white;
+  box-shadow: $effect-image-shadow-light;
+  border-radius: 12px;
+  cursor: pointer;
+  position: relative;
+  &:hover {
+    .image {
+      transform: scale(1.1);
+      opacity: 0.5;
+    }
+  }
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  color: $color-primary-nero-100;
+  font: $font-body-regular;
+}
+
+.link {
+  @include spread-link();
+}
+
+.articleInfo {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 32px;
+  align-items: center;
+}
+
+.avatar {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}

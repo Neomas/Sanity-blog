@@ -15,7 +15,7 @@ export interface BlogGridProps {
   info?: any;
   locale;
 }
-const BlogGrid = async ({ title, info, locale }) => {
+const BlogGrid = async ({ title, info, locale }: BlogGridProps) => {
   const params = { limit: 2, skip: 0 };
   const data = await sanityFetch({ query: moreStoriesQuery, params });
 

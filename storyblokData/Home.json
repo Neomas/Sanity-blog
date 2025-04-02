@@ -1,0 +1,601 @@
+{
+  "story": {
+    "name": "Home",
+    "created_at": "2025-02-25T09:17:31.900Z",
+    "published_at": "2025-02-27T09:40:20.107Z",
+    "updated_at": "2025-03-10T14:42:04.244Z",
+    "id": 631574882,
+    "uuid": "f43b6462-9a7b-4a58-a161-9c539c3fbb47",
+    "content": {
+      "_uid": "e9b4d4dc-1edf-473c-8312-9dfb737d3eed",
+      "body": [
+        {
+          "_uid": "f0621dd7-7638-42bd-aa72-39c83973744f",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "As the parent company of SD Worx, WorxInvest provides capital and expertise to help businesses grow and make a positive impact. We partner with companies in the Benelux, supporting their next steps while committing to sustainability and long-term value creation.",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "media": {
+            "id": null,
+            "alt": null,
+            "name": "",
+            "focus": "",
+            "title": null,
+            "source": null,
+            "filename": "https://pub-a495bcb9f6a346a1b8f8a4dbe3349c86.r2.dev/WorxInvest_inkomhal.mp4",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": true
+          },
+          "title": "Investing in growth, building for impact.",
+          "buttons": [
+            {
+              "_uid": "a5133678-53f3-43bf-96d9-64f0ceb218ce",
+              "icon": "ArrowRight",
+              "link": {
+                "id": "f43b6462-9a7b-4a58-a161-9c539c3fbb47",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "home"
+              },
+              "theme": "light",
+              "title": "Get in touch",
+              "variant": "primary",
+              "component": "Button",
+              "iconPosition": "BACK",
+              "_editable": "\u003C!--#storyblok#{\"name\": \"Button\", \"space\": \"327578\", \"uid\": \"a5133678-53f3-43bf-96d9-64f0ceb218ce\", \"id\": \"631574882\"}--\u003E"
+            }
+          ],
+          "variant": "primary",
+          "component": "Hero",
+          "_editable": "\u003C!--#storyblok#{\"name\": \"Hero\", \"space\": \"327578\", \"uid\": \"f0621dd7-7638-42bd-aa72-39c83973744f\", \"id\": \"631574882\"}--\u003E"
+        },
+        {
+          "id": "",
+          "_uid": "e782387c-3fbd-45fb-9c38-4916745ca98e",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "WorxInvest is a vibrant investment firm specializing in growth and alternative assets. In partnership with Gimv, it actively invests in both private and public sectors across Europe. Through its WorxInvest Horizon I fund, it has built a diverse portfolio of top buyout and growth funds in Europe and North America, while also exploring real estate and infrastructure.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "color": "white",
+          "media": {
+            "id": 21141757,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/327578/848x928/17b3894424/stepper-item-3.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "A Joint Journey",
+          "buttons": [],
+          "variant": "secondary",
+          "component": "ContentBlock",
+          "imagePosition": "right",
+          "backgroundShape": false,
+          "_editable": "\u003C!--#storyblok#{\"name\": \"ContentBlock\", \"space\": \"327578\", \"uid\": \"e782387c-3fbd-45fb-9c38-4916745ca98e\", \"id\": \"631574882\"}--\u003E"
+        },
+        {
+          "id": "",
+          "_uid": "2d4c283a-2d11-4a5f-8af6-9d5f2cfde662",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque amet nulla purus habitasse.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "color": "white",
+          "media": {
+            "id": 21125090,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/327578/1389x2084/57a2e11456/bg_wi.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "Our team will  take care of you",
+          "buttons": [
+            {
+              "_uid": "e4764333-d095-4181-95f6-d995daeb94a9",
+              "icon": "ArrowRight",
+              "link": {
+                "id": "ca0506b8-0374-4247-aa92-15cab393f053",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "about"
+              },
+              "theme": "light",
+              "title": "Get to know us",
+              "variant": "secondary",
+              "component": "Button",
+              "iconPosition": "BACK",
+              "_editable": "\u003C!--#storyblok#{\"name\": \"Button\", \"space\": \"327578\", \"uid\": \"e4764333-d095-4181-95f6-d995daeb94a9\", \"id\": \"631574882\"}--\u003E"
+            }
+          ],
+          "variant": "secondary",
+          "component": "ContentBlock",
+          "imagePosition": "left",
+          "backgroundShape": false,
+          "_editable": "\u003C!--#storyblok#{\"name\": \"ContentBlock\", \"space\": \"327578\", \"uid\": \"2d4c283a-2d11-4a5f-8af6-9d5f2cfde662\", \"id\": \"631574882\"}--\u003E"
+        },
+        {
+          "id": "",
+          "_uid": "a18ffc4e-1f9c-48f6-8db6-7fe114a47a59",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "We offer unique added value to our participations in a custom-made and personal approach.",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "items": [
+            {
+              "_uid": "f140cf2f-6bb6-4f9b-998a-86ab96a432cc",
+              "text": "Future-proofing your HR and organization.",
+              "image": {
+                "id": 21131725,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a.storyblok.com/f/327578/6000x4000/c36213fdaf/campaign-creators-gmsnxqiljp4-unsplash.jpg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "TimerItem",
+              "_editable": "\u003C!--#storyblok#{\"name\": \"TimerItem\", \"space\": \"327578\", \"uid\": \"f140cf2f-6bb6-4f9b-998a-86ab96a432cc\", \"id\": \"631574882\"}--\u003E"
+            },
+            {
+              "_uid": "fffca7aa-dede-42ce-92ab-35e26c35ce20",
+              "text": "Minority/Mayority Stake",
+              "image": {
+                "id": 21131725,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a.storyblok.com/f/327578/6000x4000/c36213fdaf/campaign-creators-gmsnxqiljp4-unsplash.jpg",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "TimerItem",
+              "_editable": "\u003C!--#storyblok#{\"name\": \"TimerItem\", \"space\": \"327578\", \"uid\": \"fffca7aa-dede-42ce-92ab-35e26c35ce20\", \"id\": \"631574882\"}--\u003E"
+            },
+            {
+              "_uid": "32b57003-25dd-4fe8-81fb-14f18ac69e46",
+              "text": "No external stakeholders",
+              "image": {
+                "id": 21155827,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a.storyblok.com/f/327578/624x880/5bc636785c/whyjoinus.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "TimerItem",
+              "_editable": "\u003C!--#storyblok#{\"name\": \"TimerItem\", \"space\": \"327578\", \"uid\": \"32b57003-25dd-4fe8-81fb-14f18ac69e46\", \"id\": \"631574882\"}--\u003E"
+            },
+            {
+              "_uid": "68e6d605-3f58-4e0f-88b5-4d1ac9bc1aba",
+              "text": "Institutionally anchored",
+              "image": {
+                "id": 21141759,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a.storyblok.com/f/327578/848x928/c428062b82/stepper-item-1.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "component": "TimerItem",
+              "_editable": "\u003C!--#storyblok#{\"name\": \"TimerItem\", \"space\": \"327578\", \"uid\": \"68e6d605-3f58-4e0f-88b5-4d1ac9bc1aba\", \"id\": \"631574882\"}--\u003E"
+            }
+          ],
+          "title": "Our added value",
+          "button": [
+            {
+              "_uid": "b9b45e4f-a816-4cdf-b254-441faa4650fe",
+              "icon": "ArrowRight",
+              "link": {
+                "id": "a112c350-e1b7-440b-804b-a685fd2895d3",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "investment-strategy"
+              },
+              "theme": "light",
+              "title": "More Info",
+              "variant": "textButton",
+              "component": "Button",
+              "iconPosition": "BACK",
+              "_editable": "\u003C!--#storyblok#{\"name\": \"Button\", \"space\": \"327578\", \"uid\": \"b9b45e4f-a816-4cdf-b254-441faa4650fe\", \"id\": \"631574882\"}--\u003E"
+            }
+          ],
+          "component": "ContentTimer",
+          "_editable": "\u003C!--#storyblok#{\"name\": \"ContentTimer\", \"space\": \"327578\", \"uid\": \"a18ffc4e-1f9c-48f6-8db6-7fe114a47a59\", \"id\": \"631574882\"}--\u003E"
+        },
+        {
+          "_uid": "f4d8c9a6-c10b-4142-9a2b-7b0da80bd4a5",
+          "title": "Recent news",
+          "button": [
+            {
+              "_uid": "5627f614-4a91-4678-8e87-71e37e4d7bb9",
+              "icon": "",
+              "link": {
+                "id": "4e9ad7e0-49b0-4dd0-902f-fea995a60da7",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "news/"
+              },
+              "theme": "light",
+              "title": "All articles",
+              "variant": "tertiary",
+              "component": "Button",
+              "iconPosition": "BACK",
+              "_editable": "\u003C!--#storyblok#{\"name\": \"Button\", \"space\": \"327578\", \"uid\": \"5627f614-4a91-4678-8e87-71e37e4d7bb9\", \"id\": \"631574882\"}--\u003E"
+            }
+          ],
+          "component": "NewsBlock",
+          "_editable": "\u003C!--#storyblok#{\"name\": \"NewsBlock\", \"space\": \"327578\", \"uid\": \"f4d8c9a6-c10b-4142-9a2b-7b0da80bd4a5\", \"id\": \"631574882\"}--\u003E"
+        },
+        {
+          "_uid": "b1088908-2317-4561-8749-a2e6825422b9",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Porta et a nisl erat sit nec pellentesque mauris arcu. Eleifend arcu imperdiet fringilla volutpat turpis turpis condimentum.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "cards": [
+            {
+              "_uid": "24078f1f-b3f8-4283-bbb6-05b2404285a1",
+              "info": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Odio sit odio ipsum sit ornare at risus non amet. At tristique amet malesuada proin sit quam. Eget pulvinar lectus dictum risus pellentesque nunc leo id sed.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "link": {
+                "id": "",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": ""
+              },
+              "image": {
+                "id": 21217638,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a.storyblok.com/f/327578/416x92/7aaac1f0f0/verdane.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "title": "Verdane",
+              "component": "PortfolioCard",
+              "_editable": "\u003C!--#storyblok#{\"name\": \"PortfolioCard\", \"space\": \"327578\", \"uid\": \"24078f1f-b3f8-4283-bbb6-05b2404285a1\", \"id\": \"631574882\"}--\u003E"
+            },
+            {
+              "_uid": "55d09345-df09-4c18-9608-d59931d012f6",
+              "info": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Odio sit odio ipsum sit ornare at risus non amet. At tristique amet malesuada proin sit quam. Eget pulvinar lectus dictum risus pellentesque nunc leo id sed.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "link": {
+                "id": "",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": ""
+              },
+              "image": {
+                "id": 21186827,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a.storyblok.com/f/327578/328x72/d0c4aefb73/inflexion.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "title": "Inflexion",
+              "component": "PortfolioCard",
+              "_editable": "\u003C!--#storyblok#{\"name\": \"PortfolioCard\", \"space\": \"327578\", \"uid\": \"55d09345-df09-4c18-9608-d59931d012f6\", \"id\": \"631574882\"}--\u003E"
+            },
+            {
+              "_uid": "bc649daf-36ad-4695-ad89-e1b3ded1eb91",
+              "info": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Odio sit odio ipsum sit ornare at risus non amet. At tristique amet malesuada proin sit quam. Eget pulvinar lectus dictum risus pellentesque nunc leo id sed.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "link": {
+                "id": "",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": ""
+              },
+              "image": {
+                "id": 21186828,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a.storyblok.com/f/327578/328x72/7d585d9e24/sdworx.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "title": "SD Worx",
+              "component": "PortfolioCard",
+              "_editable": "\u003C!--#storyblok#{\"name\": \"PortfolioCard\", \"space\": \"327578\", \"uid\": \"bc649daf-36ad-4695-ad89-e1b3ded1eb91\", \"id\": \"631574882\"}--\u003E"
+            }
+          ],
+          "title": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Our Portfolio",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "button": [
+            {
+              "_uid": "29e20232-7fa8-4c23-8938-f23cb647090b",
+              "icon": "ArrowRight",
+              "link": {
+                "id": "88fbf343-75b3-458b-b00d-41cadc9f2d7c",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "portfolio"
+              },
+              "theme": "light",
+              "title": "All Items",
+              "variant": "tertiary",
+              "component": "Button",
+              "iconPosition": "BACK",
+              "_editable": "\u003C!--#storyblok#{\"name\": \"Button\", \"space\": \"327578\", \"uid\": \"29e20232-7fa8-4c23-8938-f23cb647090b\", \"id\": \"631574882\"}--\u003E"
+            }
+          ],
+          "layout": "horizontal",
+          "component": "InvestmentBlock",
+          "_editable": "\u003C!--#storyblok#{\"name\": \"InvestmentBlock\", \"space\": \"327578\", \"uid\": \"b1088908-2317-4561-8749-a2e6825422b9\", \"id\": \"631574882\"}--\u003E"
+        },
+        {
+          "_uid": "fc012a1a-0e28-4739-aeae-5575c2052b32",
+          "component": "Global",
+          "globalComponent": {
+            "id": "77825b1f-584d-43e2-a480-c97dba5e9368",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "settings/globals/crosslinks"
+          },
+          "_editable": "\u003C!--#storyblok#{\"name\": \"Global\", \"space\": \"327578\", \"uid\": \"fc012a1a-0e28-4739-aeae-5575c2052b32\", \"id\": \"631574882\"}--\u003E"
+        }
+      ],
+      "ogImage": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "ogTitle": "",
+      "component": "Page",
+      "pageTitle": "",
+      "twitterImage": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "twitterTitle": "",
+      "ogDescription": "",
+      "pageDescription": "",
+      "twitterDescription": "",
+      "_editable": "\u003C!--#storyblok#{\"name\": \"Page\", \"space\": \"327578\", \"uid\": \"e9b4d4dc-1edf-473c-8312-9dfb737d3eed\", \"id\": \"631574882\"}--\u003E"
+    },
+    "slug": "home",
+    "full_slug": "home",
+    "sort_by_date": null,
+    "position": -80,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": 0,
+    "meta_data": null,
+    "group_id": "05cdad76-d1ce-4b1e-9523-feb6b387cde6",
+    "first_published_at": "2025-02-25T12:54:49.772Z",
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "alternates": [],
+    "default_full_slug": null,
+    "translated_slugs": null
+  },
+  "cv": 1741619978,
+  "rels": [],
+  "links": []
+}

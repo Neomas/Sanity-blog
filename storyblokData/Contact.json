@@ -1,0 +1,233 @@
+{
+  "story": {
+    "name": "Contact us",
+    "created_at": "2025-02-27T13:35:55.128Z",
+    "published_at": null,
+    "updated_at": "2025-03-05T15:17:41.454Z",
+    "id": 632960648,
+    "uuid": "a42e441f-85be-4f43-891d-9163fbd74ff3",
+    "content": {
+      "_uid": "d240fb62-8a91-4bec-b8ee-869ab7cc611c",
+      "body": [
+        {
+          "_uid": "83c04e53-8ab0-4c8e-b69e-0b1ba0804ae9",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Nec eget iaculis gravida nisl. Amet nunc ut aliquam id vitae euismod in volutpat.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "media": {
+            "id": null,
+            "alt": null,
+            "name": "",
+            "focus": null,
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {}
+          },
+          "title": "Contact us",
+          "buttons": [],
+          "variant": "tertiaryb",
+          "component": "Hero",
+          "_editable": "\u003C!--#storyblok#{\"name\": \"Hero\", \"space\": \"327578\", \"uid\": \"83c04e53-8ab0-4c8e-b69e-0b1ba0804ae9\", \"id\": \"632960648\"}--\u003E"
+        },
+        {
+          "_uid": "280aaa15-48cf-43f5-ac2d-ca66b2b9ac2d",
+          "email": {
+            "id": "",
+            "url": "contact@worxinvest.com",
+            "email": "contact@worxinvest.com",
+            "linktype": "email",
+            "fieldtype": "multilink",
+            "cached_url": "contact@worxinvest.com"
+          },
+          "image": {
+            "id": 21243643,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/327578/1520x960/5a89b6121f/map.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "intro": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Pretium et ornare nunc integer cras egestas vitae sapien a. Eu odio etiam hendrerit fermentum.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "phone": "",
+          "title": "General info",
+          "address": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Brouwersvliet 29",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hard_break",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": "2000 ANTWERPEN - Belgium",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "component": "MapBlock",
+          "addressLink": {
+            "id": "",
+            "url": "https://www.google.com/maps/place/Brouwersvliet+29,+2000+Antwerpen/@51.2273757,4.400782,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3f659892e1d69:0xf1ae058def658caa!8m2!3d51.2273724!4d4.4033569!16s%2Fg%2F11f3zwbj4j?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": "https://www.google.com/maps/place/Brouwersvliet+29,+2000+Antwerpen/@51.2273757,4.400782,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3f659892e1d69:0xf1ae058def658caa!8m2!3d51.2273724!4d4.4033569!16s%2Fg%2F11f3zwbj4j?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
+          },
+          "addressTitle": "WorxInvest",
+          "_editable": "\u003C!--#storyblok#{\"name\": \"MapBlock\", \"space\": \"327578\", \"uid\": \"280aaa15-48cf-43f5-ac2d-ca66b2b9ac2d\", \"id\": \"632960648\"}--\u003E"
+        },
+        {
+          "id": "",
+          "_uid": "6e9fa68f-f05b-44dd-93ae-d53da468da65",
+          "info": "Don’t hesitate to contact us for all your questions. For direct contact, contact one of our staff members.",
+          "title": "Contact us",
+          "mailTo": "bregt@borndigital.be",
+          "component": "ContactBlock",
+          "mailSubject": "Contact form",
+          "_editable": "\u003C!--#storyblok#{\"name\": \"ContactBlock\", \"space\": \"327578\", \"uid\": \"6e9fa68f-f05b-44dd-93ae-d53da468da65\", \"id\": \"632960648\"}--\u003E"
+        },
+        {
+          "_uid": "558d3e2b-d77b-4c63-b14b-e13933b3e082",
+          "component": "Global",
+          "globalComponent": {
+            "id": "77825b1f-584d-43e2-a480-c97dba5e9368",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "settings/globals/crosslinks"
+          },
+          "_editable": "\u003C!--#storyblok#{\"name\": \"Global\", \"space\": \"327578\", \"uid\": \"558d3e2b-d77b-4c63-b14b-e13933b3e082\", \"id\": \"632960648\"}--\u003E"
+        }
+      ],
+      "ogImage": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "ogTitle": "",
+      "component": "Page",
+      "pageTitle": "",
+      "twitterImage": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "twitterTitle": "",
+      "ogDescription": "",
+      "pageDescription": "",
+      "twitterDescription": "",
+      "_editable": "\u003C!--#storyblok#{\"name\": \"Page\", \"space\": \"327578\", \"uid\": \"d240fb62-8a91-4bec-b8ee-869ab7cc611c\", \"id\": \"632960648\"}--\u003E"
+    },
+    "slug": "contact-us",
+    "full_slug": "contact-us",
+    "sort_by_date": null,
+    "position": -40,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": null,
+    "meta_data": null,
+    "group_id": "2a8cf470-bd97-463a-b247-c8fc3483335d",
+    "first_published_at": null,
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "alternates": [],
+    "default_full_slug": null,
+    "translated_slugs": null
+  },
+  "cv": 1741619978,
+  "rels": [],
+  "links": []
+}

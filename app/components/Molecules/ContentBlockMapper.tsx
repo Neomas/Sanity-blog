@@ -2,12 +2,14 @@ import React from "react";
 import HeroComponent from "./Hero";
 import USPComponent from "./UspComponent";
 import BlogGrid from "./BlogGrid";
+import DocumentsBlock from "./DocumentsBlock";
 
 // Map Sanity content types to React components
 const componentMap = {
   heroComponent: HeroComponent,
   uspComponent: USPComponent,
   blogGridComponent: BlogGrid,
+  documentsBlockComponent: DocumentsBlock,
   // Add more component mappings here as you create them
 };
 

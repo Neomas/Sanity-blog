@@ -1,4 +1,4 @@
-import { defineType, defineField } from "sanity";
+import { defineType, defineField, defineConfig } from "sanity";
 import { supportedLanguages } from "@lib/utils";
 import {
   LocalizedFieldWithToggle,
@@ -10,10 +10,22 @@ export const bodyComponent = [
   { type: "heroComponent" },
   { type: "uspComponent" },
   { type: "blogGridComponent" },
+  { type: "documentsBlockComponent" },
   // Add more component types here as you create them
 ];
 
-export const TextString = ({ name, title }: { name: string; title: string }) =>
+export const TextString = ({
+  name,
+  title,
+  fieldset,
+  group,
+  ...props
+}: {
+  name: string;
+  title: string;
+  fieldset?: string;
+  group?: string;
+}) =>
   defineField({
     name: name,
     title: title,
@@ -41,8 +53,23 @@ export const TextString = ({ name, title }: { name: string; title: string }) =>
         });
       },
     },
+
+    fieldset,
+    group,
+    ...props,
   });
-export const TextBlock = ({ name, title }: { name: string; title: string }) =>
+export const TextBlock = ({
+  name,
+  title,
+  fieldset,
+  group,
+  ...props
+}: {
+  name: string;
+  title: string;
+  fieldset?: string;
+  group?: string;
+}) =>
   defineField({
     name: name,
     title: title,
@@ -70,6 +97,9 @@ export const TextBlock = ({ name, title }: { name: string; title: string }) =>
         });
       },
     },
+    fieldset,
+    group,
+    ...props,
   });
 
 // Hero Component Schema
@@ -77,9 +107,24 @@ export const heroComponent = defineType({
   name: "heroComponent",
   title: "Hero Component",
   type: "object",
+  // fieldsets: [
+  //   { name: "content", title: "Content", options: { collapsible: true } },
+  //   { name: "layout", title: "Layout", options: { collapsible: true } },
+  // ],
+  groups: [
+    {
+      name: "content",
+      title: "Content",
+      default: true,
+    },
+    {
+      name: "layout",
+      title: "Layout",
+    },
+  ],
   fields: [
-    TextString({ name: "title", title: "Title" }),
-    TextBlock({ name: "subtitle", title: "Subtitle" }),
+    TextString({ name: "title", title: "Title", group: "content" }),
+    TextBlock({ name: "subtitle", title: "Subtitle", group: "content" }),
 
     defineField({
       name: "backgroundImage",
@@ -88,6 +133,7 @@ export const heroComponent = defineType({
       options: {
         hotspot: true,
       },
+      group: "content",
     }),
     defineField({
       name: "primaryCta",
@@ -105,6 +151,21 @@ export const heroComponent = defineType({
           type: "url",
         }),
       ],
+      group: "content",
+    }),
+    defineField({
+      name: "variant",
+      title: "Variant",
+      type: "string",
+      options: {
+        list: [
+          { title: "Primary", value: "primary" },
+          { title: "Secondary", value: "secondary" },
+          { title: "Tertiary", value: "tertiary" },
+        ],
+        layout: "dropdown",
+      },
+      group: "layout",
     }),
   ],
   preview: {
@@ -189,6 +250,48 @@ export const blogGridComponent = defineType({
       return {
         title: "Blog Grid",
         subtitle: `${title}`,
+      };
+    },
+  },
+});
+// Documents Block Schema
+export const documentsBlockComponent = defineType({
+  name: "documentsBlockComponent",
+  title: "Documents Block",
+  type: "object",
+  fields: [
+    TextString({ name: "title", title: "Title" }),
+    TextBlock({ name: "info", title: "Info" }),
+  ],
+  preview: {
+    select: {
+      title: "title.en",
+    },
+    prepare({ title }) {
+      return {
+        title: `${title}`,
+      };
+    },
+  },
+});
+
+// Documents Block Schema
+export const formComponent = defineType({
+  name: "formComponent",
+  title: "Form Block",
+  type: "object",
+  fields: [
+    TextString({ name: "title", title: "Title" }),
+    TextBlock({ name: "info", title: "Info" }),
+  ],
+
+  preview: {
+    select: {
+      title: "title.en",
+    },
+    prepare({ title }) {
+      return {
+        title: `${title}`,
       };
     },
   },

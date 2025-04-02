@@ -36,3 +36,7 @@ export const postQuery = defineQuery(`
 export const pageQuery = defineQuery(`
   *[_type == "page" && slug.current == $slug]
 `);
+
+export const documentQuery = defineQuery(`
+  *[_type == "documents"]
+`);

@@ -61,3 +61,24 @@ export const supportedLanguages = [
   { id: "nl", title: "Nederlands" },
   // Add more languages as needed
 ];
+
+/**
+ * Resolves the download URL for a file stored in Sanity
+ * @param file The file object from Sanity containing asset reference
+ * @returns The download URL for the file or undefined if no valid file reference
+ */
+export function resolveFileUrl(file: any): string | undefined {
+  if (!file?.asset?._ref) {
+    return undefined;
+  }
+  
+  // Extract the file ID from the asset reference
+  // Format is typically: file-{fileId}-{extension}
+  const fileId = file.asset._ref.split('-').slice(1, -1).join('-');
+  const extension = file.asset._ref.split('-').pop();
+  
+  // Construct the Sanity CDN URL for file download
+  const fileUrl = `https://cdn.sanity.io/files/${projectId}/${dataset}/${fileId}.${extension}`;
+  
+  return fileUrl;
+}

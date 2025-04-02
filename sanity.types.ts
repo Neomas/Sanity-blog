@@ -46,6 +46,20 @@ export type Geopoint = {
   alt?: number;
 };
 
+export type DocumentsBlockComponent = {
+  _type: "documentsBlockComponent";
+  title?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  info?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+};
+
 export type BlogGridComponent = {
   _type: "blogGridComponent";
   title?: {
@@ -114,6 +128,7 @@ export type HeroComponent = {
     text?: string;
     link?: string;
   };
+  variant?: "primary" | "secondary" | "tertiary";
 };
 
 export type Documents = {
@@ -380,7 +395,9 @@ export type Page = {
     _key: string;
   } & UspComponent | {
     _key: string;
-  } & BlogGridComponent>;
+  } & BlogGridComponent | {
+    _key: string;
+  } & DocumentsBlockComponent>;
   seo?: {
     metaDescription?: string;
     keywords?: Array<string>;
@@ -508,7 +525,7 @@ export type SanityImageMetadata = {
   isOpaque?: boolean;
 };
 
-export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | Geopoint | BlogGridComponent | UspComponent | HeroComponent | Documents | SanityFileAsset | Post | Author | Page | Slug | Settings | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata;
+export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | Geopoint | DocumentsBlockComponent | BlogGridComponent | UspComponent | HeroComponent | Documents | SanityFileAsset | Post | Author | Page | Slug | Settings | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata;
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./app/[locale]/(blog)/posts/[slug]/page.tsx
 // Variable: postSlugs
@@ -1012,12 +1029,46 @@ export type PageQueryResult = Array<{
     _key: string;
   } & BlogGridComponent | {
     _key: string;
+  } & DocumentsBlockComponent | {
+    _key: string;
   } & HeroComponent | {
     _key: string;
   } & UspComponent>;
   seo?: {
     metaDescription?: string;
     keywords?: Array<string>;
+  };
+}>;
+// Variable: documentQuery
+// Query: *[_type == "documents"]
+export type DocumentQueryResult = Array<{
+  _id: string;
+  _type: "documents";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  name?: string;
+  picture?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+  };
+  file?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.fileAsset";
+    };
+    description?: string;
+    _type: "file";
   };
 }>;
 
@@ -1031,5 +1082,6 @@ declare module "@sanity/client" {
     "\n  *[_type == \"post\" && _id != $skip && defined(slug.current)] | order(date desc, _updatedAt desc) [0...$limit] {\n    \n  _id,\n  \"status\": select(_originalId in path(\"drafts.**\") => \"draft\", \"published\"),\n  \"title\": coalesce(title, \"Untitled\"),\n  \"slug\": slug.current,\n  excerpt,\n  coverImage,\n  \"date\": coalesce(date, _updatedAt),\n  \"author\": author->{\"name\": coalesce(name, \"Anonymous\"), picture},\n\n  }\n": MoreStoriesQueryResult;
     "\n  *[_type == \"post\" && slug.current == $slug] [0] {\n    content,\n    \n  _id,\n  \"status\": select(_originalId in path(\"drafts.**\") => \"draft\", \"published\"),\n  \"title\": coalesce(title, \"Untitled\"),\n  \"slug\": slug.current,\n  excerpt,\n  coverImage,\n  \"date\": coalesce(date, _updatedAt),\n  \"author\": author->{\"name\": coalesce(name, \"Anonymous\"), picture},\n\n  }\n": PostQueryResult;
     "\n  *[_type == \"page\" && slug.current == $slug]\n": PageQueryResult;
+    "\n  *[_type == \"documents\"]\n": DocumentQueryResult;
   }
 }
