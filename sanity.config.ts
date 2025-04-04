@@ -28,11 +28,19 @@ import {
   uspComponent,
   blogGridComponent,
   documentsBlockComponent,
+  hero,
+  contentBlock,
+  contentTimer,
+  newsBlock,
+  investmentBlock,
+  global,
+  mapBlock,
+  contactBlock,
 } from "@schemas/contentblocks"; // Adjust the path as needed
 
-import LocalizedInput from "@components/Studio/LocalizedInput";
-import DocumentSelector from "@components/Studio/DocumentSelector";
-import React from "react";
+// import LocalizedInput from "@components/Studio/LocalizedInput";
+// import DocumentSelector from "@components/Studio/DocumentSelector";
+// import React from "react";
 
 const homeLocation = {
   title: "Home",
@@ -56,29 +64,37 @@ export default defineConfig({
       uspComponent,
       blogGridComponent,
       documentsBlockComponent,
+      hero,
+      contentBlock,
+      contentTimer,
+      newsBlock,
+      investmentBlock,
+      global,
+      mapBlock,
+      contactBlock,
     ],
   },
   // changes form items in the studio
-  form: {
-    components: {
-      input: (props) => {
-        const { schemaType } = props;
+  // form: {
+  //   components: {
+  //     input: (props) => {
+  //       const { schemaType } = props;
 
-        // For multilingual text fields
-        if (schemaType.name === "object" || schemaType.name === "localeText") {
-          return React.createElement(LocalizedInput, props);
-        }
-        // For document reference fields
-        // if (schemaType.name === "reference") {
-        //   return React.createElement(DocumentSelector, props);
-        // }
+  //       // For multilingual text fields
+  //       if (schemaType.name === "object" || schemaType.name === "localeText") {
+  //         return React.createElement(LocalizedInput, props);
+  //       }
+  //       // For document reference fields
+  //       // if (schemaType.name === "reference") {
+  //       //   return React.createElement(DocumentSelector, props);
+  //       // }
 
-        return props.renderDefault(props);
-      },
+  //       return props.renderDefault(props);
+  //     },
 
-      // Default to standard Sanity input
-    },
-  },
+  //     // Default to standard Sanity input
+  //   },
+  // },
 
   plugins: [
     presentationTool({

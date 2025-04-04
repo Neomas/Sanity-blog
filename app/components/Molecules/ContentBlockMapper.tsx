@@ -3,6 +3,7 @@ import HeroComponent from "./Hero";
 import USPComponent from "./UspComponent";
 import BlogGrid from "./BlogGrid";
 import DocumentsBlock from "./DocumentsBlock";
+import Placeholder from "./Placeholder";
 
 // Map Sanity content types to React components
 const componentMap = {
@@ -10,6 +11,14 @@ const componentMap = {
   uspComponent: USPComponent,
   blogGridComponent: BlogGrid,
   documentsBlockComponent: DocumentsBlock,
+  hero: Placeholder,
+  contentBlock: Placeholder,
+  contentTimer: Placeholder,
+  newsBlock: Placeholder,
+  investmentBlock: Placeholder,
+  global: Placeholder,
+  mapBlock: Placeholder,
+  contactBlock: Placeholder,
   // Add more component mappings here as you create them
 };
 
@@ -30,7 +39,7 @@ const ContentBlockMapper: React.FC<ContentBlockMapperProps> = ({
 
         if (!Component) {
           console.warn(`No component found for block type: ${block._type}`);
-          return null;
+          return <div>{block._type}</div>;
         }
 
         return <Component key={index} {...block} locale={locale} />;

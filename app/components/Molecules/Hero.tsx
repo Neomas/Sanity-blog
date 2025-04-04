@@ -33,7 +33,6 @@ const HeroComponent: React.FC<HeroComponentProps> = ({
       }}
     >
       <div className={styles.heroContent}>
-        
         {getLocalizedValue(title) && (
           <h1 className={styles.title}>{getLocalizedValue(title, locale)}</h1>
         )}
@@ -44,7 +43,7 @@ const HeroComponent: React.FC<HeroComponentProps> = ({
         )}
         {primaryCta && primaryCta.text && (
           <a href={primaryCta.link || "#"} className={styles.ctaButton}>
-            {primaryCta.text}
+            {getLocalizedValue(primaryCta.text, locale)}
           </a>
         )}
       </div>

@@ -1,0 +1,152 @@
+{
+  "_type": "page",
+  "title": "Home2",
+  "slug": {
+    "current": "home2",
+    "_type": "slug"
+  },
+  "contentBlocks": [
+    {
+      "_type": "heroComponent",
+      "_key": "f0621dd7-7638-42bd-aa72-39c83973744f",
+      "title": {
+        "en": "Investing in growth, building for impact."
+      },
+      "subtitle": {},
+      "primaryCta": {
+        "text": {
+          "en": "Get in touch"
+        },
+        "link": ""
+      }
+    },
+    {
+      "_type": "contentBlock",
+      "info": {
+        "en": [
+          [
+            {
+              "children": [
+                {
+                  "text": "WorxInvest is a vibrant investment firm specializing in growth and alternative assets. In partnership with Gimv, it actively invests in both private and public sectors across Europe. Through its WorxInvest Horizon I fund, it has built a diverse portfolio of top buyout and growth funds in Europe and North America, while also exploring real estate and infrastructure.",
+                  "marks": []
+                }
+              ],
+              "_type": "text"
+            }
+          ]
+        ]
+      },
+      "color": {
+        "en": "white"
+      },
+      "media": {},
+      "title": {
+        "en": "A Joint Journey"
+      },
+      "variant": {
+        "en": "secondary"
+      },
+      "imagePosition": {
+        "en": "right"
+      }
+    },
+    {
+      "_type": "contentBlock",
+      "info": {
+        "en": [
+          [
+            {
+              "children": [
+                {
+                  "text": "Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque amet nulla purus habitasse.",
+                  "marks": []
+                }
+              ],
+              "_type": "text"
+            }
+          ]
+        ]
+      },
+      "color": {
+        "en": "white"
+      },
+      "media": {},
+      "title": {
+        "en": "Our team will  take care of you"
+      },
+      "variant": {
+        "en": "secondary"
+      },
+      "imagePosition": {
+        "en": "left"
+      }
+    },
+    {
+      "_type": "contentTimer",
+      "info": {
+        "en": [
+          [
+            {
+              "children": [
+                {
+                  "text": "We offer unique added value to our participations in a custom-made and personal approach.",
+                  "marks": []
+                }
+              ],
+              "_type": "text"
+            }
+          ]
+        ]
+      },
+      "title": {
+        "en": "Our added value"
+      }
+    },
+    {
+      "_type": "newsBlock",
+      "title": {
+        "en": "Recent news"
+      }
+    },
+    {
+      "_type": "investmentBlock",
+      "info": {
+        "en": [
+          [
+            {
+              "children": [
+                {
+                  "text": "Porta et a nisl erat sit nec pellentesque mauris arcu. Eleifend arcu imperdiet fringilla volutpat turpis turpis condimentum.",
+                  "marks": []
+                }
+              ],
+              "_type": "text"
+            }
+          ]
+        ]
+      },
+      "title": {
+        "en": [
+          [
+            {
+              "children": [
+                {
+                  "text": "Our Portfolio",
+                  "marks": []
+                }
+              ],
+              "_type": "text"
+            }
+          ]
+        ]
+      },
+      "layout": {
+        "en": "horizontal"
+      }
+    },
+    {
+      "_type": "global"
+    }
+  ]
+}

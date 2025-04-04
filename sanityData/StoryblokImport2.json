@@ -1,0 +1,96 @@
+{
+  "_type": "page",
+  "title": "Contact us",
+  "slug": {
+    "current": "contact-us",
+    "_type": "slug"
+  },
+  "contentBlocks": [
+    {
+      "_type": "heroComponent",
+      "_key": "83c04e53-8ab0-4c8e-b69e-0b1ba0804ae9",
+      "title": {
+        "en": "Contact us"
+      },
+      "subtitle": {}
+    },
+    {
+      "_type": "mapBlock",
+      "image": {},
+      "intro": {
+        "en": [
+          [
+            {
+              "children": [
+                {
+                  "text": "Pretium et ornare nunc integer cras egestas vitae sapien a. Eu odio etiam hendrerit fermentum.",
+                  "marks": []
+                }
+              ],
+              "_type": "text"
+            }
+          ]
+        ]
+      },
+      "phone": {
+        "en": ""
+      },
+      "title": {
+        "en": "General info"
+      },
+      "address": {
+        "en": [
+          [
+            {
+              "children": [
+                {
+                  "text": "Brouwersvliet 29",
+                  "marks": []
+                }
+              ],
+              "_type": "text"
+            },
+            {
+              "children": [
+                {
+                  "marks": []
+                }
+              ],
+              "_type": "hard_break"
+            },
+            {
+              "children": [
+                {
+                  "text": "2000 ANTWERPEN - Belgium",
+                  "marks": []
+                }
+              ],
+              "_type": "text"
+            }
+          ]
+        ]
+      },
+      "addressTitle": {
+        "en": "WorxInvest"
+      }
+    },
+    {
+      "_type": "contactBlock",
+      "info": {
+        "en": "Don’t hesitate to contact us for all your questions. For direct contact, contact one of our staff members."
+      },
+      "title": {
+        "en": "Contact us"
+      },
+      "mailTo": {
+        "en": "bregt@borndigital.be"
+      },
+      "mailSubject": {
+        "en": "Contact form"
+      }
+    },
+    {
+      "_type": "global"
+    }
+  ]
+}

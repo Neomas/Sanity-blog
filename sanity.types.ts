@@ -46,6 +46,257 @@ export type Geopoint = {
   alt?: number;
 };
 
+export type ContactBlock = {
+  _type: "contactBlock";
+  id?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  info?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  title?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  mailTo?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  mailSubject?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+};
+
+export type MapBlock = {
+  _type: "mapBlock";
+  email?: string;
+  image?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
+  intro?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  phone?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  title?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  address?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  addressLink?: string;
+  addressTitle?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+};
+
+export type Global = {
+  _type: "global";
+  globalComponent?: string;
+};
+
+export type InvestmentBlock = {
+  _type: "investmentBlock";
+  info?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  cards?: Array<string>;
+  title?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  button?: Array<string>;
+  layout?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+};
+
+export type NewsBlock = {
+  _type: "newsBlock";
+  title?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  button?: Array<string>;
+};
+
+export type ContentTimer = {
+  _type: "contentTimer";
+  id?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  info?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  items?: Array<string>;
+  title?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  button?: Array<string>;
+};
+
+export type ContentBlock = {
+  _type: "contentBlock";
+  id?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  info?: {
+    en?: Array<{
+      children?: Array<{
+        marks?: Array<string>;
+        text?: string;
+        _type: "span";
+        _key: string;
+      }>;
+      style?: "normal" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "blockquote";
+      listItem?: "bullet" | "number";
+      markDefs?: Array<{
+        href?: string;
+        _type: "link";
+        _key: string;
+      }>;
+      level?: number;
+      _type: "block";
+      _key: string;
+    }>;
+    fr?: Array<{
+      children?: Array<{
+        marks?: Array<string>;
+        text?: string;
+        _type: "span";
+        _key: string;
+      }>;
+      style?: "normal" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "blockquote";
+      listItem?: "bullet" | "number";
+      markDefs?: Array<{
+        href?: string;
+        _type: "link";
+        _key: string;
+      }>;
+      level?: number;
+      _type: "block";
+      _key: string;
+    }>;
+    nl?: Array<{
+      children?: Array<{
+        marks?: Array<string>;
+        text?: string;
+        _type: "span";
+        _key: string;
+      }>;
+      style?: "normal" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "blockquote";
+      listItem?: "bullet" | "number";
+      markDefs?: Array<{
+        href?: string;
+        _type: "link";
+        _key: string;
+      }>;
+      level?: number;
+      _type: "block";
+      _key: string;
+    }>;
+  };
+  color?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  media?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
+  title?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  buttons?: Array<string>;
+  variant?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  imagePosition?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  backgroundShape?: boolean;
+};
+
+export type Hero = {
+  _type: "hero";
+  info?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  media?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  title?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+  buttons?: Array<string>;
+  variant?: {
+    en?: string;
+    fr?: string;
+    nl?: string;
+  };
+};
+
 export type DocumentsBlockComponent = {
   _type: "documentsBlockComponent";
   title?: {
@@ -125,7 +376,11 @@ export type HeroComponent = {
     _type: "image";
   };
   primaryCta?: {
-    text?: string;
+    text?: {
+      en?: string;
+      fr?: string;
+      nl?: string;
+    };
     link?: string;
   };
   variant?: "primary" | "secondary" | "tertiary";
@@ -397,7 +652,23 @@ export type Page = {
     _key: string;
   } & BlogGridComponent | {
     _key: string;
-  } & DocumentsBlockComponent>;
+  } & DocumentsBlockComponent | {
+    _key: string;
+  } & Hero | {
+    _key: string;
+  } & ContentBlock | {
+    _key: string;
+  } & ContentTimer | {
+    _key: string;
+  } & NewsBlock | {
+    _key: string;
+  } & InvestmentBlock | {
+    _key: string;
+  } & Global | {
+    _key: string;
+  } & MapBlock | {
+    _key: string;
+  } & ContactBlock>;
   seo?: {
     metaDescription?: string;
     keywords?: Array<string>;
@@ -525,7 +796,7 @@ export type SanityImageMetadata = {
   isOpaque?: boolean;
 };
 
-export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | Geopoint | DocumentsBlockComponent | BlogGridComponent | UspComponent | HeroComponent | Documents | SanityFileAsset | Post | Author | Page | Slug | Settings | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata;
+export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | Geopoint | ContactBlock | MapBlock | Global | InvestmentBlock | NewsBlock | ContentTimer | ContentBlock | Hero | DocumentsBlockComponent | BlogGridComponent | UspComponent | HeroComponent | Documents | SanityFileAsset | Post | Author | Page | Slug | Settings | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata;
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./app/[locale]/(blog)/posts/[slug]/page.tsx
 // Variable: postSlugs
@@ -1029,9 +1300,25 @@ export type PageQueryResult = Array<{
     _key: string;
   } & BlogGridComponent | {
     _key: string;
+  } & ContactBlock | {
+    _key: string;
+  } & ContentBlock | {
+    _key: string;
+  } & ContentTimer | {
+    _key: string;
   } & DocumentsBlockComponent | {
     _key: string;
+  } & Global | {
+    _key: string;
+  } & Hero | {
+    _key: string;
   } & HeroComponent | {
+    _key: string;
+  } & InvestmentBlock | {
+    _key: string;
+  } & MapBlock | {
+    _key: string;
+  } & NewsBlock | {
     _key: string;
   } & UspComponent>;
   seo?: {

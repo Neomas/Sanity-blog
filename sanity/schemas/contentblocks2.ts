@@ -54,7 +54,9 @@ export const TextString = ({
           languageFields,
           value: props.value,
           onChange: (newValue: Record<string, any>) => {
-            props.onChange(set({ ...(props.value || {}), ...newValue }));
+            props.onChange(
+              [setIfMissing({}), set(newValue)] // Apply both patches
+            );
           },
         });
       },
@@ -96,7 +98,9 @@ export const TextBlock = ({
           languageFields,
           value: props.value,
           onChange: (newValue: Record<string, any>) => {
-            props.onChange(set({ ...props.value, ...newValue }));
+            props.onChange(
+              [setIfMissing({}), set(newValue)] // Apply both patches
+            );
           },
         });
       },
@@ -105,304 +109,16 @@ export const TextBlock = ({
     group,
     ...props,
   });
-export const ContentBlock = ({
-  name,
-  title,
-  fieldset,
-  group,
-  ...props
-}: {
-  name: string;
-  title: string;
-  fieldset?: string;
-  group?: string;
-}) =>
-  defineField({
-    name,
-    title,
-    type: "object",
-    fields: supportedLanguages.map((lang) => ({
-      name: lang.id,
-      title: lang.title,
-      type: "array",
-      of: [
-        {
-          type: "block",
-          options: {
-            spellCheck: true,
-          },
-        },
-      ],
-    })),
-    fieldset,
-    group,
-    ...props,
-  });
-
-// Define all fields
-export const BloksField = ({
-  name,
-  title,
-  fieldset,
-  group,
-  ...props
-}: {
-  name: string;
-  title: string;
-  fieldset?: string;
-  group?: string;
-}) =>
-  defineField({
-    name: name,
-    title: title,
-    type: "array",
-    of: [{ type: "reference", to: [{ type: "component" }] }],
-  });
-
-export const RichTextField = ({
-  name,
-  title,
-  fieldset,
-  group,
-  ...props
-}: {
-  name: string;
-  title: string;
-  fieldset?: string;
-  group?: string;
-}) =>
-  defineField({
-    name: name,
-    title: title,
-    type: "object",
-    fields: supportedLanguages.map((lang) => ({
-      name: lang.id,
-      title: lang.title,
-      type: "array",
-      of: [{ type: "block" }],
-    })),
-  });
-
-export const MarkdownField = ({
-  name,
-  title,
-  fieldset,
-  group,
-  ...props
-}: {
-  name: string;
-  title: string;
-  fieldset?: string;
-  group?: string;
-}) =>
-  defineField({
-    name: name,
-    title: title,
-    type: "object",
-    fields: supportedLanguages.map((lang) => ({
-      name: lang.id,
-      title: lang.title,
-      type: "markdown",
-    })),
-  });
-
-export const NumberField = ({
-  name,
-  title,
-  fieldset,
-  group,
-  ...props
-}: {
-  name: string;
-  title: string;
-  fieldset?: string;
-  group?: string;
-}) =>
-  defineField({
-    name: name,
-    title: title,
-    type: "object",
-    fields: supportedLanguages.map((lang) => ({
-      name: lang.id,
-      title: lang.title,
-      type: "number",
-    })),
-  });
-
-export const DatetimeField = ({
-  name,
-  title,
-  fieldset,
-  group,
-  ...props
-}: {
-  name: string;
-  title: string;
-  fieldset?: string;
-  group?: string;
-}) =>
-  defineField({
-    name: name,
-    title: title,
-    type: "object",
-    fields: supportedLanguages.map((lang) => ({
-      name: lang.id,
-      title: lang.title,
-      type: "datetime",
-    })),
-  });
-
-export const BooleanField = ({
-  name,
-  title,
-  fieldset,
-  group,
-  ...props
-}: {
-  name: string;
-  title: string;
-  fieldset?: string;
-  group?: string;
-}) =>
-  defineField({
-    name: name,
-    title: title,
-    type: "object",
-    fields: supportedLanguages.map((lang) => ({
-      name: lang.id,
-      title: lang.title,
-      type: "boolean",
-    })),
-  });
-
-export const OptionField = ({
-  name,
-  title,
-  fieldset,
-  group,
-  ...props
-}: {
-  name: string;
-  title: string;
-  fieldset?: string;
-  group?: string;
-}) =>
-  defineField({
-    name: name,
-    title: title,
-    type: "object",
-    fields: supportedLanguages.map((lang) => ({
-      name: lang.id,
-      title: lang.title,
-      type: "string",
-      options: {
-        list: ["Option 1", "Option 2", "Option 3"],
-      },
-    })),
-  });
-
-export const OptionsField = ({
-  name,
-  title,
-  fieldset,
-  group,
-  ...props
-}: {
-  name: string;
-  title: string;
-  fieldset?: string;
-  group?: string;
-}) =>
-  defineField({
-    name: name,
-    title: title,
-    type: "object",
-    fields: supportedLanguages.map((lang) => ({
-      name: lang.id,
-      title: lang.title,
-      type: "array",
-      of: [{ type: "string" }],
-      options: {
-        list: ["Option A", "Option B", "Option C"],
-      },
-    })),
-  });
-
-export const AssetField = ({
-  name,
-  title,
-  fieldset,
-  group,
-  ...props
-}: {
-  name: string;
-  title: string;
-  fieldset?: string;
-  group?: string;
-}) =>
-  defineField({
-    name: name,
-    title: title,
-    type: "object",
-    fields: supportedLanguages.map((lang) => ({
-      name: lang.id,
-      title: lang.title,
-      type: "image",
-    })),
-  });
-
-export const MultiAssetField = ({
-  name,
-  title,
-  fieldset,
-  group,
-  ...props
-}: {
-  name: string;
-  title: string;
-  fieldset?: string;
-  group?: string;
-}) =>
-  defineField({
-    name: name,
-    title: title,
-    type: "object",
-    fields: supportedLanguages.map((lang) => ({
-      name: lang.id,
-      title: lang.title,
-      type: "array",
-      of: [{ type: "image" }],
-    })),
-  });
-
-export const MultiLinkField = ({
-  name,
-  title,
-  fieldset,
-  group,
-  ...props
-}: {
-  name: string;
-  title: string;
-  fieldset?: string;
-  group?: string;
-}) =>
-  defineField({
-    name: name,
-    title: title,
-    type: "object",
-    fields: supportedLanguages.map((lang) => ({
-      name: lang.id,
-      title: lang.title,
-      type: "url",
-    })),
-  });
 
 // Hero Component Schema
 export const heroComponent = defineType({
   name: "heroComponent",
   title: "Hero Component",
   type: "object",
+  // fieldsets: [
+  //   { name: "content", title: "Content", options: { collapsible: true } },
+  //   { name: "layout", title: "Layout", options: { collapsible: true } },
+  // ],
   groups: [
     {
       name: "content",
@@ -416,7 +132,7 @@ export const heroComponent = defineType({
   ],
   fields: [
     TextString({ name: "title", title: "Title", group: "content" }),
-    TextString({ name: "subtitle", title: "Subtitle", group: "content" }),
+    TextBlock({ name: "subtitle", title: "Subtitle", group: "content" }),
 
     defineField({
       name: "backgroundImage",
@@ -432,7 +148,11 @@ export const heroComponent = defineType({
       title: "Primary CTA",
       type: "object",
       fields: [
-        TextString({ name: "text", title: "Button Text" }),
+        defineField({
+          name: "text",
+          title: "Button Text",
+          type: "string",
+        }),
         defineField({
           name: "link",
           title: "Link",
@@ -528,7 +248,7 @@ export const blogGridComponent = defineType({
   type: "object",
   fields: [
     TextString({ name: "title", title: "Title" }),
-    ContentBlock({ name: "info", title: "Info" }),
+    TextBlock({ name: "info", title: "Info" }),
   ],
   preview: {
     select: {
@@ -585,30 +305,41 @@ export const formComponent = defineType({
   },
 });
 
-
-
 // Hero Component Schema
 export const hero = defineType({
   name: "hero",
   title: "Hero",
   type: "object",
-  groups: [
-    {
+  fields: [
+    TextString({ name: "title", title: "Title" }),
+    TextBlock({ name: "subtitle", title: "Subtitle" }),
+
+    // Add default fields based on common patterns
+    defineField({
       name: "content",
       title: "Content",
-      default: true,
-    },
-    {
-      name: "layout",
-      title: "Layout",
-    },
-  ],
-  fields: [
-    RichTextField({ name: "info", title: "Info" }),
-    TextString({ name: "media", title: "Media" }),
-    TextString({ name: "title", title: "Title" }),
-    TextString({ name: "buttons", title: "Buttons" }),
-    TextString({ name: "variant", title: "Variant" })
+      type: "object",
+      fields: supportedLanguages.map((lang) => ({
+        name: lang.id,
+        title: lang.title,
+        type: "text",
+      })),
+      components: {
+        input: function CustomContentInput(props) {
+          const languageFields = supportedLanguages.map((lang) => ({
+            name: lang.id,
+            title: lang.title,
+          }));
+          return LocalizedFieldWithToggleTextArea({
+            languageFields,
+            value: props.value,
+            onChange: (newValue: Record<string, any>) => {
+              props.onChange([setIfMissing({}), set(newValue)]);
+            },
+          });
+        },
+      },
+    }),
   ],
   preview: {
     select: {
@@ -623,33 +354,41 @@ export const hero = defineType({
   },
 });
 
-
 // ContentBlock Component Schema
 export const contentBlock = defineType({
   name: "contentBlock",
   title: "ContentBlock",
   type: "object",
-  groups: [
-    {
+  fields: [
+    TextString({ name: "title", title: "Title" }),
+    TextBlock({ name: "subtitle", title: "Subtitle" }),
+
+    // Add default fields based on common patterns
+    defineField({
       name: "content",
       title: "Content",
-      default: true,
-    },
-    {
-      name: "layout",
-      title: "Layout",
-    },
-  ],
-  fields: [
-    TextString({ name: "id", title: "Id" }),
-    RichTextField({ name: "info", title: "Info" }),
-    TextString({ name: "color", title: "Color" }),
-    AssetField({ name: "media", title: "Media" }),
-    TextString({ name: "title", title: "Title" }),
-    TextString({ name: "buttons", title: "Buttons" }),
-    TextString({ name: "variant", title: "Variant" }),
-    TextString({ name: "imagePosition", title: "ImagePosition" }),
-    BooleanField({ name: "backgroundShape", title: "BackgroundShape" })
+      type: "object",
+      fields: supportedLanguages.map((lang) => ({
+        name: lang.id,
+        title: lang.title,
+        type: "text",
+      })),
+      components: {
+        input: function CustomContentInput(props) {
+          const languageFields = supportedLanguages.map((lang) => ({
+            name: lang.id,
+            title: lang.title,
+          }));
+          return LocalizedFieldWithToggleTextArea({
+            languageFields,
+            value: props.value,
+            onChange: (newValue: Record<string, any>) => {
+              props.onChange([setIfMissing({}), set(newValue)]);
+            },
+          });
+        },
+      },
+    }),
   ],
   preview: {
     select: {
@@ -664,29 +403,41 @@ export const contentBlock = defineType({
   },
 });
 
-
 // ContentTimer Component Schema
 export const contentTimer = defineType({
   name: "contentTimer",
   title: "ContentTimer",
   type: "object",
-  groups: [
-    {
+  fields: [
+    TextString({ name: "title", title: "Title" }),
+    TextBlock({ name: "subtitle", title: "Subtitle" }),
+
+    // Add default fields based on common patterns
+    defineField({
       name: "content",
       title: "Content",
-      default: true,
-    },
-    {
-      name: "layout",
-      title: "Layout",
-    },
-  ],
-  fields: [
-    TextString({ name: "id", title: "Id" }),
-    RichTextField({ name: "info", title: "Info" }),
-    TextString({ name: "items", title: "Items" }),
-    TextString({ name: "title", title: "Title" }),
-    TextString({ name: "button", title: "Button" })
+      type: "object",
+      fields: supportedLanguages.map((lang) => ({
+        name: lang.id,
+        title: lang.title,
+        type: "text",
+      })),
+      components: {
+        input: function CustomContentInput(props) {
+          const languageFields = supportedLanguages.map((lang) => ({
+            name: lang.id,
+            title: lang.title,
+          }));
+          return LocalizedFieldWithToggleTextArea({
+            languageFields,
+            value: props.value,
+            onChange: (newValue: Record<string, any>) => {
+              props.onChange([setIfMissing({}), set(newValue)]);
+            },
+          });
+        },
+      },
+    }),
   ],
   preview: {
     select: {
@@ -701,26 +452,41 @@ export const contentTimer = defineType({
   },
 });
 
-
 // NewsBlock Component Schema
 export const newsBlock = defineType({
   name: "newsBlock",
   title: "NewsBlock",
   type: "object",
-  groups: [
-    {
-      name: "content",
-      title: "Content",
-      default: true,
-    },
-    {
-      name: "layout",
-      title: "Layout",
-    },
-  ],
   fields: [
     TextString({ name: "title", title: "Title" }),
-    TextString({ name: "button", title: "Button" })
+    TextBlock({ name: "subtitle", title: "Subtitle" }),
+
+    // Add default fields based on common patterns
+    defineField({
+      name: "content",
+      title: "Content",
+      type: "object",
+      fields: supportedLanguages.map((lang) => ({
+        name: lang.id,
+        title: lang.title,
+        type: "text",
+      })),
+      components: {
+        input: function CustomContentInput(props) {
+          const languageFields = supportedLanguages.map((lang) => ({
+            name: lang.id,
+            title: lang.title,
+          }));
+          return LocalizedFieldWithToggleTextArea({
+            languageFields,
+            value: props.value,
+            onChange: (newValue: Record<string, any>) => {
+              props.onChange([setIfMissing({}), set(newValue)]);
+            },
+          });
+        },
+      },
+    }),
   ],
   preview: {
     select: {
@@ -735,29 +501,41 @@ export const newsBlock = defineType({
   },
 });
 
-
 // InvestmentBlock Component Schema
 export const investmentBlock = defineType({
   name: "investmentBlock",
   title: "InvestmentBlock",
   type: "object",
-  groups: [
-    {
+  fields: [
+    TextString({ name: "title", title: "Title" }),
+    TextBlock({ name: "subtitle", title: "Subtitle" }),
+
+    // Add default fields based on common patterns
+    defineField({
       name: "content",
       title: "Content",
-      default: true,
-    },
-    {
-      name: "layout",
-      title: "Layout",
-    },
-  ],
-  fields: [
-    RichTextField({ name: "info", title: "Info" }),
-    TextString({ name: "cards", title: "Cards" }),
-    RichTextField({ name: "title", title: "Title" }),
-    TextString({ name: "button", title: "Button" }),
-    TextString({ name: "layout", title: "Layout" })
+      type: "object",
+      fields: supportedLanguages.map((lang) => ({
+        name: lang.id,
+        title: lang.title,
+        type: "text",
+      })),
+      components: {
+        input: function CustomContentInput(props) {
+          const languageFields = supportedLanguages.map((lang) => ({
+            name: lang.id,
+            title: lang.title,
+          }));
+          return LocalizedFieldWithToggleTextArea({
+            languageFields,
+            value: props.value,
+            onChange: (newValue: Record<string, any>) => {
+              props.onChange([setIfMissing({}), set(newValue)]);
+            },
+          });
+        },
+      },
+    }),
   ],
   preview: {
     select: {
@@ -772,25 +550,41 @@ export const investmentBlock = defineType({
   },
 });
 
-
 // Global Component Schema
 export const global = defineType({
   name: "global",
   title: "Global",
   type: "object",
-  groups: [
-    {
+  fields: [
+    TextString({ name: "title", title: "Title" }),
+    TextBlock({ name: "subtitle", title: "Subtitle" }),
+
+    // Add default fields based on common patterns
+    defineField({
       name: "content",
       title: "Content",
-      default: true,
-    },
-    {
-      name: "layout",
-      title: "Layout",
-    },
-  ],
-  fields: [
-    TextString({ name: "globalComponent", title: "GlobalComponent" })
+      type: "object",
+      fields: supportedLanguages.map((lang) => ({
+        name: lang.id,
+        title: lang.title,
+        type: "text",
+      })),
+      components: {
+        input: function CustomContentInput(props) {
+          const languageFields = supportedLanguages.map((lang) => ({
+            name: lang.id,
+            title: lang.title,
+          }));
+          return LocalizedFieldWithToggleTextArea({
+            languageFields,
+            value: props.value,
+            onChange: (newValue: Record<string, any>) => {
+              props.onChange([setIfMissing({}), set(newValue)]);
+            },
+          });
+        },
+      },
+    }),
   ],
   preview: {
     select: {
@@ -805,32 +599,41 @@ export const global = defineType({
   },
 });
 
-
 // MapBlock Component Schema
 export const mapBlock = defineType({
   name: "mapBlock",
   title: "MapBlock",
   type: "object",
-  groups: [
-    {
+  fields: [
+    TextString({ name: "title", title: "Title" }),
+    TextBlock({ name: "subtitle", title: "Subtitle" }),
+
+    // Add default fields based on common patterns
+    defineField({
       name: "content",
       title: "Content",
-      default: true,
-    },
-    {
-      name: "layout",
-      title: "Layout",
-    },
-  ],
-  fields: [
-    TextString({ name: "email", title: "Email" }),
-    AssetField({ name: "image", title: "Image" }),
-    RichTextField({ name: "intro", title: "Intro" }),
-    TextString({ name: "phone", title: "Phone" }),
-    TextString({ name: "title", title: "Title" }),
-    RichTextField({ name: "address", title: "Address" }),
-    TextString({ name: "addressLink", title: "AddressLink" }),
-    TextString({ name: "addressTitle", title: "AddressTitle" })
+      type: "object",
+      fields: supportedLanguages.map((lang) => ({
+        name: lang.id,
+        title: lang.title,
+        type: "text",
+      })),
+      components: {
+        input: function CustomContentInput(props) {
+          const languageFields = supportedLanguages.map((lang) => ({
+            name: lang.id,
+            title: lang.title,
+          }));
+          return LocalizedFieldWithToggleTextArea({
+            languageFields,
+            value: props.value,
+            onChange: (newValue: Record<string, any>) => {
+              props.onChange([setIfMissing({}), set(newValue)]);
+            },
+          });
+        },
+      },
+    }),
   ],
   preview: {
     select: {
@@ -845,29 +648,41 @@ export const mapBlock = defineType({
   },
 });
 
-
 // ContactBlock Component Schema
 export const contactBlock = defineType({
   name: "contactBlock",
   title: "ContactBlock",
   type: "object",
-  groups: [
-    {
+  fields: [
+    TextString({ name: "title", title: "Title" }),
+    TextBlock({ name: "subtitle", title: "Subtitle" }),
+
+    // Add default fields based on common patterns
+    defineField({
       name: "content",
       title: "Content",
-      default: true,
-    },
-    {
-      name: "layout",
-      title: "Layout",
-    },
-  ],
-  fields: [
-    TextString({ name: "id", title: "Id" }),
-    TextString({ name: "info", title: "Info" }),
-    TextString({ name: "title", title: "Title" }),
-    TextString({ name: "mailTo", title: "MailTo" }),
-    TextString({ name: "mailSubject", title: "MailSubject" })
+      type: "object",
+      fields: supportedLanguages.map((lang) => ({
+        name: lang.id,
+        title: lang.title,
+        type: "text",
+      })),
+      components: {
+        input: function CustomContentInput(props) {
+          const languageFields = supportedLanguages.map((lang) => ({
+            name: lang.id,
+            title: lang.title,
+          }));
+          return LocalizedFieldWithToggleTextArea({
+            languageFields,
+            value: props.value,
+            onChange: (newValue: Record<string, any>) => {
+              props.onChange([setIfMissing({}), set(newValue)]);
+            },
+          });
+        },
+      },
+    }),
   ],
   preview: {
     select: {
