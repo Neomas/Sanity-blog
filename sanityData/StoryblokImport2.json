@@ -19,17 +19,18 @@
       "image": {},
       "intro": {
         "en": [
-          [
-            {
-              "children": [
-                {
-                  "text": "Pretium et ornare nunc integer cras egestas vitae sapien a. Eu odio etiam hendrerit fermentum.",
-                  "marks": []
-                }
-              ],
-              "_type": "text"
-            }
-          ]
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Pretium et ornare nunc integer cras egestas vitae sapien a. Eu odio etiam hendrerit fermentum.",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          }
         ]
       },
       "phone": {
@@ -40,34 +41,41 @@
       },
       "address": {
         "en": [
-          [
-            {
-              "children": [
-                {
-                  "text": "Brouwersvliet 29",
-                  "marks": []
-                }
-              ],
-              "_type": "text"
-            },
-            {
-              "children": [
-                {
-                  "marks": []
-                }
-              ],
-              "_type": "hard_break"
-            },
-            {
-              "children": [
-                {
-                  "text": "2000 ANTWERPEN - Belgium",
-                  "marks": []
-                }
-              ],
-              "_type": "text"
-            }
-          ]
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Brouwersvliet 29",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "2000 ANTWERPEN - Belgium",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          }
         ]
       },
       "addressTitle": {

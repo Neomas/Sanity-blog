@@ -378,13 +378,9 @@ export const ${componentName} = defineType({
     ${fieldsStr}
   ],
   preview: {
-    select: {
-      title: "title.en",
-    },
-    prepare({ title }) {
+    prepare() {
       return {
-        title: "${componentType}",
-        subtitle: title,
+        title: "${componentType}"
       };
     },
   },
@@ -530,22 +526,25 @@ function storyBlokFormatTransform(component: any) {
       return;
 
     if (item?.[1] && item?.[1]?.type && item?.[1]?.type === "doc") {
+      let itemArray: any = [];
+      item?.[1]?.content?.map((contentItem, i) => {
+        return contentItem?.content?.map((contentItem: any) => {
+          itemArray.push({
+            markDefs: [],
+            children: [
+              {
+                text: contentItem.text,
+                marks: [],
+                _type: "span",
+              },
+            ],
+            _type: "block",
+            style: "normal",
+          });
+        });
+      });
       const content = {
-        en: [
-          item?.[1]?.content?.flatMap((contentItem, i) => {
-            return contentItem?.content?.flatMap((contentItem: any) => {
-              return {
-                children: [
-                  {
-                    text: contentItem.text,
-                    marks: [],
-                  },
-                ],
-                _type: contentItem.type,
-              };
-            });
-          }),
-        ],
+        en: itemArray,
       };
 
       newComponent[item?.[0]] = content;

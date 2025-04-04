@@ -464,7 +464,7 @@ export const heroComponent = defineType({
     prepare({ title, media }) {
       return {
         title: "Hero Component",
-        subtitle: title,
+
         media,
       };
     },
@@ -585,8 +585,6 @@ export const formComponent = defineType({
   },
 });
 
-
-
 // Hero Component Schema
 export const hero = defineType({
   name: "hero",
@@ -608,21 +606,16 @@ export const hero = defineType({
     TextString({ name: "media", title: "Media" }),
     TextString({ name: "title", title: "Title" }),
     TextString({ name: "buttons", title: "Buttons" }),
-    TextString({ name: "variant", title: "Variant" })
+    TextString({ name: "variant", title: "Variant" }),
   ],
   preview: {
-    select: {
-      title: "title.en",
-    },
-    prepare({ title }) {
+    prepare() {
       return {
         title: "Hero",
-        subtitle: title,
       };
     },
   },
 });
-
 
 // ContentBlock Component Schema
 export const contentBlock = defineType({
@@ -649,21 +642,16 @@ export const contentBlock = defineType({
     TextString({ name: "buttons", title: "Buttons" }),
     TextString({ name: "variant", title: "Variant" }),
     TextString({ name: "imagePosition", title: "ImagePosition" }),
-    BooleanField({ name: "backgroundShape", title: "BackgroundShape" })
+    BooleanField({ name: "backgroundShape", title: "BackgroundShape" }),
   ],
   preview: {
-    select: {
-      title: "title.en",
-    },
-    prepare({ title }) {
+    prepare() {
       return {
         title: "ContentBlock",
-        subtitle: title,
       };
     },
   },
 });
-
 
 // ContentTimer Component Schema
 export const contentTimer = defineType({
@@ -686,21 +674,16 @@ export const contentTimer = defineType({
     RichTextField({ name: "info", title: "Info" }),
     TextString({ name: "items", title: "Items" }),
     TextString({ name: "title", title: "Title" }),
-    TextString({ name: "button", title: "Button" })
+    TextString({ name: "button", title: "Button" }),
   ],
   preview: {
-    select: {
-      title: "title.en",
-    },
-    prepare({ title }) {
+    prepare() {
       return {
         title: "ContentTimer",
-        subtitle: title,
       };
     },
   },
 });
-
 
 // NewsBlock Component Schema
 export const newsBlock = defineType({
@@ -720,21 +703,16 @@ export const newsBlock = defineType({
   ],
   fields: [
     TextString({ name: "title", title: "Title" }),
-    TextString({ name: "button", title: "Button" })
+    TextString({ name: "button", title: "Button" }),
   ],
   preview: {
-    select: {
-      title: "title.en",
-    },
-    prepare({ title }) {
+    prepare() {
       return {
         title: "NewsBlock",
-        subtitle: title,
       };
     },
   },
 });
-
 
 // InvestmentBlock Component Schema
 export const investmentBlock = defineType({
@@ -757,21 +735,16 @@ export const investmentBlock = defineType({
     TextString({ name: "cards", title: "Cards" }),
     RichTextField({ name: "title", title: "Title" }),
     TextString({ name: "button", title: "Button" }),
-    TextString({ name: "layout", title: "Layout" })
+    TextString({ name: "layout", title: "Layout" }),
   ],
   preview: {
-    select: {
-      title: "title.en",
-    },
-    prepare({ title }) {
+    prepare() {
       return {
         title: "InvestmentBlock",
-        subtitle: title,
       };
     },
   },
 });
-
 
 // Global Component Schema
 export const global = defineType({
@@ -789,22 +762,15 @@ export const global = defineType({
       title: "Layout",
     },
   ],
-  fields: [
-    TextString({ name: "globalComponent", title: "GlobalComponent" })
-  ],
+  fields: [TextString({ name: "globalComponent", title: "GlobalComponent" })],
   preview: {
-    select: {
-      title: "title.en",
-    },
-    prepare({ title }) {
+    prepare() {
       return {
         title: "Global",
-        subtitle: title,
       };
     },
   },
 });
-
 
 // MapBlock Component Schema
 export const mapBlock = defineType({
@@ -830,21 +796,16 @@ export const mapBlock = defineType({
     TextString({ name: "title", title: "Title" }),
     RichTextField({ name: "address", title: "Address" }),
     TextString({ name: "addressLink", title: "AddressLink" }),
-    TextString({ name: "addressTitle", title: "AddressTitle" })
+    TextString({ name: "addressTitle", title: "AddressTitle" }),
   ],
   preview: {
-    select: {
-      title: "title.en",
-    },
-    prepare({ title }) {
+    prepare() {
       return {
         title: "MapBlock",
-        subtitle: title,
       };
     },
   },
 });
-
 
 // ContactBlock Component Schema
 export const contactBlock = defineType({
@@ -867,16 +828,12 @@ export const contactBlock = defineType({
     TextString({ name: "info", title: "Info" }),
     TextString({ name: "title", title: "Title" }),
     TextString({ name: "mailTo", title: "MailTo" }),
-    TextString({ name: "mailSubject", title: "MailSubject" })
+    TextString({ name: "mailSubject", title: "MailSubject" }),
   ],
   preview: {
-    select: {
-      title: "title.en",
-    },
-    prepare({ title }) {
+    prepare() {
       return {
         title: "ContactBlock",
-        subtitle: title,
       };
     },
   },
