@@ -1,0 +1,26 @@
+{
+  "_type": "page",
+  "title": "Corda Community Meets… Corda Studio’s",
+  "slug": {
+    "current": "events/corda-community-meets-corda-studio-s",
+    "_type": "slug"
+  },
+  "contentBlocks": [
+    {
+      "_type": "contentBlock",
+      "info": {
+        "en": []
+      },
+      "type": {
+        "en": "default"
+      },
+      "image": {},
+      "title": {
+        "en": ""
+      },
+      "imagePosition": {
+        "en": "left"
+      }
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "story": {
+    "name": "Your business beats @ Corda",
+    "created_at": "2025-03-24T11:11:54.675Z",
+    "published_at": "2025-04-03T10:12:56.518Z",
+    "updated_at": "2025-04-03T10:12:56.544Z",
+    "id": 644300485,
+    "uuid": "6b59b43a-dd96-4a6b-80a2-710e8e1df9d1",
+    "content": {
+      "_uid": "013e7f6e-954d-43f9-b58d-c8f515dc6f0e",
+      "body": [
+        {
+          "_uid": "9874f54e-b64d-4659-8be0-2c44ec5f8508",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Interesse? Volg dan onderstaande stappen en maak samen met ons een muzikaal feestje van de lente en zomer!",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": "#6FA507"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph"
+              },
+              {
+                "type": "paragraph"
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Stap 1",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ": schrijf je bedrijf in via ",
+                    "type": "text"
+                  },
+                  {
+                    "text": "het inschrijvingsformulier",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "https://webcontent.cordacampus.com/cn/absud/your-business-beats-Corda",
+                          "uuid": null,
+                          "anchor": null,
+                          "target": null,
+                          "linktype": "url"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": " en geef een aantal voorkeursdatums op.",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph"
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Stap 2",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ": zodra wij je inschrijving ontvangen hebben, geven wij je een seintje wanneer je kan mee zingen- en dansen samen met je collega’s.",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph"
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Stap 3",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ": wanneer het moment nadert, sturen wij je een uitnodiging tot het platform en een handleiding.",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph"
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Stap 4",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ": je maakt samen met je collega’s een playlist en wij zorgen ervoor dat deze wordt afgespeeld op de gecommuniceerde datum.",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph"
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Stap 5",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ": geniet van jullie tracks!",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "default",
+          "image": {
+            "id": null,
+            "alt": null,
+            "name": "",
+            "focus": null,
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {}
+          },
+          "title": "",
+          "button": [],
+          "component": "ContentBlock",
+          "imagePosition": "left"
+        }
+      ],
+      "date": "",
+      "info": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "19 maart 2025",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  },
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#6FA507"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Jij vraagt, wij draaien! Bundel samen met je team jullie favoriete nummers in een playlist en laat de campus meegenieten van jullie favoriete tracks.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "image": {
+        "id": 21464102,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/315497/13235x5515/64ffb97859/corda-overview.jpg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "title": "Your business beats @ Corda",
+      "og_image": {
+        "id": 21464102,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/315497/13235x5515/64ffb97859/corda-overview.jpg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "og_title": "Stel samen met je team de ultieme campus playlist samen!",
+      "component": "NewsPage",
+      "pageTitle": "Your business beats @ Corda",
+      "categories": [
+        "Corda Campus"
+      ],
+      "twitter_image": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "twitter_title": "",
+      "og_description": "Creëer samen met je team een playlist en deel deze met de campus voor een geweldige muzikale sfeer.",
+      "pageDescription": "Stel samen met je team een playlist samen en deel deze met de campus voor een muzikale ervaring.",
+      "twitter_description": ""
+    },
+    "slug": "your-business-beats-corda",
+    "full_slug": "news/your-business-beats-corda",
+    "sort_by_date": null,
+    "position": -50,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": 588426276,
+    "meta_data": null,
+    "group_id": "2bb01c53-5064-47de-9492-3771c2513e4e",
+    "first_published_at": "2025-03-25T08:14:11.850Z",
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "alternates": [],
+    "default_full_slug": null,
+    "translated_slugs": null
+  },
+  "cv": 1743675201,
+  "rels": [],
+  "links": []
+}

@@ -1,0 +1,194 @@
+{
+  "story": {
+    "name": "Third edition: Media academy: Scoren op LinkedIn ",
+    "created_at": "2025-03-24T13:10:32.960Z",
+    "published_at": "2025-04-03T08:01:53.570Z",
+    "updated_at": "2025-04-03T08:01:53.594Z",
+    "id": 644321200,
+    "uuid": "854ebf8f-042f-4ba3-9450-ae3f759da267",
+    "content": {
+      "_uid": "c3329836-f065-4523-b306-0c709c803a5e",
+      "body": [],
+      "date": "2025-05-07 19:00",
+      "info": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "20 januari 2025",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  },
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#6FA507"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Kostprijs: 95 € per deelnemer (incl. BTW) – 5 gratis tickets voor Cordabewoners",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Inschrijven? ",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Werk je op Corda Campus en wil je graag één van de 5 gratis tickets claimen? Stuur een mail naar r.peeters@cordacampus.com",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  },
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#6FA507"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Werk je niet op Corda maar wil je wel graag deelnemen? ",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              },
+              {
+                "text": "Klik hier",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://www.medialife.be/media-academy/scoren-op-linkedin-09042025",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  },
+                  {
+                    "type": "bold"
+                  },
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#347ABC"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "title": "Third edition: Media academy: Scoren op LinkedIn ",
+      "endDate": "2025-05-07 21:30",
+      "location": "Corda Campus, Hasselt",
+      "og_image": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "og_title": "",
+      "belowBody": [],
+      "component": "EventPage",
+      "pageTitle": "",
+      "signupInfo": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph"
+          }
+        ]
+      },
+      "signupTitle": "",
+      "signupMailTo": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      },
+      "disableSignup": false,
+      "twitter_image": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "twitter_title": "",
+      "og_description": "",
+      "pageDescription": "",
+      "twitter_description": ""
+    },
+    "slug": "third-edition-media-academy-scoren-op-linkedin",
+    "full_slug": "events/third-edition-media-academy-scoren-op-linkedin",
+    "sort_by_date": null,
+    "position": -40,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": 588426173,
+    "meta_data": null,
+    "group_id": "861d81fe-e956-4877-9bbf-1f084332c504",
+    "first_published_at": "2025-04-03T08:01:53.570Z",
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "alternates": [],
+    "default_full_slug": null,
+    "translated_slugs": null
+  },
+  "cv": 1743675201,
+  "rels": [],
+  "links": []
+}

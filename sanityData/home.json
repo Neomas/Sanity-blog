@@ -1,0 +1,190 @@
+{
+  "_type": "page",
+  "title": "Home",
+  "slug": {
+    "current": "home",
+    "_type": "slug"
+  },
+  "contentBlocks": [
+    {
+      "_type": "heroComponent",
+      "_key": "47b65520-8bde-4d3a-88df-422c7c260087",
+      "title": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "De ultieme",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "textStyle",
+                      "attrs": {
+                        "color": ""
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "locatie voor",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "textStyle",
+                      "attrs": {
+                        "color": ""
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "duurzaam",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "styled",
+                      "attrs": {
+                        "class": "highlight"
+                      }
+                    },
+                    {
+                      "type": "textStyle",
+                      "attrs": {
+                        "color": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " ondernemen",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "textStyle",
+                      "attrs": {
+                        "color": ""
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "subtitle": {}
+    },
+    {
+      "_type": "newsTeaser"
+    },
+    {
+      "_type": "linkBlock",
+      "info": {
+        "en": [
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Corda Campus zet in op",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": " ",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "duurzame initiatieven",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": " ",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "die bijdragen aan een groenere toekomst, van energiebeheer tot sociale verantwoordelijkheid, met als doel een positieve impact op mens en milieu.",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          }
+        ]
+      },
+      "title": {
+        "en": "ONS DUURZAAMHEIDSBELEID"
+      }
+    },
+    {
+      "_type": "ctaBlock",
+      "info": {
+        "en": [
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Cursus sit quam euismod nibh. Tristique ac euismod amet elementum neque nunc pellentesque. Mauris pellentesque pretium pellentesque dui nisl porttitor eu ornare.",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          }
+        ]
+      },
+      "image": {},
+      "title": {
+        "en": "Onze initiatieven"
+      },
+      "variant": {
+        "en": "large"
+      }
+    }
+  ]
+}

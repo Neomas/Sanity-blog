@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./Hero.module.scss";
 import { PortableText } from "@portabletext/react";
-import { getLocalizedValue } from "@/sanity/lib/utils";
+import { getLocalizedValue, urlForImage } from "@/sanity/lib/utils";
+import { Image } from "next-sanity/image";
 export interface HeroComponentProps {
   title?: any;
   subtitle?: any;
@@ -24,14 +25,7 @@ const HeroComponent: React.FC<HeroComponentProps> = ({
   locale,
 }) => {
   return (
-    <div
-      className={styles.hero}
-      style={{
-        backgroundImage: backgroundImage
-          ? `url(${backgroundImage.url})`
-          : "none",
-      }}
-    >
+    <div className={styles.hero}>
       <div className={styles.heroContent}>
         {getLocalizedValue(title) && (
           <h1 className={styles.title}>{getLocalizedValue(title, locale)}</h1>
@@ -47,6 +41,23 @@ const HeroComponent: React.FC<HeroComponentProps> = ({
           </a>
         )}
       </div>
+
+      {urlForImage(backgroundImage) && (
+        <div className={styles.heroImage}>
+          <Image
+            src={
+              (urlForImage(backgroundImage) &&
+                urlForImage(backgroundImage)?.toString()) ||
+              ""
+            }
+            alt={getLocalizedValue(subtitle, locale) || ""}
+            width={1200}
+            height={800}
+            className={styles.image}
+            priority
+          />
+        </div>
+      )}
     </div>
   );
 };

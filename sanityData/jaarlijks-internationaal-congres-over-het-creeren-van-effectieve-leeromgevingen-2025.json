@@ -1,0 +1,72 @@
+{
+  "_type": "page",
+  "title": "Jaarlijks internationaal congres over het creëren van effectieve leeromgevingen – 2025",
+  "slug": {
+    "current": "events/jaarlijks-internationaal-congres-over-het-creeren-van-effectieve-leeromgevingen-2025",
+    "_type": "slug"
+  },
+  "contentBlocks": [
+    {
+      "_type": "articleContentBlock",
+      "info": {
+        "en": [
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Dit tweedaagse seminar brengt leerkrachten, schoolleiders en onderzoekers uit België, Finland, Estland, het Verenigd Koninkrijk en Oeganda samen om ideeën en ervaringen uit te wisselen over het creëren en verbeteren van collaboratieve leeromgevingen. Onderwerpen voor discussie zijn onder meer het HILE-model, kunstmatige intelligentie-instrumenten voor leren, het welzijn van studenten en docenten, een interdisciplinair curriculum, interdisciplinair curriculumontwerp voor zeer geïnteresseerde en hoogbegaafde studenten en de internationalisering van nationale curricula.",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Dit seminar zal de bevindingen en resultaten van een driejarig project gericht op de implementatie van het HILE-model in vier GO! Scholengroep Xpert scholen gevestigd in België.",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": " ",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Seminar talen: Engels en Nederlands",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          }
+        ]
+      },
+      "image": {},
+      "title": {
+        "en": "Corda Conference"
+      },
+      "imagePosition": {
+        "en": "left"
+      }
+    }
+  ]
+}

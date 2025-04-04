@@ -63,7 +63,12 @@ export default defineType({
       blocks: "contentBlocks",
     },
     prepare({ title, blocks }) {
+      const heroComponent = blocks?.find(
+        (block) => block._type === "heroComponent"
+      );
+      const heroImage = heroComponent?.backgroundImage || "";
       return {
+        media: heroImage,
         title,
         subtitle: `${blocks?.length || 0} content block${blocks?.length !== 1 ? "s" : ""}`,
       };

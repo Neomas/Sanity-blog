@@ -1,0 +1,23 @@
+{
+  "_type": "page",
+  "title": "Media academy: Fotografie",
+  "slug": {
+    "current": "events/media-academy-fotografie",
+    "_type": "slug"
+  },
+  "contentBlocks": [
+    {
+      "_type": "articleContentBlock",
+      "info": {
+        "en": []
+      },
+      "image": {},
+      "title": {
+        "en": ""
+      },
+      "imagePosition": {
+        "en": "left"
+      }
+    }
+  ]
+}

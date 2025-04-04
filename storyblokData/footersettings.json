@@ -1,0 +1,235 @@
+{
+  "story": {
+    "name": "footersettings",
+    "created_at": "2024-12-02T10:39:10.074Z",
+    "published_at": "2024-12-03T15:53:16.245Z",
+    "updated_at": "2024-12-03T15:53:16.280Z",
+    "id": 588319946,
+    "uuid": "3246ef0b-0be1-42df-a0fd-4211a7860487",
+    "content": {
+      "_uid": "137b8873-c0c0-41ef-b3d1-21965446d2b9",
+      "tiktok": {
+        "id": "180000ed-2d7d-4bb7-9df2-5c62a5302ac6",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": "home"
+      },
+      "youtube": {
+        "id": "180000ed-2d7d-4bb7-9df2-5c62a5302ac6",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": "home"
+      },
+      "facebook": {
+        "id": "180000ed-2d7d-4bb7-9df2-5c62a5302ac6",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": "home"
+      },
+      "linkedIn": {
+        "id": "180000ed-2d7d-4bb7-9df2-5c62a5302ac6",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": "home"
+      },
+      "whatsapp": {
+        "id": "180000ed-2d7d-4bb7-9df2-5c62a5302ac6",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": "home"
+      },
+      "component": "footerSettings",
+      "instagram": {
+        "id": "180000ed-2d7d-4bb7-9df2-5c62a5302ac6",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": "home"
+      },
+      "footerLinks": [
+        {
+          "_uid": "85fed338-2d01-4261-81a8-d6b75b808fcb",
+          "link": {
+            "id": "180000ed-2d7d-4bb7-9df2-5c62a5302ac6",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "home"
+          },
+          "count": false,
+          "title": "Home",
+          "subItems": [],
+          "component": "MenuButton",
+          "countPage": {
+            "id": "",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": ""
+          }
+        },
+        {
+          "_uid": "fa6c6653-8740-4f3c-a982-3d0cdcb8f91e",
+          "link": {
+            "id": "180000ed-2d7d-4bb7-9df2-5c62a5302ac6",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "home"
+          },
+          "count": false,
+          "title": "Beleid",
+          "subItems": [],
+          "component": "MenuButton",
+          "countPage": {
+            "id": "",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": ""
+          }
+        },
+        {
+          "_uid": "5d8a8750-52b8-41ea-84f1-f57666bb8f8b",
+          "link": {
+            "id": "180000ed-2d7d-4bb7-9df2-5c62a5302ac6",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "home"
+          },
+          "count": false,
+          "title": "Initiatieven",
+          "subItems": [],
+          "component": "MenuButton",
+          "countPage": {
+            "id": "",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": ""
+          }
+        },
+        {
+          "_uid": "22f779a4-1210-4d89-8344-194bf07973e6",
+          "link": {
+            "id": "180000ed-2d7d-4bb7-9df2-5c62a5302ac6",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "home"
+          },
+          "count": false,
+          "title": "Nieuws & Events",
+          "subItems": [],
+          "component": "MenuButton",
+          "countPage": {
+            "id": "",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": ""
+          }
+        },
+        {
+          "_uid": "21e5dcd7-2df3-4999-99b0-1bdb3ede4786",
+          "link": {
+            "id": "180000ed-2d7d-4bb7-9df2-5c62a5302ac6",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "home"
+          },
+          "count": false,
+          "title": "Contact",
+          "subItems": [],
+          "component": "MenuButton",
+          "countPage": {
+            "id": "",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": ""
+          }
+        },
+        {
+          "_uid": "acef9eb2-8771-4d46-97c1-671361d2dc55",
+          "link": {
+            "id": "180000ed-2d7d-4bb7-9df2-5c62a5302ac6",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "home"
+          },
+          "count": false,
+          "title": "Aanmelden",
+          "subItems": [],
+          "component": "MenuButton",
+          "countPage": {
+            "id": "",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": ""
+          }
+        }
+      ],
+      "termsAndPolicies": [
+        {
+          "_uid": "6b3984b4-6ba0-452c-a75f-d4ae591ab6f6",
+          "icon": "",
+          "link": {
+            "id": "180000ed-2d7d-4bb7-9df2-5c62a5302ac6",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "home"
+          },
+          "title": "Cookie Policy",
+          "variant": "primary",
+          "component": "Button",
+          "iconPosition": "back"
+        },
+        {
+          "_uid": "845ae01c-2894-4c99-b8ea-628e698e5ab3",
+          "icon": "",
+          "link": {
+            "id": "180000ed-2d7d-4bb7-9df2-5c62a5302ac6",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "home"
+          },
+          "title": "Privacy Policy",
+          "variant": "primary",
+          "component": "Button",
+          "iconPosition": "back"
+        }
+      ]
+    },
+    "slug": "footersettings",
+    "full_slug": "settings/footersettings",
+    "sort_by_date": null,
+    "position": -10,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": 588319787,
+    "meta_data": null,
+    "group_id": "b4f9cd04-f7e7-400e-8bee-402f48fffffc",
+    "first_published_at": "2024-12-03T15:53:16.245Z",
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "alternates": [],
+    "default_full_slug": null,
+    "translated_slugs": null
+  },
+  "cv": 1743675201,
+  "rels": [],
+  "links": []
+}

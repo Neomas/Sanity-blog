@@ -306,24 +306,27 @@ export const OptionsField = ({
   title,
   fieldset,
   group,
+  options,
   ...props
 }: {
   name: string;
   title: string;
   fieldset?: string;
   group?: string;
+  options?: any[];
 }) =>
   defineField({
     name: name,
     title: title,
     type: "object",
+
     fields: supportedLanguages.map((lang) => ({
       name: lang.id,
       title: lang.title,
-      type: "array",
-      of: [{ type: "string" }],
+      type: "string",
+      layout: "dropdown",
       options: {
-        list: ["Option A", "Option B", "Option C"],
+        list: options,
       },
     })),
   });
@@ -636,7 +639,15 @@ export const contentBlock = defineType({
   fields: [
     TextString({ name: "id", title: "Id" }),
     RichTextField({ name: "info", title: "Info" }),
-    TextString({ name: "color", title: "Color" }),
+    OptionsField({
+      name: "color",
+      title: "Color",
+      options: [
+        { title: "white", value: "white" },
+        { title: "red", value: "red" },
+        { title: "blue", value: "blue" },
+      ],
+    }),
     AssetField({ name: "media", title: "Media" }),
     TextString({ name: "title", title: "Title" }),
     TextString({ name: "buttons", title: "Buttons" }),

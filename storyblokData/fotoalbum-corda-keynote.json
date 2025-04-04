@@ -1,0 +1,140 @@
+{
+  "story": {
+    "name": "Fotoalbum Corda Keynote",
+    "created_at": "2025-03-24T11:00:46.754Z",
+    "published_at": "2025-04-03T10:12:57.212Z",
+    "updated_at": "2025-04-03T10:12:57.241Z",
+    "id": 644297644,
+    "uuid": "a12e5e20-60da-4561-b996-e0268923de93",
+    "content": {
+      "_uid": "86f35441-5087-4219-99c5-7989320bf0ef",
+      "body": [],
+      "date": "",
+      "info": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "19 maart 2025",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  },
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#6FA507"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Op 18 maart gaven we de kick-off van ons nieuwe Corda Keynote seizoen. Was jij er ook bij? Ontdek nu het fotoalbum.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "https://www.cordacampus.com/nieuws/fotoalbum-corda-keynote-45/",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://www.cordacampus.com/nieuws/fotoalbum-corda-keynote-45/",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      },
+      "image": {
+        "id": 21499254,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/315497/2048x1365/6886e699f4/keynote.png",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "title": "Fotoalbum Corda Keynote #45",
+      "og_image": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "og_title": "",
+      "component": "NewsPage",
+      "pageTitle": "",
+      "categories": [
+        "Corda Campus"
+      ],
+      "twitter_image": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "twitter_title": "",
+      "og_description": "",
+      "pageDescription": "",
+      "twitter_description": ""
+    },
+    "slug": "fotoalbum-corda-keynote",
+    "full_slug": "news/fotoalbum-corda-keynote",
+    "sort_by_date": null,
+    "position": -30,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": 588426276,
+    "meta_data": null,
+    "group_id": "827e1f48-f1a4-4aea-ad70-571f40b79e5e",
+    "first_published_at": "2025-03-24T11:06:34.084Z",
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "alternates": [],
+    "default_full_slug": null,
+    "translated_slugs": null
+  },
+  "cv": 1743675201,
+  "rels": [],
+  "links": []
+}

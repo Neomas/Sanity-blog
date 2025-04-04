@@ -1,0 +1,108 @@
+{
+  "story": {
+    "name": "ContactCrosslink",
+    "created_at": "2024-12-04T08:30:24.021Z",
+    "published_at": "2024-12-10T10:09:02.650Z",
+    "updated_at": "2024-12-10T10:09:02.667Z",
+    "id": 589745263,
+    "uuid": "8df0ec8f-1b50-4693-910a-7d565dc7efc3",
+    "content": {
+      "_uid": "99108198-2825-462e-8709-48aa37eb6825",
+      "title": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Jouw ",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "text": "Pilot project",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "styled",
+                    "attrs": {
+                      "class": "highlight"
+                    }
+                  },
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "testen op de Corda Campus?",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "button": [
+        {
+          "_uid": "f1b84d75-3dd9-4962-83da-960cab3b870d",
+          "icon": "ArrowRight",
+          "link": {
+            "id": "fa0148c3-1939-4abe-91f9-a6f09760d814",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "contact"
+          },
+          "title": "Contacteer ons",
+          "variant": "tertiary",
+          "component": "Button",
+          "iconPosition": "BACK"
+        }
+      ],
+      "component": "BottomCrosslink",
+      "globalLink": ""
+    },
+    "slug": "contactcrosslink",
+    "full_slug": "globals/contactcrosslink",
+    "sort_by_date": null,
+    "position": 0,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": 589745259,
+    "meta_data": null,
+    "group_id": "95cc9729-e2a1-47a7-9e63-fc028218ba79",
+    "first_published_at": "2024-12-04T14:14:41.288Z",
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "alternates": [],
+    "default_full_slug": null,
+    "translated_slugs": null
+  },
+  "cv": 1743675201,
+  "rels": [],
+  "links": []
+}

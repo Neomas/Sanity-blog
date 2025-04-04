@@ -1,0 +1,177 @@
+{
+  "story": {
+    "name": "Corda Community Meets… Corda Studio’s",
+    "created_at": "2025-03-24T11:20:09.935Z",
+    "published_at": "2025-03-25T08:15:00.108Z",
+    "updated_at": "2025-03-25T08:15:00.145Z",
+    "id": 644301096,
+    "uuid": "66d30c9c-5350-4856-9388-c21a2039368c",
+    "content": {
+      "_uid": "8ff0c855-f72e-4095-b921-b8e03b6afab7",
+      "body": [
+        {
+          "_uid": "8f0a1652-ed96-4a5f-bd0b-3eee2da65231",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph"
+              }
+            ]
+          },
+          "type": "default",
+          "image": {
+            "id": 21501849,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/315497/2560x1707/cd361157c6/corda-studios.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "",
+          "button": [],
+          "component": "ContentBlock",
+          "imagePosition": "left"
+        }
+      ],
+      "date": "2025-03-31 09:30",
+      "info": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "17 maart 2025",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  },
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#6FA507"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Benieuwd naar de gloednieuweplek op onze campus waar media, technologie en creativiteit samenkomen? Ontdek onze Corda Studio's tijdens onze Corda Community Meets. Op 31 maart en 3 april krijg je een exclusieve blik achter de schermen bij The Poolhouse en TV Limburg én hun innovatieve producties. Je ontdekt het allemaal met een heerlijk ontbijtje tijdens onze Corda Community Meets XL … Corda Studio's.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "title": "Corda Community Meets… Corda Studio’s",
+      "endDate": "2025-04-03 11:15",
+      "location": "The Poolhouse en TV Limburg",
+      "og_image": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "og_title": "",
+      "belowBody": [
+        {
+          "_uid": "736b19c6-0693-40db-93ed-fd934eb79c7e",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph"
+              }
+            ]
+          },
+          "image": {
+            "id": null,
+            "alt": null,
+            "name": "",
+            "focus": null,
+            "title": null,
+            "filename": null,
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "",
+          "component": "ArticleContentBlock",
+          "imagePosition": "left"
+        }
+      ],
+      "component": "EventPage",
+      "pageTitle": "",
+      "signupInfo": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph"
+          }
+        ]
+      },
+      "signupTitle": "",
+      "signupMailTo": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      },
+      "disableSignup": false,
+      "twitter_image": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "twitter_title": "",
+      "og_description": "",
+      "pageDescription": "",
+      "twitter_description": ""
+    },
+    "slug": "corda-community-meets-corda-studio-s",
+    "full_slug": "events/corda-community-meets-corda-studio-s",
+    "sort_by_date": null,
+    "position": 0,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": 588426173,
+    "meta_data": null,
+    "group_id": "ef67c33b-7cf6-4915-9069-9f273dbaaac0",
+    "first_published_at": "2025-03-25T08:15:00.108Z",
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "alternates": [],
+    "default_full_slug": null,
+    "translated_slugs": null
+  },
+  "cv": 1743675201,
+  "rels": [],
+  "links": []
+}

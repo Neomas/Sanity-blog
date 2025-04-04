@@ -1,0 +1,237 @@
+{
+  "story": {
+    "name": "Media academy: Fotografie",
+    "created_at": "2025-03-24T12:40:35.827Z",
+    "published_at": "2025-03-25T08:14:59.745Z",
+    "updated_at": "2025-04-03T08:06:11.825Z",
+    "id": 644317206,
+    "uuid": "4f405517-a7c1-4f26-8cb9-77e0539f11d8",
+    "content": {
+      "_uid": "be0296fb-1d62-42c0-848b-238ead158822",
+      "body": [
+        {
+          "_uid": "38e52f7d-dd78-4579-b84e-dd95e0825626",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph"
+              }
+            ]
+          },
+          "image": {
+            "id": 21501972,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/315497/1200x675/8cb3f53d7c/medialife.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "",
+          "component": "ArticleContentBlock",
+          "imagePosition": "left"
+        }
+      ],
+      "date": "2025-04-23 18:00",
+      "info": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "20 februari 2025",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  },
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#6FA507"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Kostprijs: 95 € per deelnemer (incl. BTW)",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  },
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#0A0E02"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Werk je op Corda Campus en wil je graag één van de 5 gratis tickets claimen? Stuur een mail naar ",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#0A0E02"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": "r.peeters@cordacampus.com",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "mailto:r.peeters@cordacampus.com",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  },
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#0A0E02"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Werk je niet op de campus, maar wil je wel graag deelnemen? ",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#0A0E02"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": "Klik hier",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://www.medialife.be/media-academy/fotografie-23042025",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  },
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#0A0E02"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "title": "Media academy: Fotografie",
+      "endDate": "2025-04-23 20:30",
+      "location": "Corda Campus, Hasselt",
+      "og_image": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "og_title": "",
+      "belowBody": [],
+      "component": "EventPage",
+      "pageTitle": "",
+      "signupInfo": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph"
+          }
+        ]
+      },
+      "signupTitle": "",
+      "signupMailTo": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      },
+      "disableSignup": false,
+      "twitter_image": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "twitter_title": "",
+      "og_description": "",
+      "pageDescription": "",
+      "twitter_description": ""
+    },
+    "slug": "media-academy-fotografie",
+    "full_slug": "events/media-academy-fotografie",
+    "sort_by_date": null,
+    "position": -10,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": 588426173,
+    "meta_data": null,
+    "group_id": "1f8d2fd3-eff7-4f72-93d4-d4b26799fa5c",
+    "first_published_at": "2025-03-25T08:14:59.745Z",
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "alternates": [],
+    "default_full_slug": null,
+    "translated_slugs": null
+  },
+  "cv": 1743675201,
+  "rels": [],
+  "links": []
+}

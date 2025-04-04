@@ -1,0 +1,212 @@
+{
+  "story": {
+    "name": "Binnentuin Corda-A & B Summerproof",
+    "created_at": "2025-03-24T11:08:43.030Z",
+    "published_at": "2025-04-03T10:13:07.445Z",
+    "updated_at": "2025-04-03T10:13:07.475Z",
+    "id": 644300437,
+    "uuid": "d15575fb-c9d2-4fb6-ac95-a70f3e2dab57",
+    "content": {
+      "_uid": "df17a106-be36-4e11-a7fd-e9da5cb392ee",
+      "body": [
+        {
+          "_uid": "dd79bbaa-7fee-4763-9117-5cfeaf475343",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Bij Corda Campus draait alles om een productieve en inspirerende werkomgeving. In het voorjaar is onze binnentuin de perfecte aanvulling. De groene oase tussen Corda-A en Corda-B biedt niet alleen een rustige plek om even buiten te werken, maar ook een fijne locatie om in alle rust te ontspannen.",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "emoji",
+                    "attrs": {
+                      "name": "sun_with_face",
+                      "emoji": "🌞",
+                      "fallbackImage": "https://cdn.jsdelivr.net/npm/emoji-datasource-apple/img/apple/64/1f31e.png"
+                    }
+                  },
+                  {
+                    "text": " Tip: Zin om hier eens een barbecue te doen? Corda has it all! Huur onze barbecueset en geniet van een heerlijke maaltijd in de buitenlucht. Meer weten? Vraag de brochure aan via ",
+                    "type": "text"
+                  },
+                  {
+                    "text": "H.smeets@cordacampus.com",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "mailto:H.smeets@cordacampus.com",
+                          "uuid": null,
+                          "anchor": null,
+                          "target": null,
+                          "linktype": "url"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": ".",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Een event organiseren in de Corda Valley? Binnenkort lanceren we een nieuwe service met alle event essentials. Stay tuned for more…",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": "#6FA507"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "default",
+          "image": {
+            "id": null,
+            "alt": null,
+            "name": "",
+            "focus": null,
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {}
+          },
+          "title": "",
+          "button": [],
+          "component": "ContentBlock",
+          "imagePosition": "left"
+        }
+      ],
+      "date": "",
+      "info": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "19 maart 2025",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  },
+                  {
+                    "type": "italic"
+                  },
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#6FA507"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "De zon is terug en dat betekent maar één ding: de Corda Valley is back! Onze binnentuin tussen Corda-A en Corda-B is klaar voor het lenteweer.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "image": {
+        "id": 21499380,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/315497/1600x1200/bd47f64d57/binnentuin.png",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "title": "Binnentuin Corda-A & B Summerproof",
+      "og_image": {
+        "id": 21499380,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/315497/1600x1200/bd47f64d57/binnentuin.png",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "og_title": "Binnentuin Corda-A & B Klaar voor de lentezon!",
+      "component": "NewsPage",
+      "pageTitle": "Binnentuin Corda A&B is ready!",
+      "categories": [
+        "Corda Campus"
+      ],
+      "twitter_image": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "source": null,
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "twitter_title": "",
+      "og_description": "De binnentuin tussen Corda-A en Corda-B is klaar voor het lenteweer. Geniet van de zon en frisse lucht in de vernieuwde buitenruimte!",
+      "pageDescription": "De binnentuin tussen Corda-A en Corda-B is klaar voor het lenteweer. Kom genieten van de zon in de vernieuwde Corda-A & B binnentuin!",
+      "twitter_description": ""
+    },
+    "slug": "binnentuin-corda-a-b-summerproof",
+    "full_slug": "news/binnentuin-corda-a-b-summerproof",
+    "sort_by_date": null,
+    "position": -40,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": 588426276,
+    "meta_data": null,
+    "group_id": "d45db972-62be-4d59-b4cb-78f4b8a83fe3",
+    "first_published_at": "2025-03-24T11:11:22.189Z",
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "alternates": [],
+    "default_full_slug": null,
+    "translated_slugs": null
+  },
+  "cv": 1743675201,
+  "rels": [],
+  "links": []
+}

@@ -1,0 +1,216 @@
+{
+  "_type": "page",
+  "title": "Initiatieven",
+  "slug": {
+    "current": "initiatieven-test",
+    "_type": "slug"
+  },
+  "contentBlocks": [
+    {
+      "_type": "heroComponent",
+      "_key": "d3b79260-b840-4718-ae35-3b028afb7255",
+      "title": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Onze",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "textStyle",
+                      "attrs": {
+                        "color": ""
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Initiatieven",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "styled",
+                      "attrs": {
+                        "class": "highlight"
+                      }
+                    },
+                    {
+                      "type": "textStyle",
+                      "attrs": {
+                        "color": ""
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "subtitle": {}
+    },
+    {
+      "_type": "contentBlock",
+      "info": {
+        "en": [
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Corda Campus integreert de ",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "17 SDG’s ",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "van de Verenigde Naties in zijn beleid. Deze doelstellingen, gericht op thema’s zoals mensen, welvaart, vrede, planeet en partnerschap, vormen een wereldwijd kader om hedendaagse en toekomstige uitdagingen aan te pakken. Ze zijn niet alleen voor landen, maar ook voor ",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "burgers",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": ", ",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "bedrijven ",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "en ",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "organisaties",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": " van belang.",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          }
+        ]
+      },
+      "type": {
+        "en": "blocks"
+      },
+      "image": {},
+      "title": {
+        "en": "Sustainability  Development Goals"
+      },
+      "imagePosition": {
+        "en": "left"
+      }
+    },
+    {
+      "_type": "scrollCarousel"
+    },
+    {
+      "_type": "ctaBlock",
+      "info": {
+        "en": [
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Cursus sit quam euismod nibh. Tristique ac euismod amet elementum neque nunc pellentesque. Mauris pellentesque pretium pellentesque dui nisl porttitor eu ornare.",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          }
+        ]
+      },
+      "image": {},
+      "title": {
+        "en": "Onze initiatieven"
+      },
+      "variant": {
+        "en": "large"
+      }
+    }
+  ]
+}

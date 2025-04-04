@@ -4407,21 +4407,63 @@
               "en": {
                 "type": "objectAttribute",
                 "value": {
-                  "type": "string"
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "white"
+                    },
+                    {
+                      "type": "string",
+                      "value": "red"
+                    },
+                    {
+                      "type": "string",
+                      "value": "blue"
+                    }
+                  ]
                 },
                 "optional": true
               },
               "fr": {
                 "type": "objectAttribute",
                 "value": {
-                  "type": "string"
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "white"
+                    },
+                    {
+                      "type": "string",
+                      "value": "red"
+                    },
+                    {
+                      "type": "string",
+                      "value": "blue"
+                    }
+                  ]
                 },
                 "optional": true
               },
               "nl": {
                 "type": "objectAttribute",
                 "value": {
-                  "type": "string"
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "white"
+                    },
+                    {
+                      "type": "string",
+                      "value": "red"
+                    },
+                    {
+                      "type": "string",
+                      "value": "blue"
+                    }
+                  ]
                 },
                 "optional": true
               }

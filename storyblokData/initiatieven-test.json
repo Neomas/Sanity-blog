@@ -1,0 +1,2255 @@
+{
+  "story": {
+    "name": "Initiatieven",
+    "created_at": "2024-12-05T10:13:24.291Z",
+    "published_at": "2025-03-31T10:57:19.818Z",
+    "updated_at": "2025-04-01T11:19:33.160Z",
+    "id": 590398254,
+    "uuid": "9b5eecb5-cafb-4795-b9bc-a4bb8f270d17",
+    "content": {
+      "_uid": "adc699e8-d86b-496f-aa9e-bb64f2a18f54",
+      "body": [
+        {
+          "_uid": "d3b79260-b840-4718-ae35-3b028afb7255",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Innovatie en vernieuwing staan centraal bij Corda Campus.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": "#C6E982"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": " We brengen mensen samen in diverse settings, altijd met oog voor duurzaamheid. Dit vertaalt zich in concrete acties op het vlak van mobiliteit, diensten en faciliteiten.",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "image": {
+            "id": 18939897,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/315497/1464x736/62f9c43263/initiatieven.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Onze",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Initiatieven",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "styled",
+                        "attrs": {
+                          "class": "highlight"
+                        }
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "variant": "secondary",
+          "component": "Hero"
+        },
+        {
+          "_uid": "52bad964-fedf-4ae0-a220-edb805ed9727",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Corda Campus integreert de ",
+                    "type": "text"
+                  },
+                  {
+                    "text": "17 SDG’s ",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": "#6FA507"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": "van de Verenigde Naties in zijn beleid. Deze doelstellingen, gericht op thema’s zoals mensen, welvaart, vrede, planeet en partnerschap, vormen een wereldwijd kader om hedendaagse en toekomstige uitdagingen aan te pakken. Ze zijn niet alleen voor landen, maar ook voor ",
+                    "type": "text"
+                  },
+                  {
+                    "text": "burgers",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", ",
+                    "type": "text"
+                  },
+                  {
+                    "text": "bedrijven ",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "en ",
+                    "type": "text"
+                  },
+                  {
+                    "text": "organisaties",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " van belang.",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "blocks",
+          "image": {
+            "id": 18935649,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/315497/973x648/872ed0774f/beleid.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "Sustainability  Development Goals",
+          "button": [],
+          "component": "ContentBlock",
+          "imagePosition": "left"
+        },
+        {
+          "_uid": "29acc864-211e-43b8-b8b3-1def5e778b99",
+          "items": [
+            {
+              "_uid": "ee648dcc-e8e3-4b07-86e4-05e779c88491",
+              "info": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 6
+                    },
+                    "content": [
+                      {
+                        "text": "Het creëren van een ",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": "gezonde",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#6FA507"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": " en ",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": "veilige",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#6FA507"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": " werkomgeving voor werknemers waarin ",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": "diversiteit",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#6FA507"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": " en ",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": "inclusie",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#6FA507"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": " worden gestimuleerd.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "People",
+              "component": "ScrollCarouselItem",
+              "carouselItems": [
+                {
+                  "_uid": "be5befd9-b595-4504-b57f-24d2e3adf1be",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Blend is een Limburgs netwerk dat jongeren (18-30 jaar) ondersteunt in hun toekomst en kansen op de arbeidsmarkt. We begeleiden hen met coaching op vlak van onderwijs, taal, mentale gezondheid en werk.",
+                            "type": "text"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Tijdens de Warmste Week zetten we ons extra in voor het goede doel. We organiseerden een yard sale op Corda Campus om kansarmoede aan te pakken en zo een positieve impact te maken binnen onze community.",
+                            "type": "text"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "paragraph"
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21445335,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/697x492/befb847693/foto-geen-armoede.JPG",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "De warmste week",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "noPoverty"
+                  ]
+                },
+                {
+                  "_uid": "dacf2261-da82-4fec-bdb6-974ee14c7be7",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Op 9 maart 2022 lanceerden we in samenwerking met Selecta onze foodies shop & go. Dit proefproject bestaat uit een volledig geautomatiseerde winkel in Corda 1. Hier kunnen de mensen op de campus 24/7 genieten een heerlijke maaltijd of snack. ",
+                            "type": "text",
+                            "marks": [
+                              {
+                                "type": "textStyle",
+                                "attrs": {
+                                  "color": ""
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 18952050,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/804x804/e395aeee82/foodiesshop.png",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Foodies shop & Go",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "zeroHunger"
+                  ]
+                },
+                {
+                  "_uid": "20b66f06-3001-4332-8a36-af6cb3426b45",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Sinds september 2021 kan de Corda Community trainen in de Strongbox, alleen of in groep, met begeleiding van een personal trainer. Hier vind je alles voor een gezonde en leuke workout.",
+                            "type": "text",
+                            "marks": [
+                              {
+                                "type": "textStyle",
+                                "attrs": {
+                                  "color": "#282220"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Daarnaast werden in de herfst extra Fit @ Corda activiteiten gelanceerd, zoals een wekelijkse looptocht op woensdag met het Incubator-team en de mogelijkheid om op dinsdag een padelplein te reserveren bij TC Tenkie.",
+                            "type": "text",
+                            "marks": [
+                              {
+                                "type": "textStyle",
+                                "attrs": {
+                                  "color": "#282220"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "paragraph"
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21616020,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/2048x1364/e4e702eee5/strongbox-en-fit.jpg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Strongbox en Fit @ Corda",
+                  "subTitle": "2021",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "healthWellbeing"
+                  ]
+                },
+                {
+                  "_uid": "032ab384-c8f0-462a-8bd2-95d9ff779e60",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "We verwelkomen graag nieuwe sportinitiatieven op de campus. Zo kregen we in 2024 de kans om de work-out trailer van Work Out on Location te ervaren tijdens hun gratis sportsessies, en mochten we enkele maanden gebruikmaken van de outdoor fitness van Omnigym.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21446109,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/269x248/095f8cc6d5/workout.JPG",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Pop-ups & demo's",
+                  "subTitle": "2024",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "healthWellbeing"
+                  ]
+                },
+                {
+                  "_uid": "acf0a917-bb95-4737-9667-5936e8463a4a",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Sinds 2019 ontdekken kinderen technologie via STEM-kampen met robotjes, VR en games.",
+                            "type": "text",
+                            "marks": [
+                              {
+                                "type": "textStyle",
+                                "attrs": {
+                                  "color": "#282220"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Daarnaast biedt Corda Campus stageplaatsen aan studenten in diverse teams, van techniek tot communicatie. Ze doen praktijkervaring op en ontwikkelen belangrijke vaardigheden.",
+                            "type": "text",
+                            "marks": [
+                              {
+                                "type": "textStyle",
+                                "attrs": {
+                                  "color": "#282220"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "paragraph"
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21445752,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/853x1280/db2ce0d63a/stem-kampen.jpg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Investeren in jong talent",
+                  "subTitle": "2019",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "qualityEducation"
+                  ]
+                },
+                {
+                  "_uid": "28bfc487-f25f-44ac-a86c-dc1e362a66b0",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Op 7 september 2023 verwelkomden we de Stoempautomaat op Corda Campus. Deze automaat biedt soepen, maaltijden en desserts gemaakt van verloren groenten en voedseloverschotten van lokale leveranciers. Alle maaltijden zijn vegetarisch en dragen bij aan het verminderen van voedselverspilling.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21445891,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/1080x1080/491640e1bb/stoempautomaat.png",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "De stoempautomaat",
+                  "subTitle": "2023",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "zeroHunger"
+                  ]
+                },
+                {
+                  "_uid": "f42ec88e-3a50-4eaf-a926-76dec9b49d1a",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Op 7 maart 2023 organiseerde Corda Campus een inspiratiesessie met Mensura om zowel het team als de bewoners veerkrachtiger te maken. De sessie combineerde theoretische kennis met praktische oefeningen, waardoor deelnemers concrete tips kregen om stress en veranderingen op de werkvloer beter aan te pakken en hun mentale weerbaarheid te verbeteren.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21445992,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/640x738/e9c0752061/sessie-veerkachtiger.JPG",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Veerkracht versterken",
+                  "subTitle": "2023",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "healthWellbeing"
+                  ]
+                },
+                {
+                  "_uid": "25daeb39-c3f9-4a7e-a023-0eb0d3955e8c",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Pauzes nemen is cruciaal om gefocust en productief te blijven. Zo introduceerden we in juli 2023 de Corda games. Deze zes spelletjes kan de Corda Community gratis uitlenen in Corda 5. Het aanbod bestaat uit toegankelijke games zoals darts, petanque Kubb of Cornhole. En voor een intensievere work-out zijn er uitdagender spelletje zoals Kan Jam en Spikeball.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21616294,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/2000x1414/4a3b21bcd0/foto-s-sdg-s.png",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Corda games",
+                  "subTitle": "2023",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "healthWellbeing"
+                  ]
+                },
+                {
+                  "_uid": "2f869c6a-f50f-40f9-b61d-f2617f0f823f",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Sinds februari 2024 biedt Cura Athletica kinesitherapie aan op de campus voor het behandelen van acute en langdurige klachten. Daarnaast kun je preventief werken aan je gezondheid met groepslessen of persoonlijke fitnesssessies, zonder extra verplaatsingen.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21616412,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/2560x1709/9671589049/cura-athletica.webp",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": " Kinesitherapie en gezondheid op de campus",
+                  "subTitle": "2024",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "healthWellbeing"
+                  ]
+                }
+              ],
+              "sustainabilityLabels": [
+                "noPoverty",
+                "zeroHunger",
+                "healthWellbeing",
+                "qualityEducation",
+                "genderEquality"
+              ]
+            },
+            {
+              "_uid": "02a3a27b-c271-4fb2-a1dd-afe295269119",
+              "info": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 6
+                    },
+                    "content": [
+                      {
+                        "text": "Het creëren van ",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": "economische waarde",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#6FA507"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": " op een duurzame manier. Dit kan worden bereikt door in te zetten op de ontwikkeling van ",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": "duurzame oplossingen",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#6FA507"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": ".",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "Prosperity",
+              "component": "ScrollCarouselItem",
+              "carouselItems": [
+                {
+                  "_uid": "b5c5dd14-8f85-49c2-a112-9df15d11654e",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Corda Campus breidt uit met 9 hectare tot 2030, met focus op duurzaamheid, ecologie en mobiliteit. De nieuwe Corda Arena wordt het hart van de campus, met flexibele werkruimtes en internationale aantrekkingskracht. Duurzaam vervoer, groene ruimtes en short stay appartementen maken Corda 2.0 dé technologische hotspot voor bedrijven en talent.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21446835,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/1024x578/22fa76c57f/arena.png",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Corda Campus 2.0",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "decentWork"
+                  ]
+                },
+                {
+                  "_uid": "231c5930-f8a2-44f0-956a-4be5830a3b17",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Nieuwe huurders op Corda Campus ontvangen alle nodige informatie in één duidelijk document, waardoor de onboarding efficiënter en overzichtelijker wordt. Er zijn twee documenten: één voor starters en één voor scale-ups en corporates. Deze documenten bevatten alle praktische details om een soepele start te garanderen en zijn specifiek afgestemd op de behoeften van verschillende huurders.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 18942654,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/1072x1072/3e13a79edf/onthaal.png",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Onthaalbeleid",
+                  "subTitle": "2023",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "reducedInequalities"
+                  ]
+                },
+                {
+                  "_uid": "79c9b117-46b2-485e-9df0-8e6d815d8ecb",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Corda Campus installeerde in de zomer van 2022 24 snelladers om de groeiende vraag naar laadpunten voor elektrische wagens te ondersteunen. Zeven aanbieders (zoals Isola, Tesla en Power Go) beheren de laadstations, die 24/7 beschikbaar zijn voor campusbewoners, bezoekers en buurtbewoners. De laadpunten maken gebruik van groene energie, en er worden PV-installaties geplaatst om zelf energie op te wekken. Corda blijft het project monitoren om de overstap naar elektrisch rijden te bevorderen.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21447018,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/817x467/5f8376ae10/duurzame-steden-en-gemeenten-foto.JPG",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Oplaadpunten voor duurzaam vervoer",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "sustainableCities"
+                  ]
+                },
+                {
+                  "_uid": "dba1c404-80dd-4037-9a6b-9b8326968336",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Corda Campus bevordert duurzaam mobiliteitsbeleid met autovrije, publiek toegankelijke ruimtes en car sharing. Grote parkings zijn aan de randen van de campus, met een bezoekersparking dicht bij het onthaal. Het sturingsmechanisme zorgt voor een vlotte doorstroming.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21447067,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/2560x1055/34215e0a16/mobility-lab.png",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Mobility lab",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "sustainableCities"
+                  ]
+                },
+                {
+                  "_uid": "8283686f-cfb6-46de-a5c8-13368ca76100",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Corda Campus stimuleert fietsgebruik met overdekte fietsenstallingen, douches en lockers voor het opladen van e-bikes. De nabijheid van station Kiewit en De Lijn biedt extra bereikbaarheid. Ook e-bikes en -steps zijn beschikbaar voor werknemers en bezoekers, ideaal voor verplaatsingen op de campus of naar de binnenstad.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21447130,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/1024x683/e088bd4d9a/e-steps.jpg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Fiets, E-mobiliteit en Openbaar Vervoer",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "sustainableCities"
+                  ]
+                },
+                {
+                  "_uid": "6438ead7-dc08-4eb2-a049-7b08bee42aed",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Corda Campus werkt samen met Group Delorge om twee elektrische deelwagens aan te bieden, beschikbaar voor zowel privégebruik als professioneel gebruik door bedrijven op de campus. De deelwagens kunnen gereserveerd worden via de app 'MyMove' na een eenvoudige registratie. Dit initiatief ondersteunt flexibele, duurzame en kosteneffectieve mobiliteit voor de Corda-community.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21447161,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/1200x900/0835dc12aa/deelwagens.jpg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Deelwagens",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "sustainableCities"
+                  ]
+                },
+                {
+                  "_uid": "0fc8bf9a-3078-4b98-9e76-ab80a804de1c",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "In onze drie nieuwste gebouwen kozen we voor groene daken die extra isolatie bieden en er ook mooi uitzien. Deze daken worden gemaaid door robotmaaiers, die milieuvriendelijk werken zonder olie of benzine, en vrijwel geluidloos zijn. Het afgemaaide gras blijft op het dak liggen als natuurlijke bemesting, wat de bodem helpt om vocht vast te houden en groen afval voorkomt.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21447241,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/1000x667/394daaf820/electrcitieit.jfif",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Groene daken",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "sustainableCities"
+                  ]
+                },
+                {
+                  "_uid": "33fa5618-cd48-4ad2-bd35-b31c1f2c265f",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Diversiteit en inclusie zijn essentiële waarden voor Corda Campus. Ze dragen bij aan een gelukkiger en meer betrokken werkplek, waar medewerkers zich gewaardeerd en welkom voelen. Dit vergroot hun motivatie en helpt hen hun volledige potentieel te bereiken. In ons huishoudelijk reglement staan de afspraken die gelden voor huurders en bezoekers, zodat iedereen weet hoe we met diverse situaties omgaan.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21447290,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/1280x960/430d6ae064/hands-1917895_1280.png",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Diversiteit en inclusie",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "reducedInequalities"
+                  ]
+                },
+                {
+                  "_uid": "3763670a-244c-4da3-a6b9-548f9666fd31",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Het groenonderhoud op Corda Campus wordt verzorgd door Bewel, een sociale onderneming die werknemers met een arbeidshandicap tewerkstelt. Bewel speelt een sleutelrol in het onderhoud van het park, van het snoeien van bomen en struiken tot het onderhoud van de paden. Dankzij hun inzet blijft de campus een aangename en verzorgde omgeving.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21447345,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/1280x720/170822d7ca/corda-park.jpg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Waardig werk",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "decentWork"
+                  ]
+                },
+                {
+                  "_uid": "bc1ad6b3-ad57-4d63-9325-8762e36f6a9c",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Corda Campus biedt een energiebesparend en comfortabel werkomgeving met CO²-gestuurde ventilatie. De campus is een bruisende community met diverse faciliteiten zoals een bank, strijkatelier en restaurant. Corda Conference biedt 25 vergaderruimtes, waar duurzaamheid centraal staat met gerecycleerd materiaal en glazen waterflessen. Daarnaast is er een interne technische dienst beschikbaar voor ondersteuning.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21447445,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/1800x1200/69e75299c7/conference.jpg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Innovatie en comfort",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "healthWellbeing",
+                    "cleanEnergy"
+                  ]
+                },
+                {
+                  "_uid": "685c72ab-2a11-4020-a361-c62c1a621048",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "In maart 2023 werd de eerste steen van de Corda Arena gelegd, waarmee de bouw officieel van start ging. De bouwwerkzaamheden starten na het bouwverlof en duren ongeveer anderhalf jaar. Na een testfase zal de arena in januari 2026 volledig operationeel zijn.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21447631,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/571x310/40709f3394/corda-arena-startschot.JPG",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Start van de Corda Arena",
+                  "subTitle": "2023",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "decentWork"
+                  ]
+                },
+                {
+                  "_uid": "ab8cf433-cc7c-4e08-bb29-f61d75982cd5",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Vanaf januari 2025 is het verplicht om de EPC-score te bepalen van gebouwen die vóór 2017 zijn gebouwd of gerenoveerd. De EPC van Corda 4 en Corda 5 is al vastgesteld, en de EPC van Corda 6 wordt in juni bepaald.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21447772,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/1280x853/0538ab73ea/electricity-4666566_1280.jpg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "EPB-score",
+                  "subTitle": "2023",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "infrastructure"
+                  ]
+                }
+              ],
+              "sustainabilityLabels": [
+                "cleanEnergy",
+                "decentWork",
+                "infrastructure",
+                "reducedInequalities",
+                "sustainableCities"
+              ]
+            },
+            {
+              "_uid": "8abf301e-44df-4988-9267-470b883808f5",
+              "info": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 6
+                    },
+                    "content": [
+                      {
+                        "text": "Het ",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": "minimaliseren",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#6FA507"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": " van de impact van de bedrijfsactiviteiten op het milieu en het streven naar duurzaam energieverbruik.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "Planet",
+              "component": "ScrollCarouselItem",
+              "carouselItems": [
+                {
+                  "_uid": "4a7d3dfb-bee4-415a-91f5-669846bd8661",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "In samenwerking met de Stad Hasselt werd in mei 2022 de Corda Repair Corner in het leven geroepen. Zo krijgen de Cordabewoners de mogelijkheid om producten een tweede leven te geven in plaats van te vervangen. Twee keer per jaar opent de repair corner zijn deuren.",
+                            "type": "text",
+                            "marks": [
+                              {
+                                "type": "textStyle",
+                                "attrs": {
+                                  "color": ""
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21461275,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/512x339/e110fcb4a2/repair-corner.JPG",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Corda Repair Corner",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "responsibleConsumption"
+                  ]
+                },
+                {
+                  "_uid": "46cbdb6a-3331-48db-85fb-11531806befd",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "De groene daken van Corda Campus dragen bij aan duurzaam regenwaterbeheer. Na uitdagingen met het opgevangen water, werden er opslagtanks en een grondwaterput geïnstalleerd. Dit zorgt ervoor dat de daken het hele jaar door bewaterd worden met regen- en grondwater, wat het stadswaterverbruik vermindert.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21461576,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/1920x1283/d05ce3d374/waterbeheer.jpg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Regenwaterbeheer",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "cleanWater"
+                  ]
+                },
+                {
+                  "_uid": "c8a54e7c-dd6c-43df-9f70-1bc7e22be596",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Corda Campus stimuleert afvalrecycling met vijf milieustraten voor restafval, papier, karton, PMD en glas. De semi-ondergrondse containers zijn gemaakt van milieuvriendelijke materialen en geproduceerd in België om de carbon footprint te verlagen. Afval wordt gerecycled tot nieuwe producten, zoals bouwstoffen, spaanplaten en groene stroom. Renovatieafval wordt efficiënt verwerkt, en de nieuwe brandblussers verminderen afval met 75% door hun opbouw.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21461665,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/640x480/a004b3d5f2/afval.jpg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Afvalsortering",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "responsibleConsumption"
+                  ]
+                },
+                {
+                  "_uid": "0b23525d-22fc-4abe-a761-6989a4e66ebe",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Tijdens “de Week van de Afvalvermindering” kreeg afval op Corda Campus een nieuw doel. Elektronica, kabels, batterijen en toners werden ingezameld voor recyclage of hergebruik. Ook oude laptops kregen een tweede leven. Bewoners die hun eigen koffietas meenamen, werden beloond met een zoete traktatie.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21462034,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/1280x853/7af122ef25/recycling.jpg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Afval krijgt een tweede leven",
+                  "subTitle": "2023",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "responsibleConsumption"
+                  ]
+                },
+                {
+                  "_uid": "beb9554a-e4da-4886-8dc5-18e0b310318e",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Corda Campus draagt bij aan een circulaire economie met end-of-life procedures. Niet-defecte materialen worden geschonken aan initiatieven zoals start-ups en Digital for Youth. Defecte toestellen worden gerecycleerd in samenwerking met Out-of-Use en IT-partner Trius.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21462226,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/1280x853/f5a76edbb8/laptop.jpg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Duurzaam hergebruik en recyclage",
+                  "subTitle": "2023",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "infrastructure"
+                  ]
+                },
+                {
+                  "_uid": "670cf9e5-a376-4e50-8d32-de929b3d2dff",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Corda Campus trekt met zijn groene omgeving vlinders, bijen, trekvogels, kikkers en zelfs herten en vossen aan. Grasstroken maakten plaats voor lavendel en een moestuin, een trekpleister voor insecten. Daarnaast wordt samen met de Hasseltse Gierzwaluwenwerkgroep bekeken waar nestkastjes kunnen komen op nieuwe gebouwen binnen Masterplan 2.0.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21461945,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/1024x630/ea849503cc/biodiversiteit.jpeg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Biodiversiteit",
+                  "subTitle": "2023",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": []
+                }
+              ],
+              "sustainabilityLabels": [
+                "cleanWater",
+                "responsibleConsumption",
+                "climateAction",
+                "lifeBelowWater",
+                "lifeOnLand"
+              ]
+            },
+            {
+              "_uid": "955679f3-f17c-49c8-8b34-bce65255aef3",
+              "info": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 6
+                    },
+                    "content": [
+                      {
+                        "text": "Het respecteren van de ",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": "mensenrechten",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#C6E982"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": " en het bijdragen aan ",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": "vrede en stabiliteit",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#C6E982"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": ". Bedrijven werken aan het voorkomen van conflicten en het respecteren van wet- en regelgeving.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "Peace",
+              "component": "ScrollCarouselItem",
+              "carouselItems": [
+                {
+                  "_uid": "a4273aa5-39b3-4b0c-9430-170faf77360e",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Community building is iets waar de campus veel belang aan hecht. Zo kan de kruisbestuiving en het verruimen van hun netwerk namelijk verder gestimuleerd worden. Dit gebeurt onder andere door het aanbieden van leuke activiteiten om samen met de collega's of cordaburen te doen.",
+                            "type": "text",
+                            "marks": [
+                              {
+                                "type": "textStyle",
+                                "attrs": {
+                                  "color": ""
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 18952106,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/804x804/f5a2b78c68/communitybuilding.png",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Community Building",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "peaceAndJustice"
+                  ]
+                },
+                {
+                  "_uid": "7c62bc85-4294-4cf6-b006-3c9e6e12ab49",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Het corporate governance charter van Corda Campus NV bepaalt hoe het bedrijf wordt geleid en gecontroleerd, met focus op transparantie en verantwoordelijkheid. Het omvat regels over bestuur, vergoedingen, audits en rapportering. Dit bevordert efficiëntie, gelijke behandeling en investeerdersvertrouwen. Het charter en jaarverslagen zijn beschikbaar op de websites van Corda Campus NV en LRM NV.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21462888,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/393x403/6859aa3ea9/corporate-governance-charter.JPG",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Corporate Governance Charter",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "peaceAndJustice"
+                  ]
+                },
+                {
+                  "_uid": "caf4e8a5-38fb-4987-897f-27030af75bf0",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Na de bekendmaking van Masterplan 2.0 op 24 februari 2022 werden huurders en buurtbewoners geïnformeerd via een presentatie door Raf Degens. Er werd extra aandacht besteed aan mogelijke zorgen, gevolgd door een dialoog. Flyers werden ook verspreid in de Banneuxwijk en Kiewit.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21463081,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/2560x1440/aa8ab71771/corda-arena.jpg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Infovergaderingen masterplan 2.0",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "peaceAndJustice"
+                  ]
+                },
+                {
+                  "_uid": "a3b2710e-7020-4d0d-b7bd-48ba49f7bc90",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Corda Campus streeft naar uitstekende service en klanttevredenheid. Klachten over materiële zaken kunnen bij de servicedesk worden gemeld, met een oplossing binnen 24 tot 48 uur. Daarnaast bieden we ook ontspanningsmogelijkheden, van infrastructuur en services tot community building.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 18855050,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/2196x1320/3e324a191f/hero-home.png",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Procedure klachten",
+                  "subTitle": "2023",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "peaceAndJustice"
+                  ]
+                }
+              ],
+              "sustainabilityLabels": [
+                "peaceAndJustice"
+              ]
+            },
+            {
+              "_uid": "41b14dbc-e62a-4200-83f5-1b2f16bb3beb",
+              "info": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": {
+                      "level": 6
+                    },
+                    "content": [
+                      {
+                        "text": "Samenwerking",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#C6E982"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": " tussen bedrijven waardoor ze hun ",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": "duurzaamheidsdoelstellingen",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#C6E982"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": " bereiken en bijdragen aan een duurzame toekomst.",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "Partnership",
+              "component": "ScrollCarouselItem",
+              "carouselItems": [
+                {
+                  "_uid": "478f54d2-8079-4dff-a187-9bcbd528c7d6",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Corda Campus werkt samen met leveranciers die een duurzame visie delen. Duurzaamheid is verankerd in onze contracten, bijvoorbeeld door het gebruik van milieuvriendelijke schoonmaakmiddelen en energiezuinige handdoekdispensers.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 18934198,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/1464x696/19eca9bbf4/duurzaamheidsbeleid.png",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Leveranciers",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "partnershipForTheGoals"
+                  ]
+                },
+                {
+                  "_uid": "83dca4d0-6e9e-4d29-9917-841820909b7c",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Limburg Start Up (LSU)",
+                            "type": "text",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ]
+                          },
+                          {
+                            "text": " coördineert zeven incubatoren, waaronder Corda Incubator, die 115 bedrijven ondersteunt. LSU bevordert groei via tools zoals Innovatrix en Community Booster, en faciliteert samenwerking met academische instellingen en partners. Het 'Take a seat'-programma biedt toegang tot markten in Duitsland, Nederland, Frankrijk, China, Singapore en de VS.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 21464102,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/13235x5515/64ffb97859/corda-overview.jpg",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Samenwerkingen Limburg Start Up",
+                  "subTitle": "2022",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "partnershipForTheGoals"
+                  ]
+                },
+                {
+                  "_uid": "9d3cf25c-3e5f-4173-bf4b-dd204d3bef4b",
+                  "info": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "In mei 2023 lanceerde Corda Campus de Corda Winery, een stedelijke wijngaard in samenwerking met de Universiteit van Hasselt, Wijndomein Hoenshof en Jerome Winery. Door onderzoek naar bodemsoorten ontdekten onderzoekers een methode om wijn te verbouwen op beperkte ruimte zonder landbouwgrond. De verplaatsbare wijnranken zijn bestand tegen vorst en vereisen geen pesticiden, dankzij een resistente variëteit die door kruising is ontwikkeld.",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "image": {
+                    "id": 18952153,
+                    "alt": "",
+                    "name": "",
+                    "focus": "",
+                    "title": "",
+                    "source": "",
+                    "filename": "https://a.storyblok.com/f/315497/804x804/bb0af4bb03/cordawine.png",
+                    "copyright": "",
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Corda Winery",
+                  "subTitle": "2023",
+                  "component": "ScrollCarouselItemCard",
+                  "sustainabilityLabels": [
+                    "partnershipForTheGoals"
+                  ]
+                }
+              ],
+              "sustainabilityLabels": [
+                "partnershipForTheGoals"
+              ]
+            }
+          ],
+          "component": "ScrollCarousel"
+        },
+        {
+          "_uid": "af941d8e-23e9-461a-925e-0eb596a9512c",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Cursus sit quam euismod nibh. Tristique ac euismod amet elementum neque nunc pellentesque. Mauris pellentesque pretium pellentesque dui nisl porttitor eu ornare.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "cards": [
+            {
+              "_uid": "0716ad96-31b1-47a6-b6ec-a46a5b9a58fa",
+              "info": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Ontdek de ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "concrete acties",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          },
+                          {
+                            "type": "italic"
+                          },
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#C6E982"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": " die Corda Campus onderneemt voor een duurzamere toekomst.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "image": {
+                "id": 18886192,
+                "alt": "",
+                "name": "",
+                "focus": "1468x645:1469x646",
+                "title": "",
+                "source": "",
+                "filename": "https://a.storyblok.com/f/315497/2196x1380/b3da1b9609/cta-image.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {
+                  "alt": "",
+                  "title": "",
+                  "source": "",
+                  "copyright": ""
+                },
+                "content_type": "png",
+                "is_external_url": false
+              },
+              "title": "Onze initiatieven",
+              "button": [
+                {
+                  "_uid": "dc56ef23-063c-461a-a901-7c5d31a627d1",
+                  "icon": "ArrowRight",
+                  "link": {
+                    "id": "9b5eecb5-cafb-4795-b9bc-a4bb8f270d17",
+                    "url": "",
+                    "linktype": "story",
+                    "fieldtype": "multilink",
+                    "cached_url": "initiatieven-test"
+                  },
+                  "title": "Ontdek alle initiatieven",
+                  "variant": "primary",
+                  "component": "Button",
+                  "iconPosition": "BACK"
+                }
+              ],
+              "component": "CtaCard"
+            },
+            {
+              "_uid": "c5908860-c6a4-4e3c-a261-1a8dbc9530d0",
+              "info": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Bij Corda Campus krijg je de ruimte om ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "jouw innovatieve idee",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          },
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#6FA507"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": " in de praktijk te brengen, midden in een dynamische en toekomstgerichte community.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "image": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": null,
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {}
+              },
+              "title": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Jouw ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "Pilot Project",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "styled",
+                            "attrs": {
+                              "class": "highlight"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": " testen op de Corda Campus?",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "button": [
+                {
+                  "_uid": "73ad57b3-cdba-4c19-a979-1e0555cbc2c5",
+                  "icon": "ArrowRight",
+                  "link": {
+                    "id": "fa0148c3-1939-4abe-91f9-a6f09760d814",
+                    "url": "",
+                    "linktype": "story",
+                    "fieldtype": "multilink",
+                    "cached_url": "contact"
+                  },
+                  "title": "Contacteer ons",
+                  "variant": "primary",
+                  "component": "Button",
+                  "iconPosition": "BACK"
+                }
+              ],
+              "component": "CtaCard"
+            }
+          ],
+          "image": {
+            "id": 18886192,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/315497/2196x1380/b3da1b9609/cta-image.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "Onze initiatieven",
+          "button": [
+            {
+              "_uid": "3a1bfeee-bb84-4981-ab94-66b6cb3d08d0",
+              "icon": "",
+              "link": {
+                "id": "8a88ce92-1476-4f0b-aef3-41ccb18f48c6",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "initiatieven"
+              },
+              "title": "Ontdek alle initiatieven",
+              "variant": "primary",
+              "component": "Button",
+              "iconPosition": "back"
+            }
+          ],
+          "variant": "large",
+          "component": "CtaBlock",
+          "behindPrevious": true
+        }
+      ],
+      "og_image": {
+        "id": 21461275,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/315497/512x339/e110fcb4a2/repair-corner.JPG",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "og_title": "Duurzame innovatie in actie | Ontdek de initiatieven van Corda Campus",
+      "component": "Page",
+      "pageTitle": "Duurzame Initiatieven | Corda Campus",
+      "twitter_image": {
+        "id": 21447130,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/315497/1024x683/e088bd4d9a/e-steps.jpg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "twitter_title": "Duurzame initiatieven bij Corda Campus",
+      "og_description": "Corda Campus zet in op duurzaamheid en innovatie. Van slimme mobiliteit tot de 17 SDG’s: samen creëren we een toekomstbestendige community.",
+      "pageDescription": "Ontdek hoe Corda Campus inzet op innovatie en duurzaamheid. Van mobiliteit en faciliteiten tot de integratie van de 17 SDG’s: samen bouwen we aan een betere toekomst. ",
+      "twitter_description": "Duurzaamheid en innovatie gaan hand in hand bij Corda Campus. Ontdek hoe wij de 17 SDG’s omzetten in concrete actie! #Duurzaamheid #SDGs #CordaCampus"
+    },
+    "slug": "initiatieven-test",
+    "full_slug": "initiatieven-test",
+    "sort_by_date": null,
+    "position": -20,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": null,
+    "meta_data": null,
+    "group_id": "e87c07e0-b547-4edb-ab16-255929422154",
+    "first_published_at": "2024-12-06T08:19:53.688Z",
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "alternates": [],
+    "default_full_slug": null,
+    "translated_slugs": null
+  },
+  "cv": 1743675201,
+  "rels": [],
+  "links": []
+}

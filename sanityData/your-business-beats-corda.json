@@ -1,0 +1,182 @@
+{
+  "_type": "page",
+  "title": "Your business beats @ Corda",
+  "slug": {
+    "current": "news/your-business-beats-corda",
+    "_type": "slug"
+  },
+  "contentBlocks": [
+    {
+      "_type": "contentBlock",
+      "info": {
+        "en": [
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Interesse? Volg dan onderstaande stappen en maak samen met ons een muzikaal feestje van de lente en zomer!",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Stap 1",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": ": schrijf je bedrijf in via ",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "het inschrijvingsformulier",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": " en geef een aantal voorkeursdatums op.",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Stap 2",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": ": zodra wij je inschrijving ontvangen hebben, geven wij je een seintje wanneer je kan mee zingen- en dansen samen met je collega’s.",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Stap 3",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": ": wanneer het moment nadert, sturen wij je een uitnodiging tot het platform en een handleiding.",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Stap 4",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": ": je maakt samen met je collega’s een playlist en wij zorgen ervoor dat deze wordt afgespeeld op de gecommuniceerde datum.",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Stap 5",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": ": geniet van jullie tracks!",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          }
+        ]
+      },
+      "type": {
+        "en": "default"
+      },
+      "title": {
+        "en": ""
+      },
+      "imagePosition": {
+        "en": "left"
+      }
+    }
+  ]
+}

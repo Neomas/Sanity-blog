@@ -549,9 +549,9 @@ export type ContentBlock = {
     }>;
   };
   color?: {
-    en?: string;
-    fr?: string;
-    nl?: string;
+    en?: "white" | "red" | "blue";
+    fr?: "white" | "red" | "blue";
+    nl?: "white" | "red" | "blue";
   };
   media?: {
     en?: {

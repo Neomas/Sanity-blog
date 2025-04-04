@@ -1,0 +1,618 @@
+{
+  "story": {
+    "name": "Home",
+    "created_at": "2024-12-02T10:34:56.286Z",
+    "published_at": "2025-03-31T08:12:59.736Z",
+    "updated_at": "2025-04-03T08:37:08.635Z",
+    "id": 588319022,
+    "uuid": "180000ed-2d7d-4bb7-9df2-5c62a5302ac6",
+    "content": {
+      "_uid": "7939cdb6-d771-4cc3-b8fc-1820e108ee2d",
+      "body": [
+        {
+          "_uid": "47b65520-8bde-4d3a-88df-422c7c260087",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Corda Campus is de toonaangevende tech-campus in de Euregio, waar 5000 mensen in 250 bedrijven werken aan de toekomst. Duurzaamheid is verankerd in ons DNA: van energie-efficiëntie en luchtkwaliteit tot sociale verantwoordelijkheid en diversiteit. ",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Hier groeien ideeën, ontstaan samenwerkingen en bouwen we aan een duurzame toekomst.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": "#C6E982"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "image": {
+            "id": 18855050,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/315497/2196x1320/3e324a191f/hero-home.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "De ultieme",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "locatie voor",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "duurzaam",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "styled",
+                        "attrs": {
+                          "class": "highlight"
+                        }
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": " ondernemen",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "variant": "primary",
+          "component": "Hero"
+        },
+        {
+          "_uid": "00e01297-bf3e-4aa9-bdf7-341ac4590cd2",
+          "newsLink": [
+            {
+              "_uid": "59ccb89f-8fd4-42f8-8dcc-8186cd02ae89",
+              "icon": "ArrowRight",
+              "link": {
+                "id": "b94f24ed-7b3b-4d71-8027-a68aab1ed8d4",
+                "url": "",
+                "anchor": "news",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "nieuws-en-events"
+              },
+              "title": "Alle artikels",
+              "variant": "tertiary",
+              "component": "Button",
+              "iconPosition": "BACK"
+            }
+          ],
+          "component": "NewsTeaser",
+          "eventLink": [
+            {
+              "_uid": "6e997c99-2cea-43bc-901b-9368275ad37e",
+              "icon": "ArrowRight",
+              "link": {
+                "id": "b94f24ed-7b3b-4d71-8027-a68aab1ed8d4",
+                "url": "",
+                "anchor": "events",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "nieuws-en-events"
+              },
+              "title": "Alle events",
+              "variant": "tertiary",
+              "component": "Button",
+              "iconPosition": "BACK"
+            }
+          ]
+        },
+        {
+          "_uid": "8717d150-8956-457c-9fe3-ef140463b62b",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Corda Campus zet in op",
+                    "type": "text"
+                  },
+                  {
+                    "text": " ",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": "#6FA507"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": "duurzame initiatieven",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "italic"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": "#6FA507"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": " ",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": "#6FA507"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "text": "die bijdragen aan een groenere toekomst, van energiebeheer tot sociale verantwoordelijkheid, met als doel een positieve impact op mens en milieu.",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph"
+              }
+            ]
+          },
+          "links": [
+            {
+              "_uid": "b957ea46-64d0-4cd2-b30f-55e596c2ae99",
+              "info": "Corda Campus is een plek waar ideeën groeien en bedrijven samenkomen in een inspirerende community. We streven ernaar de toonaangevende tech-campus te zijn waar innovatie en technologie de wereld van morgen vormgeven.",
+              "link": {
+                "id": "2badedd0-6613-414f-b0df-77a0c7603a2b",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "beleid"
+              },
+              "image": {
+                "id": 21408702,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a.storyblok.com/f/315497/2000x1414/66252e793d/missie-en-visie.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "title": "Missie & Visie",
+              "component": "LinkItem"
+            },
+            {
+              "_uid": "bc65d16c-b10c-4725-a53f-f969c6363335",
+              "info": "Corda Campus bevordert duurzaam ondernemen door samen te werken met investeerders, deel te nemen aan relevante initiatieven zoals Voka’s Charter Duurzaam Ondernemen, en het behalen van internationale kwaliteitslabels, terwijl we blijven investeren in duurzame innovatie en kennis.",
+              "link": {
+                "id": "74c92d61-ad62-44f1-8413-8bf42d250518",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "beleid"
+              },
+              "image": {
+                "id": 21408729,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a.storyblok.com/f/315497/500x500/d604186dff/beleid.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "title": "Ons beleid",
+              "component": "LinkItem"
+            },
+            {
+              "_uid": "eaf189e4-f56c-4700-a4a3-da3242232bc0",
+              "info": "Corda Campus rapporteert regelmatig over de voortgang van haar duurzaamheidsinitiatieven. Dit maakt het mogelijk om onze impact te meten, verbeteringen door te voeren en onze betrokkenen op de hoogte te houden van de behaalde resultaten.",
+              "link": {
+                "id": "180000ed-2d7d-4bb7-9df2-5c62a5302ac6",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "home"
+              },
+              "image": {
+                "id": 21408785,
+                "alt": "",
+                "name": "",
+                "focus": "",
+                "title": "",
+                "source": "",
+                "filename": "https://a.storyblok.com/f/315497/500x500/e2d12c58bc/rapportering.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "title": "Rapportering",
+              "component": "LinkItem"
+            }
+          ],
+          "title": "ONS DUURZAAMHEIDSBELEID",
+          "component": "LinkBlock"
+        },
+        {
+          "_uid": "9881181b-b87f-474e-b7f2-1bb06d19da01",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Cursus sit quam euismod nibh. Tristique ac euismod amet elementum neque nunc pellentesque. Mauris pellentesque pretium pellentesque dui nisl porttitor eu ornare.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "cards": [
+            {
+              "_uid": "8b5d3306-a4ba-450a-9792-74fc9922e54c",
+              "info": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Ontdek de ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "concrete acties",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          },
+                          {
+                            "type": "italic"
+                          },
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#C6E982"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": " die Corda Campus onderneemt voor een duurzamere toekomst.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "image": {
+                "id": 18886192,
+                "alt": "",
+                "name": "",
+                "focus": "1468x645:1469x646",
+                "title": "",
+                "source": "",
+                "filename": "https://a.storyblok.com/f/315497/2196x1380/b3da1b9609/cta-image.png",
+                "copyright": "",
+                "fieldtype": "asset",
+                "meta_data": {
+                  "alt": "",
+                  "title": "",
+                  "source": "",
+                  "copyright": ""
+                },
+                "content_type": "png",
+                "is_external_url": false
+              },
+              "title": "Onze initiatieven",
+              "button": [
+                {
+                  "_uid": "e7e08b34-0c00-4931-b065-7d0248ec8df5",
+                  "icon": "ArrowLeft",
+                  "link": {
+                    "id": "9b5eecb5-cafb-4795-b9bc-a4bb8f270d17",
+                    "url": "",
+                    "linktype": "story",
+                    "fieldtype": "multilink",
+                    "cached_url": "initiatieven-test"
+                  },
+                  "title": "Ontdek alle initiatieven",
+                  "variant": "primary",
+                  "component": "Button",
+                  "iconPosition": "BACK"
+                }
+              ],
+              "component": "CtaCard"
+            },
+            {
+              "_uid": "e865de74-7fe3-402a-90ca-145f72336e75",
+              "info": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Bij Corda Campus krijg je de ruimte om ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "jouw innovatieve idee",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          },
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#6FA507"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": " in de praktijk te brengen, midden in een dynamische en toekomstgerichte community.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "image": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": null,
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {}
+              },
+              "title": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Jouw ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "Pilot Project",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "styled",
+                            "attrs": {
+                              "class": "highlight"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "text": " testen op de Corda Campus?",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "button": [
+                {
+                  "_uid": "b4b977d3-da0c-445d-8dd8-53214ab8b61d",
+                  "icon": "ArrowRight",
+                  "link": {
+                    "id": "fa0148c3-1939-4abe-91f9-a6f09760d814",
+                    "url": "",
+                    "linktype": "story",
+                    "fieldtype": "multilink",
+                    "cached_url": "contact"
+                  },
+                  "title": "Contacteer ons",
+                  "variant": "primary",
+                  "component": "Button",
+                  "iconPosition": "BACK"
+                }
+              ],
+              "component": "CtaCard"
+            }
+          ],
+          "image": {
+            "id": 18886192,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/315497/2196x1380/b3da1b9609/cta-image.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "Onze initiatieven",
+          "button": [
+            {
+              "_uid": "0efafff6-fce6-463c-8953-bf114e5687c9",
+              "icon": "",
+              "link": {
+                "id": "8a88ce92-1476-4f0b-aef3-41ccb18f48c6",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "initiatieven"
+              },
+              "title": "Ontdek alle initiatieven",
+              "variant": "primary",
+              "component": "Button",
+              "iconPosition": "back"
+            }
+          ],
+          "variant": "large",
+          "component": "CtaBlock",
+          "behindPrevious": true
+        }
+      ],
+      "og_image": {
+        "id": 21447018,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/315497/817x467/5f8376ae10/duurzame-steden-en-gemeenten-foto.JPG",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "og_title": " De ultieme locatie voor duurzaam ondernemen | Corda Campus",
+      "component": "Page",
+      "pageTitle": "De ultieme locatie voor duurzaam ondernemen | Corda Campus",
+      "twitter_image": {
+        "id": 21447241,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/315497/1000x667/394daaf820/electrcitieit.jfif",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "twitter_title": "De ultieme locatie voor duurzaam ondernemen | Corda Campus",
+      "og_description": "Corda Campus is dé tech-hub waar innovatie en duurzaamheid samenkomen. Een inspirerende plek voor bedrijven die bouwen aan de toekomst.",
+      "pageDescription": "Ontdek Corda Campus, de toonaangevende tech-campus in de Euregio. Hier werken 5000 mensen in 250 bedrijven aan innovatie en duurzame groei. ",
+      "twitter_description": "Corda Campus: dé plek waar innovatie, technologie en duurzaamheid samenkomen. Ontdek hoe wij de toekomst vormgeven! #DuurzaamOndernemen #TechCampus"
+    },
+    "slug": "home",
+    "full_slug": "home",
+    "sort_by_date": null,
+    "position": -40,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": 0,
+    "meta_data": null,
+    "group_id": "9b17f23e-dded-4566-b59b-5d15baff2345",
+    "first_published_at": "2025-03-31T08:12:59.736Z",
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "alternates": [],
+    "default_full_slug": null,
+    "translated_slugs": null
+  },
+  "cv": 1743675201,
+  "rels": [],
+  "links": []
+}

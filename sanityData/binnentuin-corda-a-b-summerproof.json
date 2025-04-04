@@ -1,0 +1,97 @@
+{
+  "_type": "page",
+  "title": "Binnentuin Corda-A & B Summerproof",
+  "slug": {
+    "current": "news/binnentuin-corda-a-b-summerproof",
+    "_type": "slug"
+  },
+  "contentBlocks": [
+    {
+      "_type": "contentBlock",
+      "info": {
+        "en": [
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Bij Corda Campus draait alles om een productieve en inspirerende werkomgeving. In het voorjaar is onze binnentuin de perfecte aanvulling. De groene oase tussen Corda-A en Corda-B biedt niet alleen een rustige plek om even buiten te werken, maar ook een fijne locatie om in alle rust te ontspannen.",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": " Tip: Zin om hier eens een barbecue te doen? Corda has it all! Huur onze barbecueset en geniet van een heerlijke maaltijd in de buitenlucht. Meer weten? Vraag de brochure aan via ",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "H.smeets@cordacampus.com",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": ".",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Een event organiseren in de Corda Valley? Binnenkort lanceren we een nieuwe service met alle event essentials. Stay tuned for more…",
+                "marks": [],
+                "_type": "span"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          }
+        ]
+      },
+      "type": {
+        "en": "default"
+      },
+      "title": {
+        "en": ""
+      },
+      "imagePosition": {
+        "en": "left"
+      }
+    }
+  ]
+}

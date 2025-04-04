@@ -1,0 +1,332 @@
+{
+  "story": {
+    "name": "Jaarlijks internationaal congres over het creëren van effectieve leeromgevingen – 2025",
+    "created_at": "2025-03-24T12:46:40.017Z",
+    "published_at": "2025-04-03T10:13:21.061Z",
+    "updated_at": "2025-04-03T10:13:21.087Z",
+    "id": 644318076,
+    "uuid": "efa4e422-63fd-4673-a563-c5a116bf85a5",
+    "content": {
+      "_uid": "67fec6a3-643c-455b-a16a-453a869b9443",
+      "body": [
+        {
+          "_uid": "3b7f642e-dcce-4e28-9c42-9907f93223f5",
+          "info": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Dit tweedaagse seminar brengt leerkrachten, schoolleiders en onderzoekers uit België, Finland, Estland, het Verenigd Koninkrijk en Oeganda samen om ideeën en ervaringen uit te wisselen over het creëren en verbeteren van collaboratieve leeromgevingen. Onderwerpen voor discussie zijn onder meer het HILE-model, kunstmatige intelligentie-instrumenten voor leren, het welzijn van studenten en docenten, een interdisciplinair curriculum, interdisciplinair curriculumontwerp voor zeer geïnteresseerde en hoogbegaafde studenten en de internationalisering van nationale curricula.",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Dit seminar zal de bevindingen en resultaten van een driejarig project gericht op de implementatie van het HILE-model in vier GO! Scholengroep Xpert scholen gevestigd in België.",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": " ",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Seminar talen: Engels en Nederlands",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": "#6FA507"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "image": {
+            "id": 21461945,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/315497/1024x630/ea849503cc/biodiversiteit.jpeg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "Corda Conference",
+          "component": "ArticleContentBlock",
+          "imagePosition": "left"
+        }
+      ],
+      "date": "2025-04-24 08:00",
+      "info": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "04 februari 2025",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  },
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#6FA507"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Maak hier kennis met onze ",
+                "type": "text"
+              },
+              {
+                "text": "keynote sprekers",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://letschooling.eu/internationalcongresscele/keynote-speakers",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  },
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#347ABC"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Het voorlopige programma van het evenement is ",
+                "type": "text"
+              },
+              {
+                "text": "hier",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://letschooling.eu/internationalcongresscele/provisionalprogram",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  },
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#347ABC"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "text": " te vinden ",
+                "type": "text"
+              },
+              {
+                "text": ".",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://letschooling.eu/internationalcongresscele/provisionalprogram",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Ga voor registratie naar onze",
+                "type": "text"
+              },
+              {
+                "text": " ",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#347ABC"
+                    }
+                  }
+                ]
+              },
+              {
+                "text": "registratielink.",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://letschooling.eu/internationalcongresscele/registration",
+                      "uuid": null,
+                      "anchor": null,
+                      "target": null,
+                      "linktype": "url"
+                    }
+                  },
+                  {
+                    "type": "textStyle",
+                    "attrs": {
+                      "color": "#347ABC"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "title": "Jaarlijks internationaal congres over het creëren van effectieve leeromgevingen – 2025",
+      "endDate": "2025-03-25 16:20",
+      "location": "Corda Campus, Hasselt",
+      "og_image": {
+        "id": 21447241,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/315497/1000x667/394daaf820/electrcitieit.jfif",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "og_title": "Internationaal Congres 2025: Effectieve Leeromgevingen Creëren",
+      "belowBody": [],
+      "component": "EventPage",
+      "pageTitle": "Jaarlijks Internationaal Congres 2025: Effectieve Leeromgevingen Creëren",
+      "signupInfo": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph"
+          }
+        ]
+      },
+      "signupTitle": "",
+      "signupMailTo": {
+        "id": "",
+        "url": "https://letschooling.eu/internationalcongresscele/registration",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "https://letschooling.eu/internationalcongresscele/registration"
+      },
+      "disableSignup": false,
+      "twitter_image": {
+        "id": 21447345,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/315497/1280x720/170822d7ca/corda-park.jpg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "twitter_title": "Internationaal Congres 2025: Effectieve Leeromgevingen Creëren – Registreer Nu!",
+      "og_description": "Sluit je aan bij het internationale congres 2025 over het creëren van effectieve leeromgevingen. Ontdek het programma, leer van keynote sprekers en registreer je vandaag nog!",
+      "pageDescription": "Ontdek het jaarlijkse internationale congres 2025 over het creëren van effectieve leeromgevingen. Bekijk het programma, ontmoet onze keynote sprekers en registreer je nu!",
+      "twitter_description": "Doe mee aan het internationaal congres 2025 over effectieve leeromgevingen. Ontdek het programma, ontmoet de keynote sprekers en meld je snel aan!"
+    },
+    "slug": "jaarlijks-internationaal-congres-over-het-creeren-van-effectieve-leeromgevingen-2025",
+    "full_slug": "events/jaarlijks-internationaal-congres-over-het-creeren-van-effectieve-leeromgevingen-2025",
+    "sort_by_date": null,
+    "position": -20,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": 588426173,
+    "meta_data": null,
+    "group_id": "652be471-741a-4042-85be-3f26149e7104",
+    "first_published_at": "2025-04-03T10:13:21.061Z",
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "alternates": [],
+    "default_full_slug": null,
+    "translated_slugs": null
+  },
+  "cv": 1743675201,
+  "rels": [],
+  "links": []
+}
